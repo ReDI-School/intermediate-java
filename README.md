@@ -1,19 +1,19 @@
 ![ReDI](redi_banner.png)
 
-# COURSE_NAME
+# Intermediate Java
 
-This is the support project for the "COURSE_NAME" course at [ReDI School](https://www.redi-school.org).
+This is the support project for the "Intermediate Java" course at [ReDI School](https://www.redi-school.org).
 
 The website is visible at:
 
-  **https://redi-school.github.io/COURSE_NAME**
+  **https://redi-school.github.io/Intermediate Java**
 
 This website was generated from the [course-template](https://github.com/ReDI-School/course-template).
 You can create your own course website creating a repository out of the same template.
 
 ## Configuring the project
 
-Please replace COURSE_NAME in this file with the name of the course, as configured in GitHub.
+Please replace Intermediate Java in this file with the name of the course, as configured in GitHub.
 This must be the GitHub project name and it's used in the final URL. Then delete this paragraph.
 
 ## Authoring the website
