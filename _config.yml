@@ -17,10 +17,8 @@ title: Intermediate Java
 description: This is the homepage of the "Intermediate Java" course at ReDI School
 footer_content: "Made with ❤ by teachers at <a href=\"https://www.redi-school.org\">ReDI School</a>."
 aux_links:
-  "Example Link 1":
-    - "https://en.wikipedia.org/wiki/Link"
-  "Example Link 2":
-    - "https://en.wikipedia.org/wiki/Link"
+  "Previous Semesters":
+    - "https://redi-j2.netlify.com"
 
 # Build settings
 markdown: kramdown
