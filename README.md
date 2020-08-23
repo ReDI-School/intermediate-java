@@ -6,7 +6,7 @@ This is the support project for the "Intermediate Java" course at [ReDI School](
 
 The website is visible at:
 
-  **https://redi-school.github.io/Intermediate Java**
+  **https://redi-school.github.io/intermediate-java**
 
 This website was generated from the [course-template](https://github.com/ReDI-School/course-template).
 You can create your own course website creating a repository out of the same template.
