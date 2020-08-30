@@ -1,5 +1,5 @@
 ---
-title: Lesson 1
+title: Introduction to Intermediate Java
 nav_order: 1
 has_children: true
 ---
