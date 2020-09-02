@@ -31,6 +31,8 @@ For loops are usually used to run `<CODE TO EXECUTE>` a given amount of times.
 They are using an `INITIALIZATION` statement which is run exactly once at the beginning, 
 a `CONDITION` statement which is run before each iteration and 
 an `INCREMENT` statement which is run after each iteration.
+For loops are executed until `CONDITION` evaluates to false. If they are false from the beginning,
+the code will never be executed.
 
 Example:
 ```java
@@ -152,6 +154,32 @@ for (int i=0; i<numbers.length; i++) {
 ```
 
 A for each loop is quite common when you handle lists/arrays.
+
+## break and continue
+Sometimes it is needed to skip certain items or to stop the loop prematurely.
+In order to do so, we can use the `continue` (skip current iteration) and the `break`
+(stop the whole loop) keywords.
+
+Example break:
+```java
+for (int number : numbers) {
+    if (number == 3) {
+      break;
+    }
+    System.out.println(number);
+}
+```
+
+Example continue:
+```java
+for (int number : numbers) {
+    if (number == 3) {
+      continue;
+    }
+    System.out.println(number);
+}
+```
+
 
 ## Exercises
 ### Exercise 1: Multiplication Table
