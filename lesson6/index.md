@@ -13,7 +13,7 @@ has_children: true
 * Code, code, code 🤩
 
 ## Recap & Homework check
-Let's look into the homework from lesson 6
+Let's look into the homework from lesson 5
 
 ## Array
 ![array](objects-tenElementArray.gif)
@@ -88,7 +88,7 @@ public class Main {
 ### Exercises
 
 #### Print reversed array
-Write a method that will print an int array reversed. For an array {1,3,5,2,4}, it prints {4,3,5,2,1}
+Write a method that will print an int array reversed. For an array {1,3,5,2,4}, it prints {4,2,5,3,1}
 
 #### Merge 2 arrays
 Write a method that will merge two int arrays. Merge rule is first element from the first array, then first from the second array, ...
