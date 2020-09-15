@@ -4,7 +4,7 @@ nav_order: 5
 has_children: true
 ---
 
-# Lesson 4: Recap Functions & Methods
+# Lesson 5: Recap Functions & Methods
 
 ## Goals
 * Recap method `signature`, `arguments` and `return` value
