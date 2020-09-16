@@ -4,7 +4,7 @@ nav_order: 6
 has_children: true
 ---
 
-# Lesson 5: Recap Array & ArrayList
+# Lesson 6: Recap Array & ArrayList
 
 ## Goals
 * Declare & Initialise Array and Access its elements 
