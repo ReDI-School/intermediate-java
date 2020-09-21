@@ -76,6 +76,17 @@ Think about:
 
 ![Example default constructor explicit](default_constructor_explicit.png)
 
+## Exercise
+
+Let's create a car class and object with the name "Trabant" and the maxSpeed 100.
+
+1. Write "Car" class with String field "name" and int field "maxSpeed" without any constructor and create the needed object of this class in the main method (for assigning values to object fields use "dot" operator - object.field = value)
+
+2. Add to "Car" class explicit default constructor and ensure that you can create object in the same way.
+
+3. Add second constructor to "Car" class that assigns values to both class fields (custom constructor).
+   Create an object with needed fields using custom constructor.
+
 ## Power of OOP - Encapsulation, Abstraction, Inheritance, Polymorphism
 
 **Encapsulation**
