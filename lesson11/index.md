@@ -1,8 +1,10 @@
 ---
-title: "OOP Mini Project: university Management:
+title: OOP Mini Project - University Management
 nav_order: 11
 has_children: true
 ---
+
+## University Management
 
 We want to design an application to manage a university. This model we want to out source so that anyone can download our
 software and use it to manage their university. For the purpose of this exercise we shall limit ourselves to a technical
