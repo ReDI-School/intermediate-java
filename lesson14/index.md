@@ -63,9 +63,9 @@ void readFile(String fileName) throws FileNotFoundException {
 
 ### Runtime Exceptions
 Definition:
-> A runtime expcetion is a type of exception that happens during the runtime of the program and cause a crash to the program.
+> A runtime expcetion is a type of exception that happens during the runtime of the program and causes a crash to the program.
 
-One of the most common type of runtime exception are `NullPointerException` and `IndexOutOfBoundsException`
+Two of the most common types of runtime exceptions are `NullPointerException` and `IndexOutOfBoundsException`
 
 ## Exceptions in practice
 ### Getting to know exceptions
