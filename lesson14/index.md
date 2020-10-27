@@ -4,13 +4,15 @@ nav_order: 14
 has_children: true
 ---
 
-# Lesson 13: Exception
+# Lesson 14: Exception
 
 ## Goals
 
 - Learn what are exceptions.
 - Learn how to handle exceptions.
 - Know common java exceptions.
+- Define custom exceptions
+- Use custom exception to control program error flow
 
 ## Exceptions
 
@@ -140,8 +142,59 @@ int number = Integer.parseInt(userInput);
 System.out.println("You have entered: " + number);
 ```
 
+## Custom exceptions
+Every now and then, the exceptions defined by Java are not enough. We want to define our own exceptions.
+In order to do so, we can just inherit from Exception for checked exceptions or from RuntimeException. 
+In order to set a specific message or a specific root cause, we can overwrite the constructors of Exception/RuntimeException.
+```java
+public class MyException extends Exception {
+
+}
+
+public class MyRuntimeException extends RuntimeException {
+
+}
+
+public class Service { 
+  public void doSth() throws MyException {
+    throw new MyException();
+  }
+
+  public void doSth2() throws Exception {
+    throw new MyException();
+  }
+
+  public void doSth3() {
+    throw new MyRuntimeException();
+  }
+}
+```
+
 ## Exercice
 Write a dateValidator method that accept a string as parameter and return true if the string is in the format `DD/MM/YYYY` otherwise it returns false.
+
+## Custom exceptions 1 
+Define a method `checkPhoneNumber` which will be used to check a phone number and throw a custom checked exception if the phone number is not valid. 
+A phone number is valid if:
+- Length is exactly 14
+- The first character is +
+- All the other characters are numerical digits
+
+In your main method, use a Scanner to get a phone number input, and use the method checkPhoneNumber to validate the input.
+
+## Custom exceptions 2 - Rock, Paper, Scissors
+- Rock beats Scissor
+- Scissor beats Paper
+- Paper beats Rock
+
+The user enters one of three options (R, P, or S) and the computer picks one of the three options at random and the program should print who won and how many rounds each person has won so far e.g:
+```
+Round #10 - Computer wins!
+You: 4
+Computer: 6
+```
+
+If the user enters the wrong option throw a custom exception that forces the application to crash.
 
 ## Homework
 We would like to implement a simple calculator that does division. The user has to provide us with 2 numbers x & y, then we print the result of x devided by y.
