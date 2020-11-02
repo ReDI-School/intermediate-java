@@ -150,5 +150,9 @@ Using streams:
 ## Homework
 
 1. Given:
+
+```java
    List<String> names = Arrays.asList("Amelia","Olivia","emily","Isla","Ava","oliver","Jack","Charlie","harry","Jakob").
-   Write code to print the names in sorted order and with the first letter in each name upper-cased, each name should be printed on a new line.
+```
+
+Write code to print the names in sorted order and with the first letter in each name upper-cased, each name should be printed on a new line.
