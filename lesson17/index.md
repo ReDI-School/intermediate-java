@@ -35,6 +35,11 @@ Scenarios where bytestream are used:
 - Reading data or files from a file system e.g. a hard drive of a computer
 - Writing data or files into a file system e.g. a hard drive of a computer
 
+
+![Input](20stream2.gif)
+![Output](19stream.gif)
+
+
 >_an `InputStream` is an abstract class representing an inflow of bytes. To read data from a bytestream, one uses an `InputStream`_
 >`System.in` is an `InputStream` that can be used to read data from the standard input stream.
 
@@ -217,21 +222,23 @@ public class ReadFileLineByLine {
 }
 ```
 
-## Exercise: Try with resources
+## Exercises
+
+### Exercise: Try with resources
 
 Rewrite the two methods above using `try` with resources.
 
 
-## Exercise: Sort Line
+### Exercise: Sort Line
 
 Write a java program that sorts a given file line by line. At the end of the execution, the file must be sorted.
 
-## Exercise: Dictionary
+### Exercise: Dictionary
 
 Write a java program that given an English text file, will attempt to build a dictionary of the unique words in
 that text file.
 
-## Exercise: CSV
+### Exercise: CSV
 
 You are keeping a log of students in your class and you store the data of your students in a file on your machine.
 
@@ -247,3 +254,6 @@ You are keeping a log of students in your class and you store the data of your s
     - date of birth (in format dd/mm/yyyy)
 - The data file must be written as a (tab or comma separated) CSV file.
 
+## Materials
+
+- http://www.c-jump.com/bcc/c257c/Week10/Week10.html``
