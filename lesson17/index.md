@@ -121,7 +121,11 @@ To read from a file, we need the file path and a `FileReader`. A `FileInputStrea
 `FileReader`.
 
 To write into a file, we need the file path and a `FileWriter`. A `FileOutputStream` will be created and be used by the 
-`FileWriter`.
+`FileWriter`. 
+
+By default a `FileWriter` or `FileOutputStream` removes the existing content of the file and starts writing data into it.
+However, both the `FileWriter` and `FileOutputStream` can be created and opened in `append` mode; this implies that
+whatever is written to the stream is appended to the existing file i.e. we do not delete the existing content of the file.
 
 ### Example: Read and write a text file character by character
 
@@ -222,23 +226,34 @@ public class ReadFileLineByLine {
 }
 ```
 
+### Java 11 tricks
+
+- Read the entire file into string: `String Files.readString(Path path)`
+- Read a file line by line: `List<String> Files.readAllLines(Path path)`
+- Write lines into a file: `Path Files.write(Path path, List<String> lines)`
+- Write string into a file: `Path Files.writeString(Path path, String string, OpenOption...options)`
+
+Be careful using these methods since you lose control over the underlying resources or risk reading a huge file into
+memory which can lead to the application running out of memory and crashing. 
+
+_Please use the above methods only if necessary for the homework exercise._
+
 ## Exercises
 
 ### Exercise: Try with resources
 
 Rewrite the two methods above using `try` with resources.
 
-
-### Exercise: Sort Line
-
-Write a java program that sorts a given file line by line. At the end of the execution, the file must be sorted.
-
 ### Exercise: Dictionary
 
 Write a java program that given an English text file, will attempt to build a dictionary of the unique words in
 that text file.
 
-### Exercise: CSV
+### Exercise: Sort Line
+
+Write a java program that sorts a given file line by line. At the end of the execution, the file must be sorted.
+
+### Homework Exercise: CSV
 
 You are keeping a log of students in your class and you store the data of your students in a file on your machine.
 
