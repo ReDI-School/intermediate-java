@@ -1,6 +1,6 @@
 ---
 title: Project ideas
-nav_order: 100
+nav_order: 50
 has_children: true
 ---
 # Project 
