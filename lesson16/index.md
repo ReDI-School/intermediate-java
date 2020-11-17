@@ -4,7 +4,7 @@ nav_order: 16
 has_children: true
 ---
 
-# Lesson 15: Putting it all together
+# Lesson 16: Putting it all together
 
 ## Goals
 
