@@ -2,6 +2,7 @@
 title: "Homework Solutions"
 nav_order: 3
 parent: Git
+nav_exclude: true
 ---
 
 # Exercise 1

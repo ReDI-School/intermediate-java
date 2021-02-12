@@ -2,6 +2,7 @@
 title: Putting it all together
 nav_order: 16
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 16: Putting it all together

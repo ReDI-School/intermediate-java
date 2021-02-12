@@ -2,6 +2,7 @@
 title: Recap Functions & Methods
 nav_order: 5
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 5: Recap Functions & Methods

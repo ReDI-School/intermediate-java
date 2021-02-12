@@ -2,6 +2,7 @@
 title: Interview questions - algorithms
 nav_order: 22
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 22: Interview questions - algorithms

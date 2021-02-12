@@ -2,6 +2,7 @@
 title: Inheritance, Overriding and Overloading
 nav_order: 9
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 9: Inheritance, Overriding and Overloading

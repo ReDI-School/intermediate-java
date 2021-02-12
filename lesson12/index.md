@@ -2,6 +2,7 @@
 title: hashCode(), equals() and toString()
 nav_order: 12
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 12: Recap Array & ArrayList

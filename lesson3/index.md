@@ -2,6 +2,7 @@
 title: Git
 nav_order: 3
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 3: Git, GitHub & Integration with Intellij

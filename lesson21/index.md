@@ -2,6 +2,7 @@
 title: Exercise - Building music player
 nav_order: 21
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 21: Exercise - Building music player

@@ -2,6 +2,7 @@
 title: OOP Mini Project - University Management
 nav_order: 11
 has_children: true
+nav_exclude: true
 ---
 
 ## University Management

@@ -2,6 +2,7 @@
 title: Build With Maven
 nav_order: 19
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 19: Build With Maven
