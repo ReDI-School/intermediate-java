@@ -2,6 +2,7 @@
 title: File I/O
 nav_order: 17
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 16: File I/O

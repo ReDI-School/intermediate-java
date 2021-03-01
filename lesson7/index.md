@@ -2,6 +2,7 @@
 title: Sets
 nav_order: 7
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 7: Sets

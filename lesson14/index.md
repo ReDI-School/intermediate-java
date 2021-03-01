@@ -2,6 +2,7 @@
 title: Exception
 nav_order: 14
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 14: Exception

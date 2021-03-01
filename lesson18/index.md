@@ -2,6 +2,7 @@
 title: Recap Interfaces. Problem solving
 nav_order: 18
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 18: Recap Interfaces. Problem solving

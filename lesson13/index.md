@@ -2,6 +2,7 @@
 title: Maps (HashMap, TreeMap)
 nav_order: 13
 has_children: true
+nav_exclude: true
 ---
 
 # Lesson 13: Maps (HashMap, TreeMap)
