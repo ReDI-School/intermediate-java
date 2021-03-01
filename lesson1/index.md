@@ -13,11 +13,6 @@ has_children: true
 * Check required software (Java & Intellij Idea)
 * Do some basic Java exercises 🤩
 
-## Get familiar with schedule, attendance, tools
-### Schedule
-* Every Monday 7:15-9:15 pm Onsite session (Factory Berlin Görlitzer Park)
-* Every Wednesday 7:15-9:15 pm Online session [Online link](http://bbb.redi-school.org/b/fad-ghr-c7v)
-
 ### General info
 * 📓 Course certificate only after minimum 80% attendance
 * 💨 We don’t show up late to class (and inform otherwise)
