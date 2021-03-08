@@ -1,7 +1,7 @@
 ---
 title: Introduction to Intermediate Java
 nav_order: 1
-has_children: true
+has_children: false
 ---
 
 # Lesson 1: Introduction to Intermediate Java
