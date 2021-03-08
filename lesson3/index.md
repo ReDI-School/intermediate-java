@@ -34,16 +34,16 @@ Questions that Version control helps to answer
 ## Git
 Git is an extremely popular version control system (VCS) that is at the heart of a wide variety of high-profile projects.
 Git is a distributed version-control system for tracking changes in source code during software development. 
-It is designed for coordinating work among programmers, but it can be used to track changes in any set of files
+It is designed for coordinating work among programmers, but it can be used to track changes in any set of text files. This focus on text is important to keep in mind as Git is extremely efficient and fast with textual content but can struggle when used with large images or other large files, for example zip or video, especially when they are changed often.
 
 ![git-logo](git-logo.png)
 
 ### Install Git 
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## GitHub
 GitHub is a cloud-based hosting service that lets you manage Git repositories.
-https://github.com/
+[https://github.com/](https://github.com/)
 
 ![github-logo](github-logo.jpg)
 
@@ -51,22 +51,21 @@ Let's create a free account at GitHub (Demo)
 
 Other Git repository hosting services also exist: GitLab, BitBucket, and SourceForge 
 
-
 ## Git workflow
-In order to track changes, git dictate kind of a workflow for us. To understand this workflow let's look at the differents states of git.
+In order to track changes, Git dictates a workflow for us. To understand this workflow let's look at the differents states of Git.
 
 ![git-local-workflow](git-local-workflow.png)
 
 - `Working tree` or `working directory`: It is the area where you are currently working, any changes to files will be marked and seen here. If you do not save your changes in this state, they can be lost.
-- `Staging` or `index`: It is the area where git starts to track and saves you changes.
+- `Staging` or `index`: It is the area where Git starts to track and saves you changes.
 - `Local repository`: It is the area where all your files and changes are saved.
 
-As you can see, this flow will allow us to track changes and keep history of them but all of this, is still in your local machine. In software development you will always be working in a team, therefore we have to share the code with others. This is where hosting services of git come into play (i.e. github). They will add a 4th state to the git workflow which is the `remote repository`. It is the same as the local repository but contains all the changes from different people. This 4th state add the step of `pushing` our changes from the local repository to the remote repository and the `fetching` of other's changes from the remote repository to our local one.
+As you can see, this flow will allow us to track changes and keep history of them, but all of this is still in your local machine. In software development you will always be working in a team, therefore we have to share the code with others. This is where hosting services of Git come into play (i.e. GitHub). They will add a 4th state to the Git workflow which is the `remote repository`. It is the same as the local repository but contains all the changes from different people. This 4th state add the step of `pushing` our changes from the local repository to the remote repository and the `fetching` of other's changes from the remote repository to our local one.
 
 ![git-remote-workflow](git-remote-workflow.png)
 
 ## Git Commands
-Some of the git commands that are behind Intellij Magic 
+Some of the Git commands that are behind Intellij Magic 
 * git add
 * git commit
 * git push 
@@ -90,7 +89,7 @@ Pushing is how you transfer commits from your local repository to a remote repo.
 
 ### git pull
 Is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
-Is actually a combination of two other commands, git fetch followed by git merge.
+Is actually a combination of two other commands, `git fetch` followed by `git merge`.
 
 ### git clone
 Cloning a local or remote repository
@@ -135,7 +134,7 @@ Commit the changes and push them to your GitHub.
 Can you do it in 1 loop?
 Commit the changes and push them to your GitHub.
 
-Look into the git history 
+Look into the Git history 
 
 ### Palindrome string
 Write a Program that checks that a given string is a palindrome. 
