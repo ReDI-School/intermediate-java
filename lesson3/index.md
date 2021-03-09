@@ -175,7 +175,7 @@ Commit the changes and push them to your GitHub.
 Upload your code from the previous classes to your GitHub profile & Finish the java tasks
 
 ## Materials
-- https://learngitbranching.js.org/
-- https://try.github.io/
-- https://git-scm.com/ 
-- https://www.jetbrains.com/help/idea/github.html
+- [Learn Git Branching](https://learngitbranching.js.org/)
+- [Git learning resources](https://try.github.io/)
+- [Git homepage](https://git-scm.com/)
+- [Idea Git help](https://www.jetbrains.com/help/idea/github.html)
