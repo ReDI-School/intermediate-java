@@ -1,7 +1,7 @@
 ---
 title: Java, JVM and compilers
 nav_order: 2
-has_children: true
+has_children: false
 ---
 
 # Lesson 2: Java, JVM and compilers
