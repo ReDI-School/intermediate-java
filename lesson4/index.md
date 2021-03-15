@@ -1,14 +1,14 @@
 ---
 title: Recap loops
 nav_order: 4
-has_children: true
-nav_exclude: true
+has_children: false
+nav_exclude: false
 ---
 
 # Lesson 4: Recap loops
 
 ## Goals
-* Get to know Sunday and Flo
+* Recap Git, have you tried it?
 * Recap `for`
 * Recap `while`
 * Recap `do` ... `while`
