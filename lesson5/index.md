@@ -13,7 +13,7 @@ nav_exclude: false
 * Code, code, code 🤩
 
 ## Recap & Homework check
-Let's look into the homework from lesson 5
+Let's look into the homework from lesson 4
 
 ## Java Method
 
