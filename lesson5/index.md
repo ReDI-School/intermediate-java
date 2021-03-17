@@ -1,11 +1,11 @@
 ---
-title: Recap Functions & Methods
+title: Recap Methods & Recursion
 nav_order: 5
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Lesson 5: Recap Functions & Methods
+# Lesson 5: Recap Methods & Recursion
 
 ## Goals
 * Recap method `signature`, `arguments` and `return` value
