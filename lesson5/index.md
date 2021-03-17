@@ -248,7 +248,7 @@ f(1) = 1
 f(n) = f(n-1) + f(n-2) for n > 1
 ```
 
-### 7 - Recursion: Palindrome
+### Homework: Palindrome
 
 Using recursion, write a method that takes a string and returns a boolean indicating if the provided string is a
 palindrome or not.
