@@ -31,20 +31,18 @@ public class Main {
 ```
 
 Here, we have created a method named `main` in the class `Main`.
-We can see that we have used the `public`, `static` and `void` keywords before the method name.
+We can see that we have used the `public`, `static` and `void` keywords before the method name. We will look at their role in Java in this lesson. For the aforementioned keywords, they mean this:
 
-- `public` - access modifier. It means the method can be accessed from anywhere.
-- `static` here means this method belongs to the class Main and not to a specific instance of Main. 
-  Which means we can call the method from a different class like that `Main.foo()`.
-- `void` means this method doesn't return a value. Methods can return a single value in Java and it has to be defined in 
-  the method declaration. However, you can use return by itself to exit the method.
+- `public` serves as a access modifier. It means the method can be accessed from anywhere.
+- `static` here means this method belongs to the general class of Main and not to a specific instance of Main. We can therefore call the method from `Main` without creating an actual instance of `Main`. That would look like this: `Main.foo()`.
+- `void` means this method doesn't return a value. Methods can return a single value in Java and it has to be defined in the method declaration. However, you can use return by itself to exit the method.
 - This method takes as argument an array of `String`.
 
 A method is structured as follow:
 
 ```java
 public class Main {
-    <modifier> <return type> methodName(<arguments list>){
+    <modifiers> <return type> methodName(<arguments list>){
       //code to execute
     }
 }
@@ -57,18 +55,17 @@ the entire code each time. Think of it as, "write once, reuse multiple times". M
 easier to debug. For example, a method named `getSquare()` is so readable that we can know that this method will be calculating 
 the square of a number whenever it is called.
 
-## Method visibility
+## Method Visibility with Access Modifiers
 
 - `private`: Can only be accessed within the owning class
 - `protected`: Can only be accessed within the owning class, classes within the same package and any sub-class of the owning class
-- `[no-visibilty]`: Can only be accessed within the class and classes within the same package
 - `public`: Can be accessed from anywhere.
+- No modifier (default): Can only be accessed within the class and classes within the same package
+
 
 ## Static Methods
 
-Static methods like the `main` method belongs to the class and you do not need an instance of the class to invoke it.
-If you define a static method call `myMethod` in a class called `MyClass` you can invoke that method by using the class 
-in the following way:
+Static methods like the `main` method belongs to the class and you do not need an instance of the class to invoke it. If you define a static method call `myMethod` in a class called `MyClass`. You can invoke that method by using the class in the following way:
 
 ```java
 MyClass.myMethod(...)
@@ -111,8 +108,7 @@ public class Main {
 
 ## Non-static Methods
 
-Non-static method belongs to an instance of the class. To invoke or call a non-static method, you must have and
-use an instance of the class. **What is an instance of a class?**
+A non-static method belongs to an instance of the class. To invoke or call a non-static method, you must have and use an instance of the class. **What is an instance of a class?**
 
 If you define a non-static method call `myMethod` in a class called `MyClass` you can invoke that method in the following way:
 
@@ -120,8 +116,7 @@ If you define a non-static method call `myMethod` in a class called `MyClass` yo
 new MyClass().myMethod(...);
 ```
 
-Here, `new MyClass()` is an instance of the class `MyClass`. You will learn more about this and Object Oriented 
-Programming later in the course.
+Here, `new MyClass()` is a new instance of the class `MyClass`. You will learn more about this and Object Oriented Programming later in the course.
 
 OR in the following way
 
@@ -162,8 +157,7 @@ public class Main {
 
 ## [Recursion](https://www.google.com/search?q=recursion)
 
-A recursion occurs when invoking a method and that invocation manages to trigger another invocation of the same
-method. Recursion can be obvious and subtle for example:
+A recursion occurs when invoking a method and that invocation manages to trigger another invocation of the same method. Recursion can be obvious and subtle for example:
 
 ```java
 public class Main {
@@ -203,8 +197,7 @@ public class Main {
 }
 ```
 
-When using recursion, it is very important to have a terminating point otherwise the call stack will run out of memory and
-you will have what is called [`StackOverflowError`](https://stackoverflow.com).
+When using recursion, it is very important to have a terminating point otherwise the call stack will run out of memory and you will have what is called a [`StackOverflowError`](https://stackoverflow.com) 😱.
 
 In the exercises for this lesson, you will have an example of a problem that can be solved using recursion.
 
@@ -216,11 +209,9 @@ Feel free to name your methods however you like.
 
 ### 1 - Prettify
 
-Prettifying a string means to print the string in the standard output with the characters that appear sided by side
-separated by a character chosen by the user.
+Prettifying a string means to print the string in the standard output with the characters that appear side by side separated by a character chosen by the user.
 
-You should write a method that takes a string and the separating character and prettifies the string using the
-separating character. In addition make sure to get the separating character from the user via the standard input.
+You should write a method that takes a string and the separating character and prettifies the string using the separating character. In addition make sure to get the separating character from the user via the standard input.
 
 ### 2 - Sum of an array.
 
