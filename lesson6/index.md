@@ -2,7 +2,7 @@
 title: Array & ArrayList
 nav_order: 6
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 6: Recap Array & ArrayList
