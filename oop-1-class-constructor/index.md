@@ -1,6 +1,6 @@
 ---
 title: OOP 1 What is a class
-nav_order: 8
+nav_order: 7
 has_children: true
 nav_exclude: false
 ---
