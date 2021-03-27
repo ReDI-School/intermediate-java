@@ -5,7 +5,7 @@ has_children: true
 nav_exclude: false
 ---
 
-# Lesson 7: Object-Oriented Programming (OOP) 1 
+# Lesson 7: Object-Oriented Programming (OOP) 1
 
 ## Goals
 
