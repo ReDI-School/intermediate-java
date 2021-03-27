@@ -1,8 +1,5 @@
 ---
-title: OOP 1 What is a class
-nav_order: 7
-has_children: true
-nav_exclude: false
+title: OOP 1 What is a class nav_order: 7 has_children: true nav_exclude: false
 ---
 
 # Lesson 8: OOP 1 What is a class
@@ -19,221 +16,206 @@ nav_exclude: false
 
 ## Recap & Homework check
 
-Let's look into the homework from lesson 7
+Let's look into the homework from lesson 6
 
-## Object-oriented Programming
+## What Is an Object?
 
-`Procedural programming` - software design around procedures or methods that perform operations on the data
+An object is a software bundle of related state and behavior. Software objects are often used to model the real-world
+objects that you find in everyday life. This lesson explains how state and behavior are represented within an object,
+introduces the concept of data encapsulation, and explains the benefits of designing your software in this manner.
 
-`Object-oriented programming (OOP)` - software design around objects that contain both data and methods.
+Objects are key to understanding object-oriented technology. Look around right now and you'll find many examples of
+real-world objects: your dog, your desk, your television set, your bicycle.
 
-## Features of OOP
+Real-world objects share two characteristics: They all have state and behavior. Dogs have state (name, color, breed,
+hungry) and behavior (barking, fetching, wagging tail). Bicycles also have state (current gear, current pedal cadence,
+current speed) and behavior (changing gear, changing pedal cadence, applying brakes). Identifying the state and behavior
+for real-world objects is a great way to begin thinking in terms of object-oriented programming.
 
-- Program is divided into small parts called objects.
-- OOP follows bottom up approach.
-- Adding new data and function is easy.
-- OOP provides data hiding so it is more secure (access modifiers).
-- OOP is based on real world.
+Take a minute right now to observe the real-world objects that are in your immediate area. For each object that you see,
+ask yourself two questions: "What possible states can this object be in?" and "What possible behavior can this object
+perform?". Make sure to write down your observations. As you do, you'll notice that real-world objects vary in
+complexity; your desktop lamp may have only two possible states (on and off) and two possible behaviors (turn on, turn
+off), but your desktop radio might have additional states (on, off, current volume, current station) and behavior (turn
+on, turn off, increase volume, decrease volume, seek, scan, and tune). You may also notice that some objects, in turn,
+will also contain other objects. These real-world observations all translate into the world of object-oriented
+programming.
 
-## Classes
+![Concept Object](concepts-object.gif)
 
-Class is a template for an object.
+Software objects are conceptually similar to real-world objects: they too consist of state and related behavior. An
+object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (
+functions in some programming languages). Methods operate on an object's internal state and serve as the primary
+mechanism for object-to-object communication. Hiding internal state and requiring all interaction to be performed
+through an object's methods is known as data encapsulation — a fundamental principle of object-oriented programming.
 
-It tells JVM how to make an object of that particular type.
+Consider a bicycle, for example:
 
-![Class vs Objects](class_objects.png)
+![Concept Bicycle Object](concepts-bicycleObject.gif)
 
-## How to design a class
+By attributing state (current speed, current pedal cadence, and current gear) and providing methods for changing that
+state, the object remains in control of how the outside world is allowed to use it. For example, if the bicycle only has
+6 gears, a method to change gears could reject any value that is less than 1 or greater than 6.
 
-When you design a class, think about the objects that will be created from that class type.
+Bundling code into individual software objects provides a number of benefits, including:
 
-Think about:
+- **Modularity**: The source code for an object can be written and maintained independently of the source code for other
+  objects. Once created, an object can be easily passed around inside the system.
+- **Information-hiding**: By interacting only with an object's methods, the details of its internal implementation
+  remain hidden from the outside world.
+- **Code re-use**: If an object already exists (perhaps written by another software developer), you can use that object
+  in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then
+  trust to run in your own code.
+- **Pluggability** and debugging ease: If a particular object turns out to be problematic, you can simply remove it from
+  your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in
+  the real world. If a bolt breaks, you replace it, not the entire machine.
 
-- things the object knows (state / fields)
-- things the object does (methods)
+## What Is a Class?
 
-![Class vs Objects - code](car_code.png)
+A class is a blueprint or prototype from which objects are created. This section defines a class that models the state
+and behavior of a real-world object. It intentionally focuses on the basics, showing how even a simple class can cleanly
+model state and behavior.
 
-## Difference between class and object
+In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other
+bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and
+therefore contains the same components. In object-oriented terms, we say that your bicycle is an instance of the class
+of objects known as bicycles. A class is the blueprint from which individual objects are created.
 
-| A Class                                                  | An Object                                                                      |
-| :------------------------------------------------------- | :----------------------------------------------------------------------------- |
-| is a template or blueprint                               | is an instance of a class/it's the working entity of the class                 |
-| represents a type (a group of similar real-life objects) | represents an instance (a single real-life object such as pen, laptop, person) |
+The following Bicycle class is one possible implementation of a bicycle:
+
+```java
+class Bicycle {
+
+    int speed = 0;
+    int gear = 1;
+
+    void changeGear(int newValue) {
+        gear = newValue;
+    }
+
+    void speedUp(int increment) {
+        speed = speed + increment;
+    }
+
+    void applyBrakes(int decrement) {
+        speed = speed - decrement;
+    }
+
+    void printStates() {
+        System.out.println("speed:" + speed + " gear:" + gear);
+    }
+}
+```
+
+The syntax of the Java programming language will look new to you, but the design of this class is based on the previous
+discussion of bicycle objects. The fields cadence, speed, and gear represent the object's state, and the methods (
+changeCadence, changeGear, speedUp etc.) define its interaction with the outside world.
 
 ## Constructors
 
-- Can be used to set initial value's for object's attributes/fields
+A class contains constructors that are invoked to create objects from the class blueprint. Constructor declarations look
+like method declarations—except that they use the name of the class and have no return type. For example, `Bicycle` has
+the following constructors:
 
-- Exist inside the class and have the same name as the class
+```java
+public Bicycle(int startSpeed,int startGear){
+        this.gear=startGear;
+        this.speed=startSpeed;
+}
+public Bicycle(){
+        this.gear=1;
+        this.speed=0;
+}
+```
 
-- Looks like a method but with no return type e.g. no "void"
+To create a new `Bicycle` object called `myBike`, a constructor is called by the new operator:
 
-- Class has one or more constructors
+```java
+Bicycle myBike = new Bicycle(0,8);
+```
 
-![Exaple custom constructor](custom_constructor.png)
+`Bicycle yourBike = new Bicycle();` invokes the no-argument constructor to create a new `Bicycle` object
+called `yourBike`.
 
-![Example default constructor](default_constructor.png)
+```java
+Bicycle yourBike = new Bicycle();
+yourBike.gear = 5;
+yourBike.speed = 2;
+```
 
-![Example default constructor explicit](default_constructor_explicit.png)
+Both constructors could have been declared in Bicycle because they have different argument lists. As with methods, the
+Java platform differentiates constructors on the basis of the number of arguments in the list and their types. You
+cannot write two constructors that have the same number and type of arguments for the same class, because the platform
+would not be able to tell them apart. Doing so causes a compile-time error.
+
+You don't have to provide any constructors for your class, but you must be careful when doing this. The compiler
+automatically provides a no-argument, default constructor for any class without constructors. This default constructor
+will call the no-argument constructor of the superclass. In this situation, the compiler will complain if the superclass
+doesn't have a no-argument constructor so you must verify that it does. If your class has no explicit superclass, then
+it has an implicit superclass of Object, which does have a no-argument constructor.
+
+You can use a superclass constructor yourself. The MountainBike class at the beginning of this lesson did just that.
+This will be discussed later, in the lesson on interfaces and inheritance.
+
+You can use access modifiers in a constructor's declaration to control which other classes can call the constructor.
+
+You may have noticed that the `Bicycle` class does not contain a main method. That's because it's not a complete
+application; it's just the blueprint for bicycles that might be used in an application. The responsibility of creating
+and using new `Bicycle` objects belongs to some other class in your application.
+
+Here's a `BicycleDemo` class that creates two separate `Bicycle` objects and invokes their methods:
+
+```java
+class BicycleDemo {
+    public static void main(String[] args) {
+
+        // Create two different 
+        // Bicycle objects
+        Bicycle bike1 = new Bicycle();
+        Bicycle bike2 = new Bicycle();
+
+        // Invoke methods on 
+        // those objects
+        bike1.speedUp(10);
+        bike1.changeGear(2);
+        bike1.printStates();
+
+        bike2.speedUp(10);
+        bike2.changeGear(2);
+        bike2.speedUp(10);
+        bike2.changeGear(3);
+        bike2.printStates();
+    }
+}
+
+```
+
+The output of this test prints the ending pedal cadence, speed, and gear for the two bicycles:
+
+```
+speed:10 gear:2
+speed:20 gear:3
+```
 
 ## Exercise
 
 Let's create a car class and object with the name "Trabant" and the maxSpeed 100.
 
-1. Write "Car" class with String field "name" and int field "maxSpeed" without any constructor and create the needed object of this class in the main method (for assigning values to object fields use "dot" operator - object.field = value)
+1. Write "Car" class with String field "name" and int field "maxSpeed" without any constructor and create the needed
+   object of this class in the main method (for assigning values to object fields use "dot" operator - object.field =
+   value)
 
 2. Add to "Car" class explicit default constructor and ensure that you can create object in the same way.
 
-3. Add second constructor to "Car" class that assigns values to both class fields (custom constructor).
-   Create an object with needed fields using custom constructor.
-
-## Power of OOP - Encapsulation, Abstraction, Inheritance, Polymorphism
-
-**Encapsulation**
-
-Encapsulation means wrapping up data and member function (Method) together into a single unit i.e. class.
-
-In encapsulation, the variables of a class will be hidden from other classes , and can be accessed only through the methods of their current class (**private access**).
-
-**Abstraction**
-
-Abstraction is the process of showing only essential/necessary features of an enity/object ot the outside world and hide the other irrelevant information
-
-For example to turn on you TV you only have to click on the power button; it's not required to understand how infrared waves are getting generated in TV remote control
-
-**Inheritance**
-
-When you design inheritance, you put common code in a class and tell other more specific classes that the common class is their superclass, in this case you make a class to **extend** from superclass.
-
-Benefits: you can avoide duplicate code and define a common protocol for a group of classes
-
-**Polymorphism (Many Forms)**
-
-A subclass can define its own unique behavior and still share the same functionalities or behavior of its parent/base class
-
-Benefit: you can write code that doesn't have to change when you introduce new subclass types into the program
-
-## Keep in mind / Tips
-
-- There are **words** in the Java world that mean almost the same thing:
-
-  - Class = Type
-  - Class attributes = Class properties = Class fields
-  - Methods = Functions = Procedures
-  - Instance of a class = Object of a class
-  - Instantiate an object = Create an object
-
-- There is no **correct** solution and **incorrect** solution, but there is a **working**, a **not working** and a **better** solution
-
-- Always choose **meaningful names** for your classes, methods and variables
-
-- Try to keep your code **tidy** and well-formatted to make your life easier
-
-## Exercise
-
-Rewrite the following program in OOP.
-
-Hint: You should create a class and use it to group the information about each student and use them to `introduce()` each student.
-
-```java
-import java.util.ArrayList;
-
-public class Main {
-    public static void main(String[] args) {
-        String studentName1 = "Bob";
-        String studentName2 = "Alice";
-        String studentName3 = "John";
-        String studentName4 = "Jane";
-
-        int age1 = 36;
-        int age2 = 25;
-        int age3 = 19;
-        int age4 = 46;
-
-        boolean student1Single = false;
-        boolean student2Single = true;
-        boolean student3Single = true;
-        boolean student4Single = false;
-
-        String student1City = "Berlin";
-        String student2City = "Moscow";
-        String student3City = "San Fransisco";
-        String student4City = "Rio";
-
-        ArrayList<String> student1Friends = new ArrayList<>();
-        ArrayList<String> student2Friends = new ArrayList<>();
-        ArrayList<String> student3Friends = new ArrayList<>();
-        ArrayList<String> student4Friends = new ArrayList<>();
-
-        student1Friends.add("Alice");
-        student1Friends.add("Jane");
-
-        student2Friends.add("Bob");
-        student2Friends.add("Jane");
-
-        student3Friends.add("Jane");
-
-        student4Friends.add("John");
-        student4Friends.add("Alice");
-        student4Friends.add("Bob");
-
-        // introduce yourself (Student 1)
-        System.out.println("My name is " + studentName1);
-        System.out.println("I'm " + age1 + " years old");
-        if (student1Single) {
-            System.out.println("I'm single");
-        } else {
-            System.out.println("I'm in a relationship ^_^ ");
-        }
-        System.out.println("My friends are:");
-        student1Friends.forEach(System.out::println);
-
-
-        // introduce yourself (Student 2)
-        System.out.println("My name is " + studentName2);
-        System.out.println("I'm " + age2 + " years old");
-        if (student2Single) {
-            System.out.println("I'm single");
-        } else {
-            System.out.println("I'm in a relationship ^_^ ");
-        }
-        System.out.println("My friends are:");
-        student2Friends.forEach(System.out::println);
-
-
-        // introduce yourself (Student 3)
-        System.out.println("My name is " + studentName3);
-        System.out.println("I'm " + age3 + " years old");
-        if (student3Single) {
-            System.out.println("I'm single");
-        } else {
-            System.out.println("I'm in a relationship ^_^ ");
-        }
-        System.out.println("My friends are:");
-        student3Friends.forEach(System.out::println);
-
-
-        // introduce yourself (Student 4)
-        System.out.println("My name is " + studentName4);
-        System.out.println("I'm " + age4 + " years old");
-        if (student4Single) {
-            System.out.println("I'm single");
-        } else {
-            System.out.println("I'm in a relationship ^_^ ");
-        }
-        System.out.println("My friends are:");
-        student4Friends.forEach(System.out::println);
-    }
-}
-```
+3. Add second constructor to "Car" class that assigns values to both class fields (custom constructor). Create an object
+   with needed fields using custom constructor.
 
 ## Homework
 
 You want to go to the bank and open an account. You want to be able to transfer money, deposit money, withdraw money.
-When you transfer/withdraw the sum you have in your account can never go under 0 EUR.
-You want to keep track of your transactions as well, to see where your money is going.
-Whenever a new action is performed, print the current amount of money you have.
+When you transfer/withdraw the sum you have in your account can never go under 0 EUR. You want to keep track of your
+transactions as well, to see where your money is going. Whenever a new action is performed, print the current amount of
+money you have.
 
 - Create an `Account` class with specific account attributes and methods like `deposit()`, `withdraw()`, `transfer()`.
 - Create a `Customer` class that will have associated an `Account`.
@@ -245,8 +227,9 @@ Whenever a new action is performed, print the current amount of money you have.
 
 ## Materials
 
+- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
+- [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
 - [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)
 
 - [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/)
 
-- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
