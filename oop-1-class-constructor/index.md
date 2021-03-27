@@ -1,8 +1,11 @@
 ---
-title: OOP 1 What is a class nav_order: 7 has_children: true nav_exclude: false
+title: OOP 1 What is a class
+nav_order: 7
+has_children: true
+nav_exclude: false
 ---
 
-# Lesson 8: OOP 1 What is a class
+# Lesson 7: OOP 1 What is a class
 
 ## Goals
 
@@ -28,9 +31,9 @@ Objects are key to understanding object-oriented technology. Look around right n
 real-world objects: your dog, your desk, your television set, your bicycle.
 
 Real-world objects share two characteristics: They all have state and behavior. Dogs have state (name, color, breed,
-hungry) and behavior (barking, fetching, wagging tail). Bicycles also have state (current gear, current pedal cadence,
-current speed) and behavior (changing gear, changing pedal cadence, applying brakes). Identifying the state and behavior
-for real-world objects is a great way to begin thinking in terms of object-oriented programming.
+hungry) and behavior (barking, fetching, wagging tail). Bicycles also have state (current gear, current speed) and
+behavior (changing gear, applying brakes). Identifying the state and behavior for real-world objects is a great way to
+begin thinking in terms of object-oriented programming.
 
 Take a minute right now to observe the real-world objects that are in your immediate area. For each object that you see,
 ask yourself two questions: "What possible states can this object be in?" and "What possible behavior can this object
@@ -53,9 +56,9 @@ Consider a bicycle, for example:
 
 ![Concept Bicycle Object](concepts-bicycleObject.gif)
 
-By attributing state (current speed, current pedal cadence, and current gear) and providing methods for changing that
-state, the object remains in control of how the outside world is allowed to use it. For example, if the bicycle only has
-6 gears, a method to change gears could reject any value that is less than 1 or greater than 6.
+By attributing state (current speed, and current gear) and providing methods for changing that state, the object remains
+in control of how the outside world is allowed to use it. For example, if the bicycle only has 6 gears, a method to
+change gears could reject any value that is less than 1 or greater than 6.
 
 Bundling code into individual software objects provides a number of benefits, including:
 
@@ -108,8 +111,8 @@ class Bicycle {
 ```
 
 The syntax of the Java programming language will look new to you, but the design of this class is based on the previous
-discussion of bicycle objects. The fields cadence, speed, and gear represent the object's state, and the methods (
-changeCadence, changeGear, speedUp etc.) define its interaction with the outside world.
+discussion of bicycle objects. The fields speed, and gear represent the object's state, and the methods (changeGear,
+speedUp etc.) define its interaction with the outside world.
 
 ## Constructors
 
@@ -121,26 +124,26 @@ the following constructors:
 public Bicycle(int startSpeed,int startGear){
         this.gear=startGear;
         this.speed=startSpeed;
-}
+        }
 public Bicycle(){
         this.gear=1;
         this.speed=0;
-}
+        }
 ```
 
 To create a new `Bicycle` object called `myBike`, a constructor is called by the new operator:
 
 ```java
-Bicycle myBike = new Bicycle(0,8);
+Bicycle myBike=new Bicycle(0,8);
 ```
 
 `Bicycle yourBike = new Bicycle();` invokes the no-argument constructor to create a new `Bicycle` object
 called `yourBike`.
 
 ```java
-Bicycle yourBike = new Bicycle();
-yourBike.gear = 5;
-yourBike.speed = 2;
+Bicycle yourBike=new Bicycle();
+        yourBike.gear=5;
+        yourBike.speed=2;
 ```
 
 Both constructors could have been declared in Bicycle because they have different argument lists. As with methods, the
@@ -190,7 +193,7 @@ class BicycleDemo {
 
 ```
 
-The output of this test prints the ending pedal cadence, speed, and gear for the two bicycles:
+The output of this test prints the current speed, and gear for the two bicycles:
 
 ```
 speed:10 gear:2
