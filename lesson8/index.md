@@ -2,7 +2,7 @@
 title: OOP 1 What is a class
 nav_order: 8
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 8: OOP 1 What is a class
