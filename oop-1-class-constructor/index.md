@@ -149,15 +149,7 @@ cannot write two constructors that have the same number and type of arguments fo
 would not be able to tell them apart. Doing so causes a compile-time error.
 
 You don't have to provide any constructors for your class, but you must be careful when doing this. The compiler
-automatically provides a no-argument, default constructor for any class without constructors. This default constructor
-will call the no-argument constructor of the superclass. In this situation, the compiler will complain if the superclass
-doesn't have a no-argument constructor so you must verify that it does. If your class has no explicit superclass, then
-it has an implicit superclass of Object, which does have a no-argument constructor.
-
-You can use a superclass constructor yourself. The MountainBike class at the beginning of this lesson did just that.
-This will be discussed later, in the lesson on interfaces and inheritance.
-
-You can use access modifiers in a constructor's declaration to control which other classes can call the constructor.
+automatically provides a no-argument, default constructor for any class without constructors. 
 
 You may have noticed that the `Bicycle` class does not contain a main method. That's because it's not a complete
 application; it's just the blueprint for bicycles that might be used in an application. The responsibility of creating
@@ -199,16 +191,18 @@ speed:20 gear:3
 
 ## Exercise
 
-Let's create a car class and object with the name "Trabant" and the maxSpeed 100.
-
-1. Write "Car" class with String field "name" and int field "maxSpeed" without any constructor and create the needed
-   object of this class in the main method (for assigning values to object fields use "dot" operator - object.field =
-   value)
-
-2. Add to "Car" class explicit default constructor and ensure that you can create object in the same way.
-
-3. Add second constructor to "Car" class that assigns values to both class fields (custom constructor). Create an object
-   with needed fields using custom constructor.
+0. Create an empty class to represent a `Car`
+1. Create an `Application` class with the `main` method.
+2. Take some time to think about what properties a `Car` could have.
+   - **At least 3 properties required.**
+3. Take some time to think about what behaviors a `Car` could have.
+   - 2 behaviors that change some properties
+   - 2 behaviors that do not change any property
+   - A `print` method that prints out the properties of the `Car`
+4. Add a default no-arg constructor to `Car` and initialize the properties of `Car`
+5. Add a constructor with arguments to `Car` and initialize the properties of `Car` from the arguments
+6. In your `Application.main` method, create some cars. And make sure to use both constructors.
+7. Execute all the behaviors of the `Car` with different parameters and print the `Car` after every behavior.
 
 ## Homework
 
