@@ -124,11 +124,11 @@ the following constructors:
 public Bicycle(int startSpeed,int startGear){
         this.gear=startGear;
         this.speed=startSpeed;
-        }
+}
 public Bicycle(){
         this.gear=1;
         this.speed=0;
-        }
+}
 ```
 
 To create a new `Bicycle` object called `myBike`, a constructor is called by the new operator:
@@ -142,8 +142,8 @@ called `yourBike`.
 
 ```java
 Bicycle yourBike=new Bicycle();
-        yourBike.gear=5;
-        yourBike.speed=2;
+yourBike.gear=5;
+yourBike.speed=2;
 ```
 
 Both constructors could have been declared in Bicycle because they have different argument lists. As with methods, the
@@ -215,18 +215,7 @@ Let's create a car class and object with the name "Trabant" and the maxSpeed 100
 
 ## Homework
 
-You want to go to the bank and open an account. You want to be able to transfer money, deposit money, withdraw money.
-When you transfer/withdraw the sum you have in your account can never go under 0 EUR. You want to keep track of your
-transactions as well, to see where your money is going. Whenever a new action is performed, print the current amount of
-money you have.
-
-- Create an `Account` class with specific account attributes and methods like `deposit()`, `withdraw()`, `transfer()`.
-- Create a `Customer` class that will have associated an `Account`.
-- Create 2 `Customer` objects, one for you, and one for one of your colleagues.
-- Deposit some money in the accounts.
-- Transfer some money from your account to your friends account.
-- Withdraw some money from your account.
-- After every operation, print how much money you still have in your account.
+[Please follow this link for the homework](https://github.com/tilmans/oop1-homework)
 
 ## Materials
 
