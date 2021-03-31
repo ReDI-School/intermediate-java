@@ -2,10 +2,10 @@
 title: Inheritance, Overriding and Overloading
 nav_order: 9
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Lesson 9: Inheritance, Overriding and Overloading
+# Lesson 8: Inheritance, Overriding and Overloading
 
 ## Goals
 
@@ -18,8 +18,11 @@ nav_exclude: true
 - Regroup and check-out
 
 ## Check-in
+How is everybody doing?
 
 ## Recap homework and previous class.
+Split into groups. Review your progress on the homework.
+Try to implement answers to the following topics while reviewing:
 
 - What is Object Oriented Programming?
 - What is the difference between a class and an object?
@@ -34,11 +37,11 @@ Inheritance is a language construct that allows for classes to be related to one
 features of another class. The class or classes inherited from are called superclasses, or ancestors. The inheriting
 classes are called subclasses, or descendents. Inheritance is indicated using the keyword `extends`.
 
-- **Child/Sub/descendant Class:** The class that extends the features of another class is known as child class, sub class 
+- **Sub Class:** The class that extends the features of another class is known as child class, sub class, descending class 
   or derived class.
 
-- **Parent/Base/Super/Ancestor Class:** The class whose properties and functionalities are used(inherited) by another class
-  is known as parent class, super class or Base class.
+- **Parent Class:** The class whose properties and functionalities are used(inherited) by another class
+  is known as super class, ancestor class or Base class.
 
 Suppose we need to write a program that deals with the **area and perimeter of geometric shapes** such as rectangles and 
 circles, and possibly other shapes as well. We will design these classes, exploring the possibly hierarchies between
@@ -104,9 +107,9 @@ public class Main {
 #### Questions:
 
 -   What type does our `print` method accepts?
--   Can it accept `Circle` or `Recatangle`?
--   Should it accept `Circle` or `Recatangle`?
--   What can we do to make it accept instances of `Circle` or `Recatangle`?
+-   Can it accept `Circle` or `Rectangle`?
+-   Should it accept `Circle` or `Rectangle`?
+-   What can we do to make it accept instances of `Circle` or `Rectangle`?
 
 
 The answer is **Inheritance**. And how do we achieve it by creating `Rectangle` and `Circle` as subclasses of `Shape`.
@@ -146,8 +149,8 @@ The properties `area` and `perimeter` are now `inherited` by the sub classes `Ci
 #### Questions Revisited:
 
 -   What type does our `print` method accepts?
--   Can it accept `Circle` or `Recatangle`?
--   Should it accept `Circle` or `Recatangle`?
+-   Can it accept `Circle` or `Rectangle`?
+-   Should it accept `Circle` or `Rectangle`?
 -   What can we do to make it accept instances of `Circle` or `Recatangle`?
 
 #### Additional Questions
@@ -317,11 +320,11 @@ Discuss and implement different solutions to accommodate a `Square` i.e. is a `S
 Implement all the `add` methods defined above.
 
 
-## Home Work
+## Homework
 
 Think about how you can design the **Animal Kingdom** using OOP and inheritance. Experiment and implement your design.
 
-#### Requirements:
+#### Homework Requirements:
 
 - There must be at least one base class
 - There must be at least two sub classes inheriting from a base class.
