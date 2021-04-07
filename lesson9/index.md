@@ -5,7 +5,7 @@ has_children: false
 nav_exclude: false
 ---
 
-# Lesson 8: Recap & Practicing OOP
+# Lesson 9: Recap & Practicing OOP
 
 ## Goals
 
