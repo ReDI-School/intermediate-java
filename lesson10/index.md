@@ -1,15 +1,15 @@
 ---
-title: Interfaces,Abstarct and Final classes
+title: Interfaces,Abstract and Final classes
 nav_order: 10
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
 ## Learning Objectives
 
 At the end of the class, attendees we be able to
 
-- Define what an final class is
+- Define what a final class is
 - Create and use final classes in Java
 - Explain what final classes are useful for
 - Define what an abstract class is
@@ -54,7 +54,7 @@ public class Shape {
 Now lets create a Rectangle sub class of class Shape and override getArea
 
 ```java
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
 
     public Rectangle(String type, double area, double perimeter) {
         super(type, area, perimeter);
@@ -68,7 +68,7 @@ public class Rectangle extends Shape{
 ```
 
 #### Questions:
-- When we create an object for Rectanlge and invoke getArea() what would be the output?
+- When we create an object for Rectangle and invoke getArea() what would be the output?
 
 
 In some cases when we want child class to invoke parent class method but not to overrirde them in such scenario we use **final** keyword before method
@@ -101,7 +101,7 @@ public class Shape {
 The solution is simple we can add **final** keyword on class.A class that is declared final cannot be subclassed at all.
 
 ### Questions?
-- Have you noticied any Java Classes before?
+- Have you noticed any Java Classes before?
 
 Now let's change Shape class to final and see what will happen to sub-classes.
 
@@ -131,13 +131,13 @@ public final class Shape {
 ## Exercises
 
 ### Exercise 1 
-Make `Shape` class from lesson9 as abstarct and observer the error message and try to add/make existing method as abstract.
+Make `Shape` class from lesson9 as abstract, observe the error message and try to add/make existing method as abstract.
 
 ### Exercise 2
-Create different subclasses of `Shape` like `Rectangle` and `Square`.Instanciate and try to assign to sub-classes to `Shape` and discuss pros and cons?
+Create different subclasses of `Shape` like `Rectangle` and `Square`.Instantiate and try to assign to sub-classes to `Shape` and discuss pros and cons?
 
 ### Exercise 3
-Model a `Vehicle` with interface try to comeup with good methods which can be part of interface
+Model a `Vehicle` with interface try to come up with good methods which can be part of interface
 and also create subclasses and try to invoke the methods?
 
 ## Links
