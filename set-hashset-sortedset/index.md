@@ -5,7 +5,7 @@ has_children: true
 nav_exclude: false
 ---
 
-# Lesson 7: Sets
+# Lesson 12: Sets
 
 ## Goals
 

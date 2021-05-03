@@ -1,53 +1,85 @@
 ---
 title: Maps (HashMap, TreeMap)
-nav_order: 13
-has_children: true
-nav_exclude: true
+nav\_order: 14
+has\_children: true
+nav\_exclude: false
 ---
 
 # Lesson 13: Maps (HashMap, TreeMap)
 
 ## Goals
 
-- Learn how and when to use the two most used implementations: `HashMap` and `TreeMap`
-- know the difference between `HashMap` and `TreeMap`
-- **Practice!**
+- Learn how and when to use `Maps`
+- Learn the difference between `HashMap` and `TreeMap`
 
-## Slides
+## What are Maps
+Maps “map” a key to a value, making it easy to store something and find it again later on. Since this is one of the most common problems in programming they are used quite a lot to solve different kinds of problems. In some programming languages maps are called Dictionaries which makes the use case clearer. They allow you to find data by a key or identifier. 
 
-[Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vStTwKJBl_FwEWMe1jBoCbFqbu7tLILPk4O8Ch5s_BrbqRTRUTCU_5fpbQem331aL0gZ3Z8Q7qZ9WJl/embed) .
+| Key  | Value |
+| ---- | ---- |
+| 1      | Anna, Teacher |
+| 2      | Mohamed, Student |
+| 3      | Jorge, Student |
+
+## What can you do with a Map
+Maps are defined by their key and value type. Keys are usually simple values (string or number) and the values are more complex objects. A map is therefore defined with two types, first the key, then the value: `Map<String,Student>`. 
+It is totally valid to use a complex object as the key but less common, for example `Map<Student, Int>`. More on that later.
 
 ## Common Map Operations
-
 ```java
 // creating a new map
-Map<String, String> map = new HashMap<>();
+// The map is typed by key and value, in this case
+// the key is a String and the value a Student
+// (a custom class)
+Map<String, Student> map = new HashMap<>();
 
-// putting elements in a map
-map.put("key1", "value1");
-map.put("key2", "value2");
+// Put new values in a map
+map.put("Mohamed", new Student(84758, "Mohamed"));
+map.put("Anna", new Student(45344, "Anna"));
 
-// getting element from a map & printing
-String value1 = map.get("key1");
-System.out.println(value1);
+// getting the size of a map
+map.size(); // 2
+
+// Check if a map has a key with a value
+map.containsKey("Juan"); // false
+
+// Check if a map contains a value
+map.containsValue(new Student(45344, "Anna")); // true
+
+// Get a value from a map
+Student anna = map.get("Anna");
 
 // getting all the keys of a map
 Set<String> keys = map.keySet();
+// keys = ["Mohamed", "Anna"]
 
 // getting all the values of a map
 Collection<String> values = map.values();
+// values = [Student "Anna", Student "Mohamed"]
 
-// getting the size of a map
-map.size();
-
-// removing an element from a map
-map.remove("key2");
+// Remove a value from a map
+Student mo = map.remove("Mohamed");
+map.containsKey("Mohamed"); // false
 
 // iterating over a map
 for (Map.Entry<String, String> entry : map.entrySet()) {
     System.out.println(entry.getKey() + " : " + entry.getValue());
 }
 ```
+
+## Different implementations
+There are many different implementation of maps but the most common one is the HashMap. This is a safe go-to implementation if you don’t need any specific functionality beyond what the Map interface offers.
+The TreeMap differs in that it sorts the keys, resulting in a sorted output when you retrieve the values:
+```java
+Map<String, Student> map = new TreeMap<>();
+map.put("Mohamed", new Student(84758, "Mohamed"));
+map.put("Anna", new Student(45344, "Anna"));
+map.keySet(); // ["Anna","Mohamed"]
+```
+
+## Complex keys
+Generally speaking, stay away from using complex types as keys. Maps rely on correct implementation of `equals`, `hashKey` and in the case of TreeMap `compareTo` . If these are implemented inefficiently or incorrectly then the map can get slow or behave incorrectly. 
+Usually you will have a basic data type that uniquely identifies an object - use that.
 
 ## Exercises
 
