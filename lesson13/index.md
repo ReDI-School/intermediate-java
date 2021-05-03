@@ -16,7 +16,7 @@ nav\_exclude: false
 Maps “map” a key to a value, making it easy to store something and find it again later on. Since this is one of the most common problems in programming they are used quite a lot to solve different kinds of problems. In some programming languages maps are called Dictionaries which makes the use case clearer. They allow you to find data by a key or identifier. 
 
 | Key  | Value |
-| —— | —— |
+| ---- | ---- |
 | 1      | Anna, Teacher |
 | 2      | Mohamed, Student |
 | 3      | Jorge, Student |
