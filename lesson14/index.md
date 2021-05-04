@@ -8,8 +8,7 @@ nav_exclude: true
 # Lesson 14: Exception
 
 ## Goals
-
-- Learn what are exceptions.
+- Learn what exceptions are.
 - Learn how to handle exceptions.
 - Know common java exceptions.
 - Define custom exceptions
@@ -20,14 +19,14 @@ nav_exclude: true
 Definition of an exception:
 > An exception is an unexpected event, which occurs during the execution of a program that disrupts the normal flow of the program’s instructions.
 
-Examples:
+Examples of exceptions:
 
-1: You have an app to send messages between users, what happens when the internet is down? how does the app handle that?.
+1: You have an app to send messages between users, what happens when the internet is down? how does the app handle that?
 
 2: Your program is reading data from a file and suddenly the file is deleted by a user. How will your program react?
 
 ## Handling Exceptions
-Handling exception is about detecting when something went wrong and act on it. We don't want our program to just crash or freeze, that would be a bad user experience.
+Handling exceptions is about detecting when something went wrong and act on it. We don't want our program to just crash or freeze, that would be a bad user experience.
 
 Following the example we gave above:
 
@@ -39,6 +38,8 @@ Following the example we gave above:
 Definition:
 > A checked exception is a type of exception that must be either caught or declared in the method in which it is thrown.
 
+The purpose of it is to force the developer to consider **expected** cases they might not be aware of.
+
 Example: FileNotFoundException is a checked exception. The following code will not compile as we either need to handle the exception or declare it in the method.
 ```java
   void readFile(String fileName) {
@@ -46,7 +47,7 @@ Example: FileNotFoundException is a checked exception. The following code will n
   }
 ```
 
-#### Handle the expcetion:
+#### Handle the exception:
 ```java
 void readFile(String fileName) {
   try {
@@ -57,16 +58,19 @@ void readFile(String fileName) {
 }
 ```
 
-#### Declare the expcetion in the method:
+#### Declare the exception in the method:
+Instead of handling this exception directly in `readFile`, we can also propagate it to it's caller and let them handle it. This can be useful if how you want to handle it depends on who calls the method.
+
 ```java
 void readFile(String fileName) throws FileNotFoundException {
   FileReader fr = new FileReader(fileName);
 }
 ```
 
+
 ### Runtime Exceptions
 Definition:
-> A runtime expcetion is a type of exception that happens during the runtime of the program and causes a crash to the program.
+> A runtime exception is a type of exception that happens during the runtime of the program and causes a crash to the program.
 
 Two of the most common types of runtime exceptions are `NullPointerException` and `IndexOutOfBoundsException`
 
@@ -113,7 +117,7 @@ Two of the most common types of runtime exceptions are `NullPointerException` an
       String userInput = scanner.nextLine();
       Integer.parseInt(userInput);
   } catch (NumberFormatException nfe) {
-      // Here it mean the use did not provide something convertable to a number
+      // Here it mean the user did not provide something convertable to a number
       System.out.println("Sorry: You need to provide a number");
   }
   ```
@@ -145,7 +149,7 @@ System.out.println("You have entered: " + number);
 
 ## Custom exceptions
 Every now and then, the exceptions defined by Java are not enough. We want to define our own exceptions.
-In order to do so, we can just inherit from Exception for checked exceptions or from RuntimeException. 
+In order to do so, we can just inherit from Exception for checked exceptions or from RuntimeException.
 In order to set a specific message or a specific root cause, we can overwrite the constructors of Exception/RuntimeException.
 ```java
 public class MyException extends Exception {
@@ -156,7 +160,7 @@ public class MyRuntimeException extends RuntimeException {
 
 }
 
-public class Service { 
+public class Service {
   public void doSth() throws MyException {
     throw new MyException();
   }
@@ -171,11 +175,21 @@ public class Service {
 }
 ```
 
-## Exercice
-Write a dateValidator method that accept a string as parameter and return true if the string is in the format `DD/MM/YYYY` otherwise it returns false.
+## Recap
+ - Exceptions are a tool to make expected misbehaviour visible and to allow other parts of the code to handle it explicitly
+ - Exceptions are triggered ("raised") with the `throw` keyword
+ - To handle an exception explicitly, we wrap the method that throws the exception in a try/catch block and use the catch section to handle it.
+ - There are a bunch of predefined Exception types in Java that can be used (e.g. `DateTimeException`, `FileNotFoundException`, `NumberFormatException`, ...)
+ - A custom exception can be implemented with a class that extends either `Exception` or a subclass of it, like `RuntimeException` or one of the predefined ones.
+ - To make it visible that a method could raise a certain exception, we append `throws <ExceptionName>` to the method definition. This will force code that calls this method to explicitly handle it.
 
-## Custom exceptions 1 
-Define a method `checkPhoneNumber` which will be used to check a phone number and throw a custom checked exception if the phone number is not valid. 
+## Exercices
+
+## Date Validator
+Write a dateValidator method that accept a string as parameter and returns nothing if the string is in the format `DD/MM/YYYY` otherwise it raises a `DateTimeException` as a checked exception.
+
+## Custom exceptions 1
+Define a method `checkPhoneNumber` which will be used to check a phone number and throw a custom checked exception if the phone number is not valid.
 A phone number is valid if:
 - Length is exactly 14
 - The first character is +
