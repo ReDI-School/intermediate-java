@@ -185,10 +185,12 @@ public class Service {
 
 ## Exercices
 
-## Date Validator
+## Exercice 1
 Write a dateValidator method that accept a string as parameter and returns nothing if the string is in the format `DD/MM/YYYY` otherwise it raises a `DateTimeException` as a checked exception.
 
-## Custom exceptions 1
+## Exercice 2: Replace the `DateTimeException` in Exercice 1 with a custom Exception.
+
+## Exercice 3:
 Define a method `checkPhoneNumber` which will be used to check a phone number and throw a custom checked exception if the phone number is not valid.
 A phone number is valid if:
 - Length is exactly 14
@@ -197,25 +199,34 @@ A phone number is valid if:
 
 In your main method, use a Scanner to get a phone number input, and use the method checkPhoneNumber to validate the input.
 
-## Custom exceptions 2 - Rock, Paper, Scissors
+## Exercice 4:
+Write a simple rock, paper, scissors application
 - Rock beats Scissor
 - Scissor beats Paper
 - Paper beats Rock
 
-The user enters one of three options (R, P, or S) and the computer picks one of the three options at random and the program should print who won and how many rounds each person has won so far e.g:
+The user enters one of three options (R, P, or S) and the computer picks one of the three options at random and the program should print who picked what and who won.
+
+If the user enters the wrong option throw a custom exception that forces the application to crash with a message explaining what options are available and what option they had wrongly taken.
+
+Bonus 1: Change the application so that instead of crasing, it keep asking again for an option until the player selects a valid one.
+
+Bonus 2: Keep track of how many times each player has won, e.g.:
 ```
 Round #10 - Computer wins!
 You: 4
 Computer: 6
 ```
 
-If the user enters the wrong option throw a custom exception that forces the application to crash.
-
 ## Homework
-We would like to implement a simple calculator that does division. The user has to provide us with 2 numbers x & y, then we print the result of x devided by y.
+Implement a simple calculator that does division. The user has to provide us with 2 numbers x & y, then we print the result of x divided by y.
 - Implement a function to read user's input.
-- Parse user's input to number
-- Print the result of division (PS: it is not possible to divide by 0)
+- Implement a function to parse the input to a number
+- Implement a function to perform the division
+- Use custom exceptions to handle the expected problematic cases:
+  - division by zero
+  - input not a number
+- Handle the custom exceptions in the `main` function.
 
 Bonus
 - Add the possibility to handle more than one operation in your calculator, for example addition and the user have to choose which operation to apply. 
