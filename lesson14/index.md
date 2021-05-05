@@ -151,6 +151,7 @@ System.out.println("You have entered: " + number);
 Every now and then, the exceptions defined by Java are not enough. We want to define our own exceptions.
 In order to do so, we can just inherit from Exception for checked exceptions or from RuntimeException.
 In order to set a specific message or a specific root cause, we can overwrite the constructors of Exception/RuntimeException.
+
 ```java
 public class MyException extends Exception {
 
@@ -161,14 +162,18 @@ public class MyRuntimeException extends RuntimeException {
 }
 
 public class Service {
+
+  //Checked Custom Exception
   public void doSth() throws MyException {
     throw new MyException();
   }
 
+  //Checked Generic Exception
   public void doSth2() throws Exception {
     throw new MyException();
   }
 
+  //Unchecked Custom Exception
   public void doSth3() {
     throw new MyRuntimeException();
   }
