@@ -1,8 +1,8 @@
 ---
 title: Exception
-nav_order: 14
+nav_order: 15
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 14: Exception
