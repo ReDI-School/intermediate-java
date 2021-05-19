@@ -119,3 +119,29 @@ If this is too simple, here some ideas how you can make the project more complex
 ####  You will need to learn yourself: 
 - using Twitter Java API (maybe [http://twitter4j.org/en/](http://twitter4j.org/en/)? )
 - potentially, using a graphing library
+
+### Exercice Tracker (with persistence)
+#### Description:
+Users should be able to:
+- select from a static list of possible exercises and enter when they did it & specific exercice-relevant information, e.g.
+  - for runnning and biking: Duration & Distance
+  - for weightlifting exercices: Weight & Repetitions
+  - for football, basketball, ... : Duration, # of matches played
+- get an easily readable list of exercices they did in the last x days/weeks/months
+- The data they entered should not be lost when the appliction is closed - either with a datrabase or a file-based storage.
+
+#### Bonus: 
+If this is too simple, here some ideas how you can make the project more complex, potentially using more tools too:
+
+- keeping track of the data of multiple users in parallel
+- allowing the user to put in their weight and keep track of their weight change over the last x days/weeks/months
+- calculating the calories burned whenever someone enters an exercice based on the exercice type, the provided details & the persons weight.
+
+#### From the course, you'll use:
+- OOP
+- Data Structures 
+- Tests
+- File IO
+
+####  You will need to learn yourself: 
+- Potentially, simple database operations
