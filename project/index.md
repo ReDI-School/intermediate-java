@@ -2,7 +2,7 @@
 title: Project ideas
 nav_order: 50
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 # Project 
 
@@ -48,6 +48,24 @@ each file + a statistics for the folder, that contains:
 
 ####  You will need to learn yourself: 
 - String operations
+
+###  Book Library
+#### Description:
+Build an application that allows us to catalogue and organize the books we lend to our users.
+
+- Every book has an ISBN
+- Using the ISBN we should be able to retrieve the details of the book from a public API e.g. 
+  - https://isbndb.com/
+  - https://openlibrary.org/dev/docs/api/books
+- We must be able to register a new book to the library. Note that we can have multiple copies of the same book.
+- We must be able to remove a book from the store.
+- Our users must be able to register at our library for a fee of 50 euros and when they do, they receive a library card.
+- Users can visit the library to borrow a one or more books for 1 euro which is immediately withdrawn from the library card.
+- The user cannot borrow a book if there is no money in the card.
+- The user can then recharge the library card with more money.
+- Every borrowed book must be returned after a week.
+- Late returns are charged 10 cents for every day after the return period.
+
 
 ###  Phone Index
 #### Description:
