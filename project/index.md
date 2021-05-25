@@ -128,7 +128,7 @@ Users should be able to:
   - for weightlifting exercices: Weight & Repetitions
   - for football, basketball, ... : Duration, # of matches played
 - get an easily readable list of exercices they did in the last x days/weeks/months
-- The data they entered should not be lost when the appliction is closed - either with a datrabase or a file-based storage.
+- The data they entered should not be lost when the appliction is closed - either with a database or a file-based storage.
 
 #### Bonus: 
 If this is too simple, here some ideas how you can make the project more complex, potentially using more tools too:
