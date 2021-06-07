@@ -188,3 +188,57 @@ G is for ghosts, P for pacman, O for large dots, . for dots the others are obsta
 1. Add a leaderboard system, you can use files to save old scores.
 2. Use a UI library to render the maze and the different characters in the game. You can use `libgdx` or search for a `Java 2d games library`.
 3. Change the game to no be turn based but more dynamic as the original pacman game. (This is a tricky one)
+
+### Groceries Delivery  
+Users should be able to (through the terminal): 
+
+- lookup for different product in different groups (bread, dairy, meat, fish, vegan)
+- choose what products they want to deliver and how much 
+- see the order, before the confirmation
+- confirm the order
+
+#### Bonus: 
+If this is too simple, here some ideas how you can make the project more complex, potentially using more tools too:
+
+- Read products and groups of the products from a file
+- Use a db or a file to save all orders
+- User should be able to:
+  - see previous orders of this user
+  - see statistics how much they paid per month 
+  - see statistics what product was ordered the most for the user 
+- Super user (admin) should be able to 
+  - see all orders
+  - see all users
+  - see the most popular product
+  - change any product price
+- Add support for the distribution centers (so some product could be out of stock after the orders)
+- Add tests for your application
+
+####  From the course, you'll use:
+- OOP
+- Data Structures 
+- Tests
+- File IO
+
+####  You will need to learn yourself: 
+- Work with DBs, if you want to use the db
+
+### CV generator
+
+Users should be able to:
+- add personal details
+- add contact details
+- add a link to a photo
+- generate a pdf version of the CV based on the entered data
+
+####  From the course, you'll use:
+- OOP
+- Data Structures 
+- Tests
+- File IO
+
+#### Hint 
+
+- A library for pdf generation: 
+  - https://www.baeldung.com/java-pdf-creation
+  - https://www.dunebook.com/best-java-pdf-generation-libraries/
