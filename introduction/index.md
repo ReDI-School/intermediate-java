@@ -24,6 +24,12 @@ nav_exclude: false
 * 🎓 We will have a Project at the end of the course!
 
 ### Content
+
+We shall aim to cover the following topics over the course of the semester. However, it is
+important to note that this is not set in stone. Depending on the progress of the class as a whole,
+we may cover a bit more or a bit less. It is nevertheless most important that we work and progress
+as a group whilst helping one another grow.
+
 * The Java language
 * Git & Github
 * Data structures
@@ -86,7 +92,9 @@ We shall be using GitHub classroom for the rest of this semester to organize exe
 assignments, so it is important that you have a GitHub account. **If you do not have one, please
 create an account right now.**
 
-Please click the link above and follow the instructions in your free time.
+Please click the link above and follow the instructions in your free time. This assignment
+contains a course on the fundamentals of Git and GitHub which will help in understanding how
+to leverage Git & GitHub for collaboration between the students and tutors. 
 
 ## Exercises and assignment
 
