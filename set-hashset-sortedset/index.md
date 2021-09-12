@@ -1,8 +1,8 @@
 ---
 title: Sets
-nav_order: 13
+nav_order: 0
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 12: Sets

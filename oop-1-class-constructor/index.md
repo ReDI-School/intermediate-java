@@ -1,8 +1,8 @@
 ---
 title: OOP 1 What is a class
-nav_order: 7
+nav_order: 0
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 7: Object-Oriented Programming (OOP) 1

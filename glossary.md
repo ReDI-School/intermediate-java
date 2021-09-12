@@ -2,7 +2,7 @@
 title: Glossary
 nav_order: 90
 permalink: /glossary
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Glossary

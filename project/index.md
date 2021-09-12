@@ -1,8 +1,8 @@
 ---
 title: Project ideas
-nav_order: 50
+nav_order: 0
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 # Project 
 
