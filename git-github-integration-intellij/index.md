@@ -17,8 +17,8 @@ nav_exclude: true
 * Look in the changes log
 * More java if we have time 🤩
 
-## Recap & Homework check
-Let's look into the homework from lesson 2
+## Recap & Assignment check
+Let's look into the assignment from lesson 2
 
 ## Version Control
 Version control is like a savings program for your project. 
@@ -171,7 +171,7 @@ For example, The value of 0! is 1, according to the convention for an empty prod
 
 Commit the changes and push them to your GitHub.
 
-## Homework
+## Assignment
 Upload your code from the previous classes to your GitHub profile & Finish the java tasks
 
 ## Materials

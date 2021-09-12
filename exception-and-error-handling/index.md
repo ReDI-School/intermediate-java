@@ -223,7 +223,7 @@ You: 4
 Computer: 6
 ```
 
-## Homework
+## Assignment
 Implement a simple calculator that does division. The user has to provide us with 2 numbers x & y, then we print the result of x divided by y.
 - Implement a function to read user's input.
 - Implement a function to parse the input to a number

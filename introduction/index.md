@@ -1,10 +1,10 @@
 ---
-title: Introduction to Intermediate Java
-nav_order: 0
-nav_exclude: true
+title: "1 - Introduction to Programming with Java"
+nav_order: 1
+nav_exclude: false
 ---
 
-# Lesson 1: Introduction to Intermediate Java
+# Lesson 1: Introduction to Programming with Java
 
 ## Goals
 * Getting to know each other
@@ -17,13 +17,19 @@ nav_exclude: true
 * 📓 Course certificate only after minimum 80% attendance
 * 💨 We don’t show up late to class (and inform otherwise)
 * 🏝 We take a 10 minutes break in the middle of the class
-* 🕺🏻 We are here for you! Asking questions is 🔝
+* 🕺🏻 We are here for you! Always ask questions if something is not clear.
 * 🚀 Never forget the feedback!
 * 🕸 [Web](https://redi-school.github.io/intermediate-java), [Previous Semesters](https://redi-j2.netlify.com)
-* 🐦 Slack: #20fs_intermediate_java
+* 🐦 Slack: #21f_programming_java
 * 🎓 We will have a Project at the end of the course!
 
 ### Content
+
+We shall aim to cover the following topics over the course of the semester. However, it is
+important to note that this is not set in stone. Depending on the progress of the class as a whole,
+we may cover a bit more or a bit less. It is nevertheless most important that we work and progress
+as a group whilst helping one another grow.
+
 * The Java language
 * Git & Github
 * Data structures
@@ -63,14 +69,14 @@ public class Main {
         int age = 40;
         boolean smoking = false;
 
-        someMethod(profession);
+        coolOrNotCool(profession);
 
         for (int i = 0; i < 10; i++) {
             System.out.println("hey " + i);
         }
     }
 
-    private static void someMethod(String profession) {
+    private static void coolOrNotCool(String profession) {
         if (profession.equals("skydiver")) {
             System.out.println("Cool");
         } else {
@@ -80,67 +86,19 @@ public class Main {
 }
 ```
 
-## Exercises
+## [GitHub classroom](https://classroom.github.com/a/fKsu9Nib)
 
-Write the method _squares_ that for X and Y given by arguments prints the square of each number between X and Y.
+We shall be using GitHub classroom for the rest of this semester to organize exercises and 
+assignments, so it is important that you have a GitHub account. **If you do not have one, please
+create an account right now.**
 
-```java
-square(1,3)
-> 1 - 1
-> 2 - 4
-> 3 - 9
+Please click the link above and follow the instructions in your free time. This assignment
+contains a course on the fundamentals of Git and GitHub which will help in understanding how
+to leverage Git & GitHub for collaboration between the students and tutors. 
 
-square(5,6)
-> 5 - 25
-> 6 - 36
-```
+## Exercises and assignment
 
-If you don't know where to start, try creating a new Java class called ExerciseIntro and copy-pasting the following into it!
-
-```java
-public class ExerciseIntro {
-    public static void main(String[] args) {
-        square(1, 3);
-        square(5, 6);
-    }
-
-    public static void square(int x, int y) {
-        // your code needs to go here!
-    }
-}
-```
-
-### Exercise 2
-
-In german, nouns ending with e are almost always feminine. Write a method _isFeminineNoun_ that checks if the provided word ends with e or not.
-
-```
-isFeminineNoun("Katze")
-> true
-
-isFeminineNoun("Hund")
-> false
-```
-
-Bonus: can you also make sure the method also catches words ending in _-ung_? Those are also feminine.
-
-## Homework
-
-Write a program that for given value of variable ‘height’ will print out the right-half of a pine tree to the console.
-
-- The tree starts with “I” on the top and ends with “M” on the bottom. 
-- The tree is built from “X” and “Y” characters one after another
-
-For example, for an `height` of 6 it will print:
-
-```
-I
-XY
-XYX
-XYXY
-XYXYX
-M
-```
+### [#1 Introduction to Programming with Java](https://classroom.github.com/a/7vXI9ynd)
 
 ## Materials:
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)

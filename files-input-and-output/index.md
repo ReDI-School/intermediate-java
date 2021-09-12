@@ -237,7 +237,7 @@ public class ReadFileLineByLine {
 Be careful using these methods since you lose control over the underlying resources or risk reading a huge file into
 memory which can lead to the application running out of memory and crashing. 
 
-_Please use the above methods only if necessary for the homework exercise._
+_Please use the above methods only if necessary for the assignment exercise._
 
 ## Exercises
 
@@ -254,7 +254,7 @@ that text file.
 
 Write a java program that sorts a given file line by line. At the end of the execution, the file must be sorted.
 
-### Homework Exercise: CSV
+### Assignment Exercise: CSV
 
 You are keeping a log of students in your class and you store the data of your students in a file on your machine.
 

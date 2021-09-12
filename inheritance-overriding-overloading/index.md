@@ -10,7 +10,7 @@ nav_exclude: true
 ## Goals
 
 - Check-in
-- Recap homework and previous classes.
+- Recap assignment and previous classes.
 - What is _Inheritance_?
 - What is _Method Overriding_?
 - What is _Method Overloading_?
@@ -20,8 +20,8 @@ nav_exclude: true
 ## Check-in
 How is everybody doing?
 
-## Recap homework and previous class.
-Split into groups. Review your progress on the homework.
+## Recap assignment and previous class.
+Split into groups. Review your progress on the assignment.
 Try to implement answers to the following topics while reviewing:
 
 - What is Object Oriented Programming?
@@ -320,11 +320,11 @@ Discuss and implement different solutions to accommodate a `Square` i.e. is a `S
 Implement all the `add` methods defined above.
 
 
-## Homework
+## Assignment
 
 Think about how you can design the **Animal Kingdom** using OOP and inheritance. Experiment and implement your design.
 
-#### Homework Requirements:
+#### Assignment Requirements:
 
 - There must be at least one base class
 - There must be at least two sub classes inheriting from a base class.

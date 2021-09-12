@@ -148,7 +148,7 @@ Using streams:
 2. Make list of people's surname in alphabetic order that took loan greater than 10000
 3. Calculate total amount of loans for people whose loan is overdue and is greater than 75000
 
-## Homework
+## Assignment
 
 1. Given:
 

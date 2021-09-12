@@ -15,7 +15,7 @@ nav_exclude: true
 ## Check-in
 How is everybody doing?
 
-## Recap homework and previous class.
+## Recap assignment and previous class.
 
 [Google Slides](https://docs.google.com/presentation/d/17cQhIiittot1Gv73OrVQbSRNWzShdMTjKmLWiL-IplQ/embed)
 
@@ -71,7 +71,7 @@ int upperbound = 25;
 int int_random = rand.nextInt(upperbound);
 ```
 
-## Homework
+## Assignment
 
 Let's spice up our game a bit. We want to add special effects that can be used by characters. In order to achieve that we need to add for each character:
 - mana points between 0 and 100. when mana is at 100, the character uses the special effects if they have them when attacking or being attacked.

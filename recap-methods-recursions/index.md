@@ -12,8 +12,8 @@ nav_exclude: true
 * Recap `recursion`
 * Code, code, code 🤩
 
-## Recap & Homework check
-Let's look into the homework from lesson 4
+## Recap & Assignment check
+Let's look into the assignment from lesson 4
 
 ## Java Method
 
@@ -248,7 +248,7 @@ f(1) = 1
 f(n) = f(n-1) + f(n-2) for n > 1
 ```
 
-### Homework: Palindrome
+### Assignment: Palindrome
 
 Using recursion, write a method that takes a string and returns a boolean indicating if the provided string is a
 palindrome or not.

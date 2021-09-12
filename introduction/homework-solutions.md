@@ -1,7 +1,7 @@
 ---
-title: "Homework Solutions"
+title: "Assignment Solutions"
 nav_order: 0
-parent: Introduction to Intermediate Java
+parent: "1 - Introduction to Programming with Java"
 nav_exclude: true
 ---
 
@@ -72,7 +72,7 @@ private static void isFeminineNounExpanded(String noun) {
 }
 ```
 
-# Homework Exercise
+# Assignment Exercise
 Write a program that for given value of variable ‘height’ will print out the right-half of a pine tree to the console.
 
 - The tree starts with “I” on the top and ends with “M” on the bottom. 

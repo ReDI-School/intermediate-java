@@ -17,9 +17,9 @@ nav_exclude: true
 - Have an overview about class constructors.
 - Have an overview about the main concepts of OOP.
 
-## Recap & Homework check
+## Recap & Assignment check
 
-Let's look into the homework from lesson 6
+Let's look into the assignment from lesson 6
 
 [Google Slides](https://docs.google.com/presentation/d/1M_Eeyv9fA4oJda54TCXdyhBqFoclJgqYenxT7GqkXwo/embed)
 
@@ -209,9 +209,9 @@ speed:20 gear:3
 6. In your `Application.main` method, create some cars. And make sure to use both constructors.
 7. Execute all the behaviors of the `Car` with different parameters and print the `Car` after every behavior.
 
-## Homework
+## Assignment
 
-[Please follow this link for the homework](https://github.com/tilmans/oop1-homework)
+[Please follow this link for the assignment](https://github.com/tilmans/oop1-assignment)
 
 ## Materials
 

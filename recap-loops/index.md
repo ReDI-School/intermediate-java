@@ -15,8 +15,8 @@ nav_exclude: true
 * Recap `for` each
 * Code, code, code 🤩
 
-## Recap & Homework check
-Let's look into the homework from lesson 3
+## Recap & Assignment check
+Let's look into the assignment from lesson 3
 
 ## for loops
 For loops are the most commonly used loops in Java.
@@ -267,7 +267,7 @@ You typed in 7. Here is the multiplication table:
 Happy? (y/n)
 ```
 
-## Homework
+## Assignment
 ### FizzBuzz
 Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 Share your code (also with each other) using git.
