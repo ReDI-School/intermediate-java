@@ -1,7 +1,7 @@
 ---
 title: "Homework Solutions"
 nav_order: 0
-parent: Introduction to Intermediate Java
+parent: "1 - Introduction to Programming with Java"
 nav_exclude: true
 ---
 

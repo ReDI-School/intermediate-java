@@ -1,10 +1,10 @@
 ---
-title: Introduction to Intermediate Java
-nav_order: 0
-nav_exclude: true
+title: "1 - Introduction to Programming with Java"
+nav_order: 1
+nav_exclude: false
 ---
 
-# Lesson 1: Introduction to Intermediate Java
+# Lesson 1: Introduction to Programming with Java
 
 ## Goals
 * Getting to know each other
@@ -17,10 +17,10 @@ nav_exclude: true
 * 📓 Course certificate only after minimum 80% attendance
 * 💨 We don’t show up late to class (and inform otherwise)
 * 🏝 We take a 10 minutes break in the middle of the class
-* 🕺🏻 We are here for you! Asking questions is 🔝
+* 🕺🏻 We are here for you! Always ask questions if something is not clear.
 * 🚀 Never forget the feedback!
 * 🕸 [Web](https://redi-school.github.io/intermediate-java), [Previous Semesters](https://redi-j2.netlify.com)
-* 🐦 Slack: #20fs_intermediate_java
+* 🐦 Slack: #21f_programming_java
 * 🎓 We will have a Project at the end of the course!
 
 ### Content
@@ -63,14 +63,14 @@ public class Main {
         int age = 40;
         boolean smoking = false;
 
-        someMethod(profession);
+        coolOrNotCool(profession);
 
         for (int i = 0; i < 10; i++) {
             System.out.println("hey " + i);
         }
     }
 
-    private static void someMethod(String profession) {
+    private static void coolOrNotCool(String profession) {
         if (profession.equals("skydiver")) {
             System.out.println("Cool");
         } else {
@@ -126,21 +126,8 @@ Bonus: can you also make sure the method also catches words ending in _-ung_? Th
 
 ## Homework
 
-Write a program that for given value of variable ‘height’ will print out the right-half of a pine tree to the console.
-
-- The tree starts with “I” on the top and ends with “M” on the bottom. 
-- The tree is built from “X” and “Y” characters one after another
-
-For example, for an `height` of 6 it will print:
-
-```
-I
-XY
-XYX
-XYXY
-XYXYX
-M
-```
+### [#0 Git & Github Fundamentals](https://classroom.github.com/a/fKsu9Nib)
+### [#1 Introduction to Programming with Java](https://classroom.github.com/a/7vXI9ynd)
 
 ## Materials:
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)
