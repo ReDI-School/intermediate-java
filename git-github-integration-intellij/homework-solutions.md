@@ -1,5 +1,5 @@
 ---
-title: "Homework Solutions"
+title: "Assignment Solutions"
 nav_order: 0
 parent: Git
 nav_exclude: true

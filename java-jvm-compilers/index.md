@@ -105,5 +105,5 @@ Invalid examples:
 Hint: You need nested for loops.
 Hint2: There are 24 numbers.
 
-## Homework:
+## Assignment:
 Finish the above easy tasks - and try the hard ones.

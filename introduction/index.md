@@ -80,53 +80,16 @@ public class Main {
 }
 ```
 
-## Exercises
+## [GitHub classroom](https://classroom.github.com/a/fKsu9Nib)
 
-Write the method _squares_ that for X and Y given by arguments prints the square of each number between X and Y.
+We shall be using GitHub classroom for the rest of this semester to organize exercises and 
+assignments, so it is important that you have a GitHub account. **If you do not have one, please
+create an account right now.**
 
-```java
-square(1,3)
-> 1 - 1
-> 2 - 4
-> 3 - 9
+Please click the link above and follow the instructions in your free time.
 
-square(5,6)
-> 5 - 25
-> 6 - 36
-```
+## Exercises and assignment
 
-If you don't know where to start, try creating a new Java class called ExerciseIntro and copy-pasting the following into it!
-
-```java
-public class ExerciseIntro {
-    public static void main(String[] args) {
-        square(1, 3);
-        square(5, 6);
-    }
-
-    public static void square(int x, int y) {
-        // your code needs to go here!
-    }
-}
-```
-
-### Exercise 2
-
-In german, nouns ending with e are almost always feminine. Write a method _isFeminineNoun_ that checks if the provided word ends with e or not.
-
-```
-isFeminineNoun("Katze")
-> true
-
-isFeminineNoun("Hund")
-> false
-```
-
-Bonus: can you also make sure the method also catches words ending in _-ung_? Those are also feminine.
-
-## Homework
-
-### [#0 Git & Github Fundamentals](https://classroom.github.com/a/fKsu9Nib)
 ### [#1 Introduction to Programming with Java](https://classroom.github.com/a/7vXI9ynd)
 
 ## Materials:

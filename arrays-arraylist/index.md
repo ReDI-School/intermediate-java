@@ -13,8 +13,8 @@ nav_exclude: true
 * Understand the difference between Array vs ArrayList
 * Code, code, code 🤩
 
-## Recap & Homework check
-Let's look into the homework from lesson 5
+## Recap & Assignment check
+Let's look into the assignment from lesson 5
 
 ## Array
 ![array](objects-tenElementArray.gif)
@@ -219,7 +219,7 @@ Given an array arr[] of n integers, construct a Sum Array sum[] (of same size) s
 #### Create an Array from the terminal 
 Add elements to the array from the terminal until the user enters nothing
 
-## Homework
+## Assignment
 Finish all exercises
 
 ### Square matrix calculations
