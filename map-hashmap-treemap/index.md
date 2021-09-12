@@ -1,8 +1,8 @@
 ---
 title: Maps (HashMap, TreeMap)
-nav\_order: 14
-has\_children: true
-nav\_exclude: false
+nav_order: 0
+has_children: true
+nav_exclude: true
 ---
 
 # Lesson 13: Maps (HashMap, TreeMap)
