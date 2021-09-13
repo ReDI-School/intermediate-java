@@ -46,6 +46,8 @@ as a group whilst helping one another grow.
 
 We use Java 11+. In the terminal/command line check that you have an installed jdk. 
 
+To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
+
 -> java -version
 ![java_version](java-version.png)
 
