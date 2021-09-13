@@ -98,7 +98,9 @@ to leverage Git & GitHub for collaboration between the students and tutors.
 
 ## Exercises and assignment
 
-### [#1 Introduction to Programming with Java](https://classroom.github.com/a/7vXI9ynd)
+### [#1 Introduction to github classroom](https://classroom.github.com/a/WPyqVy9W)
+### [#2 "Know Thy Tools" - get familiar with git](https://classroom.github.com/a/fKsu9Nib)
+### [#3 Warming back up to programming with Java](https://classroom.github.com/a/7vXI9ynd)
 
 ## Materials:
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)
