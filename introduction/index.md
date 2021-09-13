@@ -50,7 +50,7 @@ We use Java 11+. In the terminal/command line check that you have an installed j
 ![java_version](java-version.png)
 
 ### Intellij Idea
-We use only functionality of Intellij Idea Community Edition. 
+We use only functionality of Intellij Idea Community Edition. Please follow [instructions to make sure you have it installed](https://www.jetbrains.com/help/idea/installation-guide.html)
 [Intellij Idea resources](https://www.jetbrains.com/idea/resources/)
 
 You can find there short cuts, debugging tutorials, integration with verious version control systems (like Git)
