@@ -46,11 +46,17 @@ as a group whilst helping one another grow.
 
 We use Java 11+. In the terminal/command line check that you have an installed jdk. 
 
+To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
+
 -> java -version
 ![java_version](java-version.png)
 
+## Git
+
+Git is a tool to handle different versions of your code. Please [install it following the reference manual](Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
 ### Intellij Idea
-We use only functionality of Intellij Idea Community Edition. 
+We use only functionality of Intellij Idea Community Edition. Please follow [instructions to make sure you have it installed](https://www.jetbrains.com/help/idea/installation-guide.html)
 [Intellij Idea resources](https://www.jetbrains.com/idea/resources/)
 
 You can find there short cuts, debugging tutorials, integration with verious version control systems (like Git)
