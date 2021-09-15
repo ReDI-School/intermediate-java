@@ -1,14 +1,14 @@
 ---
-title: Recap loops
-nav_order: 0
+title: "2 - Recap loops"
+nav_order: 1
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Lesson 4: Recap loops
+# Lesson 2: Recap loops
 
 ## Goals
-* Recap Git, have you tried it?
+* Intro git & github classroom
 * Recap `for`
 * Recap `while`
 * Recap `do` ... `while`
@@ -16,7 +16,7 @@ nav_exclude: true
 * Code, code, code 🤩
 
 ## Recap & Assignment check
-Let's look into the assignment from lesson 3
+Let's look into the assignment from lesson 1.
 
 ## for loops
 For loops are the most commonly used loops in Java.
@@ -183,9 +183,50 @@ for (int number : numbers) {
 
 
 ## Exercises
-### Exercise 1: Multiplication Table
-- Read a one number with Scanner
-- Print the multiplication table of the number from 1 till 10
+
+### Exercise 1: Sum of an array.
+
+Write a method that takes an array of integers and returns the sum of the elements of that array. Test it by passing in a few `hardcoded` inputs and printing the output to the console. 
+
+Examples:
+```shell
+[1,2,3,4] -> 10
+[] -> 0
+[1] -> 1
+```
+
+### Exercise 2: Average
+
+The average of a list of numbers is the sum of those numbers divided by the number of elements. Write a method that takes an array of integers and returns the average. Make sure to reuse the sum method that you have written for Exercise 1.
+
+Examples:
+```shell
+
+[1,2,3,4] -> 2.5
+[10,10,10] -> 10
+[] -> 0
+```
+
+### Exercise 3: Count the `char`
+
+Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that string. 
+
+Examples:
+```shell
+`"Hello!", 'l'` -> 2
+`"Banana", 'a'` -> 3
+`"ReDI", 'a'` -> 0 
+```
+
+
+## Homework
+
+### Graded: Simple Multiplication Table
+
+This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/wJEsXx7a)
+
+- Read a single number with [Scanner](https://beginnersbook.com/2017/09/java-program-to-read-integer-value-from-the-standard-input/)
+- Print the multiplication table of the number from 1 until 10
 
 Example:
 ```
@@ -203,7 +244,10 @@ Output:
 2 x 10 = 20
 ```
 
-### Exercise 2: Dividable numbers
+### Graded: Dividable numbers
+
+This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/KOXYDafF)
+
 - Read two numbers with Scanner
 - Print each number from 1 to the first entered number that is dividable without remainder by the second number (e.g. 6 is dividable by 3 without remainder as 6 / 3 is 2 with remainder 0, but 6 is not dividable by 4 without remainder as 6 / 4 is 1 with remainder 2)
 
@@ -216,10 +260,35 @@ Output:
 10 is dividable by 5
 15 is dividable by 5
 ```
-### Exercise 3: Bank Account
+
+
+### Multiplication table II
+
+- Write a Java program that reads from the user a value n and prints an n by n multiplication table.
+- When run, your program should look as follows:
+
+Example:
+```
+Dear user, please enter a number, and I will compute a multiplication table for you: 7
+
+You typed in 7. Here is the multiplication table: 
+
+ 1  2  3  4  5  6  7
+ 2  4  6  8 10 12 17
+ 3  6  9 12 15 18 21
+ 4  8 12 16 20 24 28
+ 5 10 15 20 25 30 35
+ 6 12 18 24 30 36 42
+ 7 14 21 28 35 42 49
+
+Happy? (y/n)
+```
+
+### Bank Account
+
 - Your program should start with a variable holding the current money on a user’s bank account (start with e.g. 100)
-- The user should now enter an amount and he should enter if he wants to deposit to his account or if he wants to withdraw (e.g. 1 for deposit, 2 for withdrawal)
-- The variable holding money on the account should be updated accordingly and the current money should be printed.
+- The user should now enter an amount, and he should enter if he wants to deposit to his account or if he wants to withdraw (e.g. 1 for deposit, 2 for withdrawal)
+- The variable holding money on the account should be updated accordingly, and the current money should be printed.
 The program should run and let the user interact until the money on his account is zero or less.
 
 Example:
@@ -246,31 +315,6 @@ Enter 1 for deposit, 2 for withdrawal
 2
 You have no money left, program stopped ...
 ```
-### Exercise 4: Multiplication table
-- Write a Java program that reads from the user a value n and prints an n by n multiplication table. 
-- When run, your program should look as follows:
-
-Example:
-```
-Dear user, please enter a number, and I will compute a multiplication table for you: 7
-
-You typed in 7. Here is the multiplication table: 
-
- 1  2  3  4  5  6  7
- 2  4  6  8 10 12 17
- 3  6  9 12 15 18 21
- 4  8 12 16 20 24 28
- 5 10 15 20 25 30 35
- 6 12 18 24 30 36 42
- 7 14 21 28 35 42 49
-
-Happy? (y/n)
-```
-
-## Assignment
-### FizzBuzz
-Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
-Share your code (also with each other) using git.
 
 ## Materials
 - https://www.javatpoint.com/java-for-loop

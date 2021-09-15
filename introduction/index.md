@@ -53,11 +53,11 @@ To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
 
 ## Git
 
-Git is a tool to handle different versions of your code. Please [install it following the reference manual](Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Git is a tool to handle different versions of your code. Please [install it following the reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ### Intellij Idea
-We use only functionality of Intellij Idea Community Edition. Please follow [instructions to make sure you have it installed](https://www.jetbrains.com/help/idea/installation-guide.html)
-[Intellij Idea resources](https://www.jetbrains.com/idea/resources/)
+We use only functionality of Intellij Idea Community Edition. Please [download it in the following link, choosing the appropriate version for your operating system](https://www.jetbrains.com/idea/download).
+To learn more about [Intellij Idea, here are some resources](https://www.jetbrains.com/idea/resources/)
 
 You can find there short cuts, debugging tutorials, integration with verious version control systems (like Git)
 
