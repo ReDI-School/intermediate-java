@@ -194,7 +194,11 @@ Examples:
 
 ### Exercise 2: Average
 
-The average of a collection of numbers is the sum divided by the number of elements. Write a method that takes an array of
+The average of a list of numbers is the sum of those numbers divided by the number of elements. Write a method that takes an array of integers and returns the average. Make sure to reuse the sum method that you have written for Exercise 1.
+Examples:
+`[1,2,3,4]` -> 2.5
+`[10,10,10]` -> 10
+`[]` -> null
 integers and returns the average. Make sure to reuse the sum method that you have written above.
 
 ### Exercise 3: Count the `char`
