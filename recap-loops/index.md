@@ -186,7 +186,11 @@ for (int number : numbers) {
 
 ### Sum of an array.
 
-Write a method that takes an array of integers and returns the sum of the elements of said array.
+Write a method that takes an array of integers and returns the sum of the elements of that array. Test it by passing in a few `hardcoded` inputs and printing the output to the console. 
+Examples:
+`[1,2,3,4] `-> 10
+`[]` -> 0
+`[1]` -> 1
 
 ### Average
 
