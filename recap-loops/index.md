@@ -216,7 +216,7 @@ string.
 
 This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/wJEsXx7a)
 
-- Read a one number with Scanner
+- Read a single number with [Scanner](https://beginnersbook.com/2017/09/java-program-to-read-integer-value-from-the-standard-input/)
 - Print the multiplication table of the number from 1 till 10
 
 Example:
