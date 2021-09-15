@@ -203,7 +203,10 @@ integers and returns the average. Make sure to reuse the sum method that you hav
 
 ### Exercise 3: Count the `char`
 
-Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that
+Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that string. Examples:
+`"Hello!", 'l'` -> 2
+`"Banana", 'a'` -> 3
+`"ReDI", 'a'` -> 0 
 string.
 
 ### FizzBuzz
