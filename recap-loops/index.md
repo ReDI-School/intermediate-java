@@ -187,27 +187,37 @@ for (int number : numbers) {
 ### Exercise 1: Sum of an array.
 
 Write a method that takes an array of integers and returns the sum of the elements of that array. Test it by passing in a few `hardcoded` inputs and printing the output to the console. 
+
 Examples:
-`[1,2,3,4] `-> 10
-`[]` -> 0
-`[1]` -> 1
+```shell
+[1,2,3,4] -> 10
+[] -> 0
+[1] -> 1
+```
 
 ### Exercise 2: Average
 
 The average of a list of numbers is the sum of those numbers divided by the number of elements. Write a method that takes an array of integers and returns the average. Make sure to reuse the sum method that you have written for Exercise 1.
+
 Examples:
-`[1,2,3,4]` -> 2.5
-`[10,10,10]` -> 10
-`[]` -> null
+```shell
+
+[1,2,3,4] -> 2.5
+[10,10,10] -> 10
+[] -> 0
+```
 integers and returns the average. Make sure to reuse the sum method that you have written above.
 
 ### Exercise 3: Count the `char`
 
-Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that string. Examples:
+Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that string. 
+
+Examples:
+```shell
 `"Hello!", 'l'` -> 2
 `"Banana", 'a'` -> 3
 `"ReDI", 'a'` -> 0 
-string.
+```
 
 
 ## Homework
