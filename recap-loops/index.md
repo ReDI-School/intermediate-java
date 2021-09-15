@@ -206,7 +206,6 @@ Examples:
 [10,10,10] -> 10
 [] -> 0
 ```
-integers and returns the average. Make sure to reuse the sum method that you have written above.
 
 ### Exercise 3: Count the `char`
 
