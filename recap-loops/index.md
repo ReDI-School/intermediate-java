@@ -184,7 +184,7 @@ for (int number : numbers) {
 
 ## Exercises
 
-### Sum of an array.
+### Exercise 1: Sum of an array.
 
 Write a method that takes an array of integers and returns the sum of the elements of that array. Test it by passing in a few `hardcoded` inputs and printing the output to the console. 
 Examples:
@@ -192,12 +192,12 @@ Examples:
 `[]` -> 0
 `[1]` -> 1
 
-### Average
+### Exercise 2: Average
 
 The average of a collection of numbers is the sum divided by the number of elements. Write a method that takes an array of
 integers and returns the average. Make sure to reuse the sum method that you have written above.
 
-### Count the `char`
+### Exercise 3: Count the `char`
 
 Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that
 string.
