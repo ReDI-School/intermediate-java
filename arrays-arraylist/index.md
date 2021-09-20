@@ -65,7 +65,7 @@ public class Main {
     //.
     for (int i = 0; i < anArray.length; i++) {
       // access and print the i-th element
-      System.out.println(String.format("Element at index %s: %s", i, anArray[i]));
+      System.out.printf("Element at index %d: %d%n", i, anArray[i]);
     }
   }
 }
@@ -88,7 +88,7 @@ public class Main {
 
     for (int i = 0; i < anArray.length; i++) {
       // access and print the i-th element
-      System.out.println(String.format("Element at index %s: %s", i, anArray[i]));
+      System.out.printf("Element at index %d: %d%n", i, anArray[i]);
     }
   }
 }
