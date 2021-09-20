@@ -65,7 +65,7 @@ public class Main {
     //.
     for (int i = 0; i < anArray.length; i++) {
       // access and print the i-th element
-      System.out.println(String.format("Element at index %s: %s", i, anArray[i]));
+      System.out.printf("Element at index %d: %d%n", i, anArray[i]);
     }
   }
 }
@@ -88,7 +88,7 @@ public class Main {
 
     for (int i = 0; i < anArray.length; i++) {
       // access and print the i-th element
-      System.out.println(String.format("Element at index %s: %s", i, anArray[i]));
+      System.out.printf("Element at index %d: %d%n", i, anArray[i]);
     }
   }
 }
@@ -272,13 +272,17 @@ ArrayList<String> animals = new ArrayList<>(Arrays.asList(arr));
 
 Please download the assignment on GitHub classroom.
 
-### [Print reversed array](./src/main/java/com/redi/j2/PrintReversed.java)
+### Print reversed array
+
+In the java class `PrintReversed` (file in the github repository `src/main/java/com/redi/j2/PrintReversed.java`):
 
 1. Complete the method `printReversedArray` that will print an `int` array reversed. For an array
    `{1,3,5,2,4}`, it prints `{4,2,5,3,1}`
 2. Write another method `printReversedList` that will print an `Integer` array reversed.
 
-### [Merge 2 arrays](./src/main/java/com/redi/j2/Merge.java)
+### Merge 2 arrays
+
+In the java class `Merge` (file in the github repository `src/main/java/com/redi/j2/Merge.java`):
 
 1. Complete the method `mergeArrays` that will merge two int arrays into another int array and
    returns it. The merge rule is that for each index, that the element of the first array goes
@@ -295,7 +299,9 @@ Please download the assignment on GitHub classroom.
 
 > However, how would you handle it if the two arrays are of different length?
 
-### [Find an element](./src/main/java/com/redi/j2/FindElement.java)
+### Find an element
+
+In the java class `FindElement` (file in the github repository `src/main/java/com/redi/j2/FindElement.java`):
 
 1. Complete the method `findFirstInArray` that gets as input a `String` array and a `String`. The
    method should return the first position of the string in this array or -1 if the string is not in
@@ -304,9 +310,9 @@ Please download the assignment on GitHub classroom.
 3. Write the equivalent methods `findFirstInList` and `findLastInList` that does the same as above
    but using a list instead.
 
-### [Second smallest](./src/main/java/com/redi/j2/SecondSmallest.java)
+### Second smallest
 
-Complete the method `secondSmallest` to return the second-smallest item in an array of integers.
+In the java class `SecondSmallest` (file in the github repository `src/main/java/com/redi/j2/SecondSmallest.java`), complete the method `secondSmallest` to return the second-smallest item in an array of integers.
 
 For example
 - the second smallest of `[0, 1, 2, 3]` is `1`
