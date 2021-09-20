@@ -1,5 +1,5 @@
 ---
-title: Data Structure - Arrays and Lists
+title: 3 - Data Structure - Arrays and Lists
 nav_order: 3
 has_children: true
 nav_exclude: false
@@ -265,52 +265,68 @@ ArrayList<String> animals = new ArrayList<>(Arrays.asList(arr));
 
 > Question; What other kind of `Lists` do we have?
 
-### Exercises
+> Question; How do you find out whether the given `List` is empty or not?
 
-#### Print reversed array
 
-Write a method that will print an int array reversed. For an array {1,3,5,2,4}, it prints
-{4,2,5,3,1}
+## [Exercises and Assignments](https://classroom.github.com/a/vi1e0wLM)
 
-#### Merge 2 arrays
+Please download the assignment on GitHub classroom.
 
-Write a method that will merge two int arrays. Merge rule is first element from the first array,
-then first from the second array, ... Print the result array.
+### [Print reversed array](./src/main/java/com/redi/j2/PrintReversed.java)
 
-#### Find an element
+1. Complete the method `printReversedArray` that will print an `int` array reversed. For an array
+   `{1,3,5,2,4}`, it prints `{4,2,5,3,1}`
+2. Write another method `printReversedList` that will print an `Integer` array reversed.
 
-Write a method that gets as input an int array and a number and return a position of the element in
-this array or -1 if the element is not in the array
+### [Merge 2 arrays](./src/main/java/com/redi/j2/Merge.java)
 
-Find the first position of the element. Find the last position of the element.
+1. Complete the method `mergeArrays` that will merge two int arrays into another int array and
+   returns it. The merge rule is that for each index, that the element of the first array goes
+   before the element of the second array e.g.
 
-#### From Array to ArrayList
+   ```
+   first = {2, 5, 9}
+   second = {1, 4, 0}
+   merge = {2, 1, 5, 4, 9, 0}
+   ```
+   The two arrays are of the same length.
 
-Use ArrayList for all exercises from the previous section
+2. Write another method `mergeLists` that will do the same using `List` of `Integers`.
 
-#### How do you find out whether the given ArrayList is empty or not?
+> However, how would you handle it if the two arrays are of different length?
 
-#### Second Smallest
+### [Find an element](./src/main/java/com/redi/j2/FindElement.java)
 
-Write a program to find the second smallest element in an array of integers. Write a program to find
-the second smallest element in an array list of integers
+1. Complete the method `findFirstInArray` that gets as input a `String` array and a `String`. The
+   method should return the first position of the string in this array or -1 if the string is not in
+   the array.
+2. Write another method called `findLastInArray` that returns the last position of the element.
+3. Write the equivalent methods `findFirstInList` and `findLastInList` that does the same as above
+   but using a list instead.
 
-#### Find all elements less than X
+### [Second smallest](./src/main/java/com/redi/j2/SecondSmallest.java)
+
+Complete the method `secondSmallest` to return the second-smallest item in an array of integers.
+
+For example
+- the second smallest of `[0, 1, 2, 3]` is `1`
+- the second smallest of `[1, 3, 4, 1, 1, 4, 2]` is `2` and
+- the second smallest of `[2]` is `2`
+
+## Extra exercises
+
+### Find all elements less than X
 
 Write a program to find all elements of the array of ints that are less than X
 
-#### Build Sum element
+### Build Sum element
 
 Given an array arr[] of n integers, construct a Sum Array sum[] (of same size) such that sum[i] is
 equal to the sum of all the elements of arr[] except arr[i].
 
-#### Create an Array from the terminal
+### Create an Array from the terminal
 
 Add elements to the array from the terminal until the user enters nothing
-
-## Assignment
-
-Finish all exercises
 
 ### Square matrix calculations
 
