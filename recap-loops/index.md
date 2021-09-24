@@ -1,7 +1,7 @@
 ---
 title: "2 - Recap loops"
 nav_order: 2
-has_children: false
+has_children: true
 nav_exclude: false
 ---
 
