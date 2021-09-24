@@ -1,11 +1,11 @@
 ---
-title: OOP 1 What is a class
-nav_order: 0
-has_children: true
-nav_exclude: true
+title: "Lesson 4: OOP: What is a class"
+nav_order: 4
+has_children: false
+nav_exclude: false
 ---
 
-# Lesson 7: Object-Oriented Programming (OOP) 1
+# Lesson 4: Object-Oriented Programming (OOP) 
 
 ## Goals
 
