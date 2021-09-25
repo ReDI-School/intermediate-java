@@ -1,11 +1,11 @@
 ---
-title: OOP 1 What is a class
-nav_order: 0
-has_children: true
-nav_exclude: true
+title: "4 - OOP - Objects, Classes & Constructor"
+nav_order: 4
+has_children: false
+nav_exclude: false
 ---
 
-# Lesson 7: Object-Oriented Programming (OOP) 1
+# Lesson 4: OOP - Objects, Classes & Constructor
 
 ## Goals
 
@@ -19,7 +19,7 @@ nav_exclude: true
 
 ## Recap & Assignment check
 
-Let's look into the assignment from lesson 6
+Let's look into the assignment from lesson 3
 
 [Google Slides](https://docs.google.com/presentation/d/1M_Eeyv9fA4oJda54TCXdyhBqFoclJgqYenxT7GqkXwo/embed)
 

@@ -2,7 +2,7 @@
 title: "Assignment Solutions"
 nav_order: 2
 parent: "2 - Recap loops"
-nav_exclude: true
+nav_exclude: false
 ---
 
 ### Exercise 1: Sum of an array.
