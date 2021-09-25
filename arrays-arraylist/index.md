@@ -41,7 +41,7 @@ To create an array in Java, you use three steps:
 * Create a new array object and assign it to the array variable.
 * Store things in that array.
 
-#### Unidimensional Array
+#### Multi-dimensional Array
 
 This is how you can declare arrays:
 
