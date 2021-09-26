@@ -209,10 +209,6 @@ speed:20 gear:3
 6. In your `Application.main` method, create some cars. And make sure to use both constructors.
 7. Execute all the behaviors of the `Car` with different parameters and print the `Car` after every behavior.
 
-## Assignment
-
-[Please follow this link for the assignment](https://github.com/tilmans/oop1-assignment)
-
 ## Materials
 
 - [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
