@@ -1,7 +1,7 @@
 ---
 title: 3 - Data Structure - Arrays and Lists
 nav_order: 3
-has_children: true
+has_children: false
 nav_exclude: false
 ---
 

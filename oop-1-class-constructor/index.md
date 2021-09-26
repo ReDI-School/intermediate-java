@@ -13,7 +13,7 @@ nav_exclude: false
 - Be able to translate a real-life object to a programming object.
 - Be able to create a Java class.
 - Be able to instantiate an object of a Java class.
-- Understand the difference between a class and an object.
+- Understand the difference between a class and an instance.
 - Have an overview about class constructors.
 - Have an overview about the main concepts of OOP.
 
@@ -209,15 +209,10 @@ speed:20 gear:3
 6. In your `Application.main` method, create some cars. And make sure to use both constructors.
 7. Execute all the behaviors of the `Car` with different parameters and print the `Car` after every behavior.
 
-## Assignment
-
-[Please follow this link for the assignment](https://github.com/tilmans/oop1-assignment)
-
 ## Materials
 
 - [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
 - [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
 - [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)
-
 - [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/)
 
