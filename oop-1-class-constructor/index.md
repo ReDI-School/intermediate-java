@@ -13,7 +13,7 @@ nav_exclude: false
 - Be able to translate a real-life object to a programming object.
 - Be able to create a Java class.
 - Be able to instantiate an object of a Java class.
-- Understand the difference between a class and an object.
+- Understand the difference between a class and an instance.
 - Have an overview about class constructors.
 - Have an overview about the main concepts of OOP.
 
