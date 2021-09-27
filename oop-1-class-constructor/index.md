@@ -194,20 +194,39 @@ speed:10 gear:2
 speed:20 gear:3
 ```
 
-## Exercise
+## [Exercise & Assignment](https://classroom.github.com/a/Pr0SbPS6)
 
-0. Create an empty class to represent a `Car`
-1. Create an `Application` class with the `main` method.
-2. Take some time to think about what properties a `Car` could have.
-   - **At least 3 properties required.**
-3. Take some time to think about what behaviors a `Car` could have.
-   - 2 behaviors that change some properties
-   - 2 behaviors that do not change any property
-   - A `print` method that prints out the properties of the `Car`
-4. Add a default no-arg constructor to `Car` and initialize the properties of `Car`
-5. Add a constructor with arguments to `Car` and initialize the properties of `Car` from the arguments
-6. In your `Application.main` method, create some cars. And make sure to use both constructors.
-7. Execute all the behaviors of the `Car` with different parameters and print the `Car` after every behavior.
+#### Follow the link and download the assignment from GitHub Classroom
+
+0. In the package `com.redi.j2`, create a class to represent a `Car`
+1. Add the following properties to the `Car`
+  - `int speed` the current speed that the car has, initial value = 0
+  - `int maxSpeed` the maximum speed that the car can have.
+  - `String plateNumber` a string representing the plate number of the car.
+  - `int numSeats` the maximum number of seats the car has.
+  - `List<String> passengers` the list of names of people currently inside the car.
+2. Add a constructor that accepts these properties in order:
+  - `plateNumber`
+  - `maxSpeed`
+  - `numSeats`
+3. Add another constructor that only accepts these properties in order:
+  - `plateNumber`
+    also set the following default values:
+  - `maxSpeed` = 100
+  - `numSeats` = 5
+4. Add a no-arg constructor and set the following default values:
+  - `plateNumber` = `UUID.randomUUID().toString()` a random string.
+  - `maxSpeed` = 100
+  - `numSeats` = 5
+5. Now let's add the following behaviors to the `Car`
+  - Getters for each property.
+  - `start()` starts the car and accelerates until the 30 km/h
+  - `stop()` stops the car, bringing the speed to zero
+  - `accelerate(int increase)` accelerates the car by increasing the car speed.
+  - `decelerate(int reduce)` decelerates the car by reducing the car speed.
+  - `enter(name)` The person with name enters the car.
+  - `leave(name)` The person with name leaves the car.
+  - `toString` that returns a `String` representing the Car.
 
 ## Materials
 
