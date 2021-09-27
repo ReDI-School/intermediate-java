@@ -224,9 +224,12 @@ speed:20 gear:3
   - `stop()` stops the car, bringing the speed to zero
   - `accelerate(int increase)` accelerates the car by increasing the car speed.
   - `decelerate(int reduce)` decelerates the car by reducing the car speed.
-  - `enter(name)` The person with name enters the car.
+  - `enter(name)` The person with name enters the car. This method returns true if the person is already in the car or 
+    was successfully added, otherwise it returns false.
   - `leave(name)` The person with name leaves the car.
   - `toString` that returns a `String` representing the Car.
+
+**NOTE** The constraints of max speed and number of seats must not be violated.
 
 ## Materials
 
