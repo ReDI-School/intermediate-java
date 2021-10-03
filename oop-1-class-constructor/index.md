@@ -235,13 +235,13 @@ speed:20 gear:3
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 
-This exercise consists of a series of tasks related to an e-Commerce application (like eBay or Amazon).
+This exercise consists of a series of tasks related to an e-Commerce application (like eBay).
 
 - Create the structure and logic for a `Product` class
 - Create structure and logic to "store" and handle instances of the Product class (`ProductRepository`)
 - It includes a **Challenge**: to implement a Star Rating mechanism like in the image below
 
-![Star Rating Example](amazon-style-ratings.jpg)
+![Star Rating Example](star-rating-ebay.png)
 
 Follow the steps described in the README file and check if your implementation is correct using the corresponding tests.
 
