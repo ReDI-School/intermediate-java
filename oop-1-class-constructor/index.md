@@ -231,6 +231,22 @@ speed:20 gear:3
 
 **NOTE** The constraints of max speed and number of seats must not be violated.
 
+## [OOP Review Exercise](https://classroom.github.com/a/bRZeqLql)
+
+#### Follow the link, accept and download the assignment from GitHub Classroom
+
+This exercise consists of a series of tasks related to an e-Commerce application (like eBay or Amazon).
+
+- Create the structure and logic for a `Product` class
+- Create structure and logic to "store" and handle instances of the Product class (`ProductRepository`)
+- It includes a **Challenge**: to implement a Star Rating mechanism like in the image below
+
+![Star Rating Example](amazon-style-ratings.jpg)
+
+Follow the steps described in the README file and check if your implementation is correct using the corresponding tests.
+
+Good luck and have fun!
+
 ## Materials
 
 - [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
