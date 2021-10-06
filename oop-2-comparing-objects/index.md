@@ -1,5 +1,5 @@
 ---
-title: "6 - OOP 2 - Objects, Classes & Constructor"
+title: "6 - OOP 2 - Comparing Objects"
 nav_order: 6
 has_children: false
 nav_exclude: false
