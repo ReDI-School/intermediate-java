@@ -29,7 +29,6 @@ nav_exclude: false
 > More formally, a `Set` contains no pair of items `e1` and `e2` such that `e1.equals(e2)` is true.
 
 1. What is the size of this `Set` at then end?
-
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -43,9 +42,7 @@ public class Main {
     }
 }
   ```
-
 2. What is the size of this `Set` at then end?
-
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -59,7 +56,6 @@ public class Main {
     }
 }
   ```
-
 > As stated above, you need a Set when you are interested in only unique items.
 
 ## What is a Map?
@@ -72,7 +68,6 @@ public class Main {
 > such that `k1.equals(k2)` is true.
 
 1. What is the size of this `Map` at then end?
-
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -89,9 +84,7 @@ public class Main {
     }
 }
   ```
-
 2. What is the size of this `Set` at then end?
-
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -108,7 +101,6 @@ public class Main {
     }
 }
   ```
-
 > As stated above, you need a `Map` when you are interested in keeping a dictionary or mapping of keys to values.
 
 ## HashSet and HashMap
@@ -145,8 +137,23 @@ interface RediSet<T> {
     // returns the size of this set
     int size();
 }
+public interface RediSortedSet<T> extends RediSet<T> {
+
+    // The first item in the Set
+    T first();
+
+    // The last item in the Set
+    T last();
+
+    // The Set containing items >= first and < last.
+    SortedSet<T> subset(T first, T last);
+
+}
 ``` 
 
 ### Let us design `RediSimpleSet` class.
 ### Let us design `RediHashSet` class.
 
+## [Set & Map Assignment](https://classroom.github.com/a/BH7ZFXWa_remove)
+
+#### Follow the link, accept and download the assignment from GitHub Classroom
