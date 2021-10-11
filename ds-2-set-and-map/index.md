@@ -111,7 +111,7 @@ public class Main {
 
 > When in doubt, use the `HashSet` and `HashMap`.
 
-## TreeSet and TreeSet
+## TreeSet and TreeMap
 
 - **Ordering is very important**
 - TreeSet is a **Binary Search Tree** that uses the `compareTo` method to ensure that the items in the `Set` are unique and are sorted in the right order.
@@ -154,6 +154,6 @@ public interface RediSortedSet<T> extends RediSet<T> {
 ### Let us design `RediSimpleSet` class.
 ### Let us design `RediHashSet` class.
 
-## [Set & Map Assignment](https://classroom.github.com/a/BH7ZFXWa)
+## [Set & Map Assignment (Coming Soon)](https://#)
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
