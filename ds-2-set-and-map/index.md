@@ -154,6 +154,6 @@ public interface RediSortedSet<T> extends RediSet<T> {
 ### Let us design `RediSimpleSet` class.
 ### Let us design `RediHashSet` class.
 
-## [Set & Map Assignment (Coming Soon)](https://#)
+## [Set & Map Assignment](https://classroom.github.com/a/BH7ZFXWa)
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
