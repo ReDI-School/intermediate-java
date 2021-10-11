@@ -28,7 +28,7 @@ nav_exclude: false
 
 > More formally, a `Set` contains no pair of items `e1` and `e2` such that `e1.equals(e2)` is true.
 
-1. What is the size of this `Set` at then end?
+1. What is the size of this `Set` at the end?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class Main {
     }
 }
   ```
-2. What is the size of this `Set` at then end?
+2. What is the size of this `Set` at the end?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -67,7 +67,7 @@ public class Main {
 > More formally, a `Map` is a collection of key-value pairs containing no pair of keys `k1` and `k2`
 > such that `k1.equals(k2)` is true.
 
-1. What is the size of this `Map` at then end?
+1. What is the size of this `Map` at the end?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -84,7 +84,7 @@ public class Main {
     }
 }
   ```
-2. What is the size of this `Set` at then end?
+2. What is the size of this `Map` at the end?
   ```java
 public class Main {
     public static void main(String[] args) {
