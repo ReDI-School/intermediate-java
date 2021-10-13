@@ -1,0 +1,214 @@
+---
+title: "9 - OOP3 - Inheritance and Visibility"
+nav_order: 8
+has_children: false 
+nav_exclude: true
+---
+
+# Lesson 9: OOP3 - Inheritance and Visibility
+
+## Goals
+
+- What is Inheritance?
+- Why Do we need it?
+- Have we seen it before?
+- Visibilty and access modifiers
+- Some code Action!
+
+
+## What is Inhertiance?
+
+- Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
+- The new class that is created is known as subclass (child or derived class) and the existing class from where the child class is derived is known as superclass (parent or base class).
+- To inherit from a class, use the `extend` keyword in java.
+
+### Let's define, again, a Product class.
+
+```java
+package com.redi.j2;
+
+public class Product {
+    private float price;
+    private String name;
+    private String category;
+
+    public float getPrice() {
+        return price;
+    }
+
+    protected void setPrice(float price) {
+        if(price < 0)
+            System.out.println("Are you kidding me?");
+        else
+            this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "price=" + price +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                '}';
+    }
+
+
+}
+```
+### What if I have many laptops and I need to make sure that none of them has its price to be less than 100? 
+#### Old solution (bad)
+```java
+package com.redi.j2;
+
+public class Laptop {
+    private float price;
+    private String name;
+    private String category = "Electrionics";
+
+    public float getPrice() {
+        return price;
+    }
+
+    protected void setPrice(float price) {
+        if(price < 100)
+            System.out.println("I can't be that cheap");
+        else
+            this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "price=" + price +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                '}' + "I'm also a a laptop btw!";
+    }
+
+```
+
+### new solution (nice!)
+Why don't we use inheritance?
+```java
+package com.redi.j2;
+
+public class laptop extends Product{
+
+
+    public laptop() {
+        setCategory("electronics");
+    }
+
+    @Override
+    public void setPrice(float price) {
+        if(price < 100){
+            System.out.println("I can't be THAT cheap!!");
+        }
+        else{
+            super.setPrice(price);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "I am also a laptop btw!";
+    }
+}
+```
+
+### Think of inheritance as an "is-a" relationship
+In Java, inheritance is an is-a relationship. That is, we use inheritance only if there exists an is-a relationship between two classes. For example,
+
+Laptop is a Prouct
+Car is a Vehicle
+Orange is a Fruit
+
+## Why do we need it?
+- The most important use of inheritance in Java is code reusability. The code that is present in the parent class can be directly used by the child class.
+- Method overriding is also known as runtime polymorphism. Hence, we can achieve Polymorphism in Java with the help of inheritance.
+
+## Have we seen it before?
+**YES!!** Since day one actually. Remember this example from the very first lesson? 
+```java
+package com.redi.j2;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+
+        String name = "Memet";
+        String profession = "skydiver";
+        int age = 40;
+        boolean smoking = false;
+
+        coolOrNotCool(profession);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("hey " + i);
+        }
+    }
+
+    private static void coolOrNotCool(String profession) {
+        if (profession.equals("skydiver")) {
+            System.out.println("Cool");
+        } else {
+            System.out.println("Not cool");
+        }
+    }
+}
+```
+let's take a moment and understand what is a [`String`](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) really?
+
+## Visibility and access modifiers
+
+### Default Access Modifier - No Keyword
+- Default access modifier means we do not explicitly declare an access modifier for a class, field, method, etc.
+
+- A variable or method declared without any access control modifier is available to any other class in the same package. The fields in an interface are implicitly public static final and the methods in an interface are by default public.
+
+### Private Access Modifier - Private
+
+- Methods, variables, and constructors that are declared private can only be accessed within the declared class itself.
+
+- Private access modifier is the most restrictive access level. Class and interfaces cannot be private.
+
+### Public Access Modifier - Public
+- A class, method, constructor, interface, etc. declared public can be accessed from any other class. Therefore, fields, methods, blocks declared inside a public class can be accessed from any class belonging to the Java Universe.
+
+
+
+![modifiers summary](Screenshot%202021-10-13%20113506.png)
+
