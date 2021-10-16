@@ -1,9 +1,9 @@
 ---
-title: "9 - OOP3 - Inheritance and Visibility"
+title: "8 - OOP3 - Inheritance and Visibility"
 nav_order: 8 has_children: false nav_exclude: true
 ---
 
-# Lesson 9: OOP3 - Inheritance and Visibility
+# Lesson 8: OOP3 - Inheritance and Visibility
 
 ## Goals
 
@@ -11,7 +11,7 @@ nav_order: 8 has_children: false nav_exclude: true
 - What is Inheritance?
 - Why Do we need it?
 - Have we seen it before?
-- Visibilty and access modifiers
+- Visibility and access modifiers
 - Some code Action!
 
 ## Check-in
@@ -21,7 +21,7 @@ How is everybody doing?
 - Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
 - The new class that is created is known as subclass (child or derived class), and the existing class from where the child class is derived is known
   as superclass (parent or base class).
-- To inherit from a class, use the `extend` keyword in java.
+- To inherit from a class, use the `extends` keyword in java.
 
 ### Let's define, again, a Product class.
 
@@ -95,7 +95,7 @@ public class Laptop {
 
     private String name;
 
-    private String category = "Electrionics";
+    private String category = "Electronics";
 
 
     public float getPrice() {
@@ -149,9 +149,9 @@ Why don't we use inheritance?
 ```java
 package com.redi.j2;
 
-public class laptop extends Product {
+public class Laptop extends Product {
 
-    public laptop() {
+    public Laptop() {
         setCategory("electronics");
     }
 
@@ -176,9 +176,9 @@ public class laptop extends Product {
 
 ### Think of inheritance as an "is-a" relationship
 
-In Java, inheritance is an is-a relationship. That is, we use inheritance only if there exists an is-a relationship between two classes. For example,
+- In Java, inheritance is an is-a relationship. That is, we use inheritance only if there exists an is-a relationship between two classes. For example,
 
-Laptop is a Prouct Car is a Vehicle Orange is a Fruit
+- Laptop is a Product, Car is a Vehicle, Orange is a Fruit.
 
 ## Why do we need it?
 
@@ -230,8 +230,7 @@ let's take a moment and understand what is a [`String`](https://docs.oracle.com/
 
 - Default access modifier means we do not explicitly declare an access modifier for a class, field, method, etc.
 
-- A variable or method declared without any access control modifier is available to any other class in the same package. The fields in an interface
-  are implicitly public static final and the methods in an interface are by default public.
+- A variable or method declared without any access control modifier is available to any other class in the same package.
 
 ### Private Access Modifier - Private
 
@@ -266,6 +265,8 @@ public class Shape {
         this.perimeter = perimeter;
     }
 
+    // Getters for all properties
+
 }
 ```
 
@@ -289,6 +290,8 @@ public class Rectangle {
         this.area = length * breadth;
         this.perimeter = 2 * (length + breadth);
     }
+
+    // Getters for all properties
 }
 ```
 
@@ -308,6 +311,8 @@ public class Rectangle extends Shape {
         this.length = length;
         this.breadth = breadth;
     }
+
+    // Getters for length and breadth only, 
 }
 ```
 
@@ -328,6 +333,8 @@ public class Circle {
         this.area = Math.PI * radius * radius;
         this.perimeter = 2 * Math.PI * radius;
     }
+
+    // Getters for all properties
 }
  ```
 
@@ -343,6 +350,8 @@ public class Circle extends Shape {
         super("CIRCLE", Math.PI * radius * radius, 2 * Math.PI * radius);
         this.radius = radius;
     }
+
+    // A getter for the radius only, since we are inheriting all other getters from the parent class.
 }
  ```
 
@@ -447,8 +456,12 @@ public class Circle extends Shape {
 Extract the `Shape` class and implement the `Square` shape.
 
 ### Exercise 2
-Make a new class `RediList`, that extends the `ArrayList` class and  implement a `count` method that returns the number of occurences of a specific element in the object of `RediList`. Think about how can you implement such functiolanlity with the datastructures that you have learned so far. 
+Make a new class `RediList`, that extends the `ArrayList` class and  implement a `count` method that returns the number of occurrences of a specific element in the object of `RediList`. Think about how can you implement such functionality with the data structures that you have learned so far.
 
 ## [Inheritance and Visibility assignment]()
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
+
+## food for thought
+
+- After learning about access modifiers do you think a constructor of a class can be private? Let's have a discussion about it on slack!
