@@ -436,3 +436,9 @@ public class Circle extends Shape {
     }
 }
 ```
+
+## Exercises:
+
+### Exercise 1
+
+Extract the `Shape` class and implement the `Square` shape.
