@@ -458,7 +458,7 @@ Extract the `Shape` class and implement the `Square` shape.
 ### Exercise 2
 Make a new class `RediList`, that extends the `ArrayList` class and  implement a `count` method that returns the number of occurrences of a specific element in the object of `RediList`. Think about how can you implement such functionality with the data structures that you have learned so far.
 
-## [Inheritance and Visibility assignment]()
+## [Inheritance and Visibility assignment](https://classroom.github.com/a/G8hBj-_N)
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 
