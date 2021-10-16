@@ -7,12 +7,15 @@ nav_order: 8 has_children: false nav_exclude: true
 
 ## Goals
 
+- Check-in
 - What is Inheritance?
 - Why Do we need it?
 - Have we seen it before?
 - Visibilty and access modifiers
 - Some code Action!
 
+## Check-in
+How is everybody doing?
 ## What is Inheritance?
 
 - Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
@@ -442,3 +445,10 @@ public class Circle extends Shape {
 ### Exercise 1
 
 Extract the `Shape` class and implement the `Square` shape.
+
+### Exercise 2
+Make a new class `RediList`, that extends the `ArrayList` class and  implement a `count` method that returns the number of occurences of a specific element in the object of `RediList`. Think about how can you implement such functiolanlity with the datastructures that you have learned so far. 
+
+## [Inheritance and Visibility assignment]()
+
+#### Follow the link, accept and download the assignment from GitHub Classroom
