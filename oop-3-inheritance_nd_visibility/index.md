@@ -16,10 +16,10 @@ nav_exclude: true
 - Some code Action!
 
 
-## What is Inhertiance?
+## What is Inheritance?
 
 - Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
-- The new class that is created is known as subclass (child or derived class) and the existing class from where the child class is derived is known as superclass (parent or base class).
+- The new class that is created is known as subclass (child or derived class), and the existing class from where the child class is derived is known as superclass (parent or base class).
 - To inherit from a class, use the `extend` keyword in java.
 
 ### Let's define, again, a Product class.
@@ -71,7 +71,7 @@ public class Product {
 
 }
 ```
-### What if I have many laptops and I need to make sure that none of them has its price to be less than 100? 
+### What if I have many laptops, and I need to make sure that none of them has its price to be less than 100? 
 #### Old solution (bad)
 ```java
 package com.redi.j2;
