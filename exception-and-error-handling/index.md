@@ -1,5 +1,5 @@
 ---
-title: Error Handling & Exceptions
+title: "11 - Error Handling & Exceptions"
 nav_order: 11
 has_children: false
 nav_exclude: false
