@@ -18,7 +18,7 @@ When we write code, we often start with an idea of what happens if everything go
 Let's say we write an application that asks the user to enter their instagram name and then prints the date when they uploaded their last picture:
 - The user enters their name and presses enter
 - We send a request to the Instagram API and ask for the most recent picture this user uploaded.
-- Instagram sends us back an URL to the picture & the time it was uploaded.
+- Instagram sends us back a URL to the picture & the time it was uploaded.
 - We print the upload time.
 - Everyone is happy.
 
@@ -255,12 +255,12 @@ Use exceptions only for exceptional situations, e.g.
 
 Do not use it for anything else. It is considered bad practice - Exceptions complicate the flow of your application because you jump between functions and blocks before they complete.
 
-## Exercices
+## Exercises
 
-## Exercice 1
+## Exercise 1
 Write a dateValidator method that accept a string as parameter and returns nothing if the string is in the format `DD/MM/YYYY` otherwise it raises a `DateTimeException` as a checked exception.
 
-## Exercice 2: Replace the `DateTimeException` in Exercice 1 with a custom Exception.
+## Exercise 2: Replace the `DateTimeException` in Exercise 1 with a custom Exception.
 
 # Assignment
 
