@@ -263,4 +263,7 @@ Write a dateValidator method that accept a string as parameter and returns nothi
 ## Exercice 2: Replace the `DateTimeException` in Exercice 1 with a custom Exception.
 
 # Assignment
-<follows>
+
+## [Rock, Paper, Scissors with Error Handling](https://classroom.github.com/a/QEHpqbFP)
+
+#### Follow the link, accept and download the assignment from GitHub Classroom
