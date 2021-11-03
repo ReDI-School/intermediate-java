@@ -17,6 +17,8 @@ nav_exclude: false
 
 [Google Slides](https://docs.google.com/presentation/d/1wWBYhCs0qNxYKMee1euA0QDcMeYpfjrfXnPZ4nJdwac/embed)
 
+[Hands-On Exercise Solution](https://github.com/RediJavaClassroomF21/09-hands-on-exercise-solution)
+
 ## [Homework Assignment](https://classroom.github.com/a/PsVIQZSy)
 
 #### Follow the link, accept the exercise and download the repository
