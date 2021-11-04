@@ -283,12 +283,12 @@ public class ReadFileLineByLine {
 - Write lines into a file: `Path Files.write(Path path, List<String> lines)`
   ```java
     List<String> lines = List.of("one", "two");
-    Files.write(Path.of("input-file.txt"), lines);
+    Files.write(Path.of("output-file.txt"), lines);
   ```
 - Write string into a file: `Path Files.writeString(Path path, String string, OpenOption...options)`
   ```java
     String string = "one\ntwo\n";
-    Files.writeString(Path.of("input-file.txt"), string);
+    Files.writeString(Path.of("output-file.txt"), string);
   ```
 
 Be careful using these methods since you lose control over the underlying resources or risk reading a huge file into
@@ -296,7 +296,9 @@ memory which can lead to the application running out of memory and crashing.
 
 _Please use the above methods only if necessary for the assignment exercise._
 
-## Exercises
+## [Github Classroom Exercises](https://classroom.github.com/a/v_iYcSA9)
+
+### Follow the link, accept and download the assignment from GitHub Classroom
 
 ### Exercise: Dictionary
 
