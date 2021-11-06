@@ -300,30 +300,61 @@ _Please use the above methods only if necessary for the assignment exercise._
 
 ### Follow the link, accept and download the assignment from GitHub Classroom
 
-### Exercise: Dictionary
+You have been provided by the class  `ReadFileLineByLine`
+with two methods demonstrating how to copy from one file to another file line by line.
 
-Write a java program that given an English text file, will attempt to build a dictionary of the unique words in that
-text file.
+Please go through those methods and observe the differences between them.
 
-### Exercise: Sort Line
+**For these exercises, please only use `ReadFileLineByLine#theEasierWay` to read or write from the file.**
 
-Write a java program that sorts a given file line by line. At the end of the execution, the file must be sorted.
+## Exercise
 
-### Exercise: CSV Record
+**For these exercises, please only use `ReadFileLineByLine#theEasierWay` to read or write from the file.**
 
-You are keeping a log of students in your class, and you store the data of your students in a file on your machine.
+### 1 - Sort Line
 
-- When your application starts, it loads the students' info from the data file.
-- You can add a new student to the data set. The new student must also be stored in the data file.
-- You can search for students by providing any of their properties.
-- The students have the following properties
-    - Serial number: a unique identifier of the student
-    - First name
-    - last name
-    - height (in meter)
-    - weight (in kilogram)
-    - date of birth (in format dd/mm/yyyy)
-- The data file must be written as a (tab or comma separated) CSV file.
+Write a method that sorts a given file line by line. At the end of the execution, the file must be sorted.
+
+In the package `com.redi.j2`, create a public class `SortLine`, and in this class create a public static
+method `sortLine`. Input of the method should be a `String path` which is the path to the file that needs to be sorted.
+
+### 2 - CSV Students
+
+1. In the package `com.redi.j2`, create a class `Student` to represent a student
+    1. with the following properties
+        - `UUID id` a unique identifier of the student
+        - `String firstName`
+        - `String lastName`
+        - `int height`
+        - `int weight`
+        - `LocalDate dateOfBirth`
+    2. Add a constructor for `Student` with all the properties in the order specified above.
+    3. All properties of `Student` must be private and final.
+    4. Please implement getters, `equals`, `hashCode` and `toString`
+2. Validations - All exceptions are custom and must be unchecked i.e. should extend `RuntimeException`
+    1. if the `firstName` or `lastName` is empty, throw a custom `BadNameException`
+    2. if the `height` is not positive throw a `BadHeightException`
+    3. if the `weight` is not positive throw a `BadWeightException`
+    4. if the `dateOfBirth` is in the future, throw a `BadDateException`
+    4. if any property is null, throw `NullPointerException`.
+3. In the package `com.redi.j2`, create a class `CSVStudents`
+    1. **In this exercise, DO NOT CATCH or HANDLE any `IOException`!!**
+    2. Create a private no-arg constructor for `CSVStudents`. We do this for utility classes so that they cannot be
+       initialized nor inherited from. An utility class is a class that only has static methods.
+    3. Create a public static method `read(path)` which accepts a `String` path and reads a CSV file that contains the
+       students and returns a list of students in the order found in the CSV file.
+        1. Must throw `BadCSVException` if the file extension is not `.csv`
+        2. The first line of the CSV file is always the header.
+        3. The header must be the name of the properties of the class `Student` in the order as listed above.
+        4. The CSV is comma separated.
+        5. If any of the conditions above is not satisfied, throw a custom runtime exception `BadCSVException`
+        6. The method must return a list of students in the order found in the CSV file.
+    4. Create a public static method `write(path,student)` which accepts a `Student` and a `String` path and writes this
+       student to the CSV record.
+        1. Must throw `BadCSVException` if the file extension is not `.csv`
+        2. If the CSV file path doesn't exist, it must be created along with any missing parent directories.
+        3. A new CSV file must be created with the headers in the order of the properties specified above
+        4. If the CSV file does exist, then the student CSV record is appended to the CSV file.
 
 ## Materials
 
