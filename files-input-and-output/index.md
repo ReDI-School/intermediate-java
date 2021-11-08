@@ -1,11 +1,11 @@
 ---
-title: File I/O
+title: 12 - Files Input/Output
 nav_order: 12
 has_children: false
 nav_exclude: false
 ---
 
-# Lesson 16: File Input/Output (I/O)
+# Lesson 12: File Input/Output (I/O)
 
 ## Goals
 
@@ -300,27 +300,56 @@ _Please use the above methods only if necessary for the assignment exercise._
 
 ### Follow the link, accept and download the assignment from GitHub Classroom
 
-You have been provided by the class  `ReadFileLineByLine`
+YYou have been provided by the class  [`ReadFileLineByLine`](src/main/java/com/redi/j2/ReadFileLineByLine.java)
 with two methods demonstrating how to copy from one file to another file line by line.
 
 Please go through those methods and observe the differences between them.
 
-**For these exercises, please only use `ReadFileLineByLine#theEasierWay` to read or write from the file.**
+**For these exercises, please only
+use [`ReadFileLineByLine#theEasierWay`](src/main/java/com/redi/j2/ReadFileLineByLine.java) to read or write from the
+file.**
 
 ## Exercise
 
-**For these exercises, please only use `ReadFileLineByLine#theEasierWay` to read or write from the file.**
+**For these exercises, please only
+use [`ReadFileLineByLine#theEasierWay`](src/main/java/com/redi/j2/ReadFileLineByLine.java) to read or write from the
+file.**
 
 ### 1 - Sort Line
 
 Write a method that sorts a given file line by line. At the end of the execution, the file must be sorted.
 
-In the package `com.redi.j2`, create a public class `SortLine`, and in this class create a public static
-method `sortLine`. Input of the method should be a `String path` which is the path to the file that needs to be sorted.
+In the package [`com.redi.j2`](src/main/java/com/redi/j2), create a public class `SortLine`, and in this class create a
+public static method `sortLine`. Input of the method should be a `String path` which is the path to the file that needs
+to be sorted.
+
+For example if I have a file `/path/to/my/MyFile.txt` with the following content
+
+```text
+This is because we feel pain.
+Land is good.
+Who's calling on the phone this late at night?
+The quick brown fox jump over the lazy dog.
+A high APR is a bad thing.
+This is my younger brother.
+Lenora only had eight fingers, after losing both of her pinkies to a freak accident with a hay baler.
+```
+
+After I invoke `SortLine.sortLine("/path/to/my/MyFile.txt")`, then the file should have the following content.
+
+```text
+A high APR is a bad thing.
+Land is good.
+Lenora only had eight fingers, after losing both of her pinkies to a freak accident with a hay baler.
+The quick brown fox jump over the lazy dog.
+This is because we feel pain.
+This is my younger brother.
+Who's calling on the phone this late at night?
+```
 
 ### 2 - CSV Students
 
-1. In the package `com.redi.j2`, create a class `Student` to represent a student
+1. In the package [`com.redi.j2`](src/main/java/com/redi/j2), create a class `Student` to represent a student
     1. with the following properties
         - `UUID id` a unique identifier of the student
         - `String firstName`
@@ -337,7 +366,7 @@ method `sortLine`. Input of the method should be a `String path` which is the pa
     3. if the `weight` is not positive throw a `BadWeightException`
     4. if the `dateOfBirth` is in the future, throw a `BadDateException`
     4. if any property is null, throw `NullPointerException`.
-3. In the package `com.redi.j2`, create a class `CSVStudents`
+3. In the package [`com.redi.j2`](src/main/java/com/redi/j2), create a class `CSVStudents`
     1. **In this exercise, DO NOT CATCH or HANDLE any `IOException`!!**
     2. Create a private no-arg constructor for `CSVStudents`. We do this for utility classes so that they cannot be
        initialized nor inherited from. An utility class is a class that only has static methods.
@@ -355,6 +384,7 @@ method `sortLine`. Input of the method should be a `String path` which is the pa
         2. If the CSV file path doesn't exist, it must be created along with any missing parent directories.
         3. A new CSV file must be created with the headers in the order of the properties specified above
         4. If the CSV file does exist, then the student CSV record is appended to the CSV file.
+
 
 ## Materials
 
