@@ -264,4 +264,4 @@ Java provides libraries to analyze images. You can do something cool with that, 
 
 Easy: User should be able to provide the path to a local image and the application prints the most dominant colors in that image
 Medium: User should be able to provide the path to a folder with images and the user can search for colors. The application lists the images that use that color a lot.
-Hard: After performing image analysis, store the information per image locally. Allow the user to add custom tags on top of the automatic color analysis. Provide the User the ability to search the folder based on tags.
+Hard: After performing image analysis, store the information per image locally. Allow the user to add custom tags on top of the automatic color analysis. Provide the User the ability to search the folder based on tags. Tags should not be lost when the application restarts!
