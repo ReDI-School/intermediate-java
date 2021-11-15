@@ -5,7 +5,7 @@ has_children: true
 nav_exclude: false
 ---
 
-# Lesson 19: Build With Maven
+# Lesson 13: Build With Maven
 
 ## Goals
 
