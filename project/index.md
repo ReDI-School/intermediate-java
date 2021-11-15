@@ -10,7 +10,7 @@ nav_exclude: false
 ## Project rules
 
 - **Find a colleague to work with!**
-- Choose and share your idea in the class' Slack channel before 25.11
+- Choose and share your idea in the class' Slack channel before 22.11
 - You are working on the project until the end of the course
 - Try to use what we learnt during the course
 - You are free to use something that was not covered during the course
