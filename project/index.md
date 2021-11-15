@@ -256,7 +256,7 @@ The details of how you select these songs is up to you - there's different ways 
 - Hard: Mix in songs from similar artists
 
 
-**Note: An important part of this task will be reading the Instagram API documentation and understanding how to interact with it.**
+**Note: An important part of this task will be reading the Spotify API documentation and understanding how to interact with it.**
 
 ### Image Analysis
 
