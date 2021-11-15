@@ -138,9 +138,9 @@ Otherwise, follow these instructions
 12. Verify project can build `mvn clean verify`
 13. Execute the resulting jar file with some arguments
       ```
-        java -jar target/maven-demo-1.0-SNAPSHOT.jar "Hello World!" 250
+        java -jar target/maven-demo-1.0-SNAPSHOT.jar 'Hello World!' 250
       ```
-    to generate a QR Code for the text `"Hello World!"`, having a width of 250 pixels.
+    to generate a QR Code for the text `'Hello World!'`, having a width of 250 pixels.
 
 14. Exception because not all classes and libraries are included in the jar file
       ```
@@ -179,8 +179,8 @@ Otherwise, follow these instructions
 16. Verify project can build `mvn clean verify`
 17. Execute the resulting jar file with some arguments
       ```
-        java -jar target/maven-demo-1.0-SNAPSHOT-jar-with-dependencies.jar "Hello World!" 250
+        java -jar target/maven-demo-1.0-SNAPSHOT-jar-with-dependencies.jar 'Hello World!' 250
       ```
-    to generate a QR Code for the text `"Hello World!"`, having a width of 250 pixels.
+    to generate a QR Code for the text `'Hello World!'`, having a width of 250 pixels.
 
 18. Check that QR Code is generated
