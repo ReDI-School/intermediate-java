@@ -265,3 +265,27 @@ Java provides libraries to analyze images. You can do something cool with that, 
 Easy: User should be able to provide the path to a local image and the application prints the most dominant colors in that image
 Medium: User should be able to provide the path to a folder with images and the user can search for colors. The application lists the images that use that color a lot.
 Hard: After performing image analysis, store the information per image locally. Allow the user to add custom tags on top of the automatic color analysis. Provide the User the ability to search the folder based on tags. Tags should not be lost when the application restarts!
+
+
+### Degrees
+
+A Java program that would tell us how many "degrees of separation" apart two actors are.
+
+You will be provided with two sets of CSV data files: one set in the large directory and one set in the small directory. Each contains files with the same names, and the same structure, but small is a much smaller dataset for ease of testing and experimentation.
+
+Each dataset consists of three CSV files. A CSV file, if unfamiliar, is just a way of organizing data in a text-based format: each row corresponds to one data entry, with commas in the row separating the values for that entry.
+
+Each dataset includes three files: 
+1. `people.csv` in which you’ll see that each person has a unique id, corresponding with their id in IMDb’s database. They also have a name, and a birth year.
+2. `movies.csv` in which you’ll see here that each movie also has a unique id, in addition to a title and the year in which the movie was released.
+3. Finally, `stars.csv` which establishes a relationship between the people in `people.csv` and the movies in `movies.csv`. Each row is a pair of a `person_id` value and `movie_id` value. 
+
+You can start with just outputting any relation between the two given actors. If you want a challenge think try to get the **shortest relation** between the actors!
+
+### Image filtering app
+
+A Java program that wold take a path to an image through the command line and then offers the user a list of filters that they can apply to the image. The program would apply the filter to the image and save the new image on disk. The more filters the better!
+
+
+For a bonus you can build a GUI for it, that IS how Instagram started, you know! 
+
