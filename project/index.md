@@ -232,3 +232,36 @@ Users should be able to:
 - A library for pdf generation:
 - https://www.baeldung.com/java-pdf-creation
 - https://www.dunebook.com/best-java-pdf-generation-libraries/
+
+### Instagram API
+Use the instagram API to make something cool, for example:
+
+Users should be able to enter a hashtag and get a list of accounts they can follow that use that hashtag.
+
+The details of how you select these accounts is up to you - there's different ways with different levels of difficulty:
+- Easy: Take the first 10 accounts you find that use that hashtag
+- Medium: Recommend accounts first that have the most posts/followers/...
+- Hard: Let the user select what's most important to them (follower #, post count, recently active, ...) 
+
+**Note: An important part of this task will be reading the Instagram API documentation and understanding how to interact with it.**
+
+### Spotify API
+
+Use the spotify API to do something cool, for example:
+User should be able to enter an artist and get 10 song recommendations
+
+The details of how you select these songs is up to you - there's different ways with different levels of difficulty:
+- Easy: Take the 10 most streaed songs of that artist
+- Medium: Let the user pick an album, pick songs from that album first
+- Hard: Mix in songs from similar artists
+
+
+**Note: An important part of this task will be reading the Spotify API documentation and understanding how to interact with it.**
+
+### Image Analysis
+
+Java provides libraries to analyze images. You can do something cool with that, like:
+
+Easy: User should be able to provide the path to a local image and the application prints the most dominant colors in that image
+Medium: User should be able to provide the path to a folder with images and the user can search for colors. The application lists the images that use that color a lot.
+Hard: After performing image analysis, store the information per image locally. Allow the user to add custom tags on top of the automatic color analysis. Provide the User the ability to search the folder based on tags. Tags should not be lost when the application restarts!
