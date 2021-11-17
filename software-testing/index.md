@@ -1,11 +1,11 @@
 ---
-title: Software Testing
-nav_order: 0
+title: 14 - Software Testing
+nav_order: 14
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Lesson 20: Software Testing
+# Lesson 14: Software Testing
 
 ## Goals
 - Learn about software testing
