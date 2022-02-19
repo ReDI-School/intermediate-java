@@ -49,7 +49,7 @@ We use Java 11+. In the terminal/command line check that you have an installed j
 To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
 
 -> java -version
-![java_version](java-version.png)
+![java_version](../00-initial-setup/java-version.png)
 
 ## Git
 

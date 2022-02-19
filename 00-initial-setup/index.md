@@ -4,16 +4,17 @@ nav_order: 0
 nav_exclude: false
 ---
 
-# Lesson 0: How to setup the tools you'll need for the course
+# Lesson 0: How to set up the tools you'll need for the course
 
 ## Java 
 
-We use Java 11+. In the terminal/command line check that you have an installed jdk. 
-
-To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
-
+We use Java 11+. In the command-line terminal, check that you have an installed jdk using the following command: 
+```
 -> java -version
+```
 ![java_version](java-version.png)
+
+If you need to install the jdk, follow [these instructions](https://adoptopenjdk.net/releases.html).
 
 ## IntelliJ Idea
 
@@ -27,6 +28,6 @@ To learn more about Intellij Idea (e.g. shortcuts, plugins, etc.), here are [som
 
 ## Git
 
-Git is a tool to handle different versions of your code. Please [install it following the reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Git is a tool to handle different versions of your code. Please install it following the [reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Git comes with a command-line tool, and there are plenty of Git tools out there, but none of them are required for this course (the integration that Intellij Idea Community Edition provides already is enough).
+_Git comes with a command-line tool, and there are plenty of Git tools out there, but none of them are required for this course (the integration that Intellij Idea Community Edition provides by default is enough)._
