@@ -8,13 +8,14 @@ nav_exclude: false
 
 ## Java 
 
-We use Java 11+. In the command-line terminal, check that you have an installed jdk using the following command: 
+We use Java 11+. In the command-line terminal, check that you have an installed JDK using the following commands: 
 ```
--> java -version
+java -version
+javac -version
 ```
 ![java_version](java-version.png)
 
-If you need to install the jdk, follow [these instructions](https://adoptopenjdk.net/releases.html).
+If you need to install the JDK (or a new version), follow [these instructions](https://adoptopenjdk.net/releases.html).
 
 ## IntelliJ Idea
 
