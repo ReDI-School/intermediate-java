@@ -2,7 +2,7 @@
 title: "01 - Introduction to the Intermediate Java course"
 nav_order: 1
 nav_exclude: false
-has_children: true
+has_children: false
 ---
 
 # Lesson 1: Introduction
