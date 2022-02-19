@@ -4,7 +4,7 @@ nav_order: 0
 nav_exclude: false
 ---
 
-# Lesson 0: How to set up the tools you'll need for the course
+# How to set up the tools you'll need for the course
 
 ## Java 
 
