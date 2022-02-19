@@ -2,7 +2,7 @@
 title: "9 - OOP 4 - Abstract Classes and Interfaces"
 nav_order: 9
 has_children: false
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 9: OOP 4 - Abstract Classes and Interfaces

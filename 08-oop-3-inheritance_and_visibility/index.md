@@ -2,7 +2,7 @@
 title: "8 - OOP3 - Inheritance and Visibility"
 nav_order: 8 
 has_children: false 
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 8: OOP3 - Inheritance and Visibility

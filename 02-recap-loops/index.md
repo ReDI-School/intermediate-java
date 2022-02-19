@@ -2,7 +2,7 @@
 title: "2 - Recap loops"
 nav_order: 2
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 2: Recap loops

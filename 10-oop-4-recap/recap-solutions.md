@@ -2,7 +2,7 @@
 title: "Solutions to recap OOP4"
 nav_order: 2
 parent: "10 - OOP4 Classes, Abstract Classes & Interfaces Recap"
-nav_exclude: false
+nav_exclude: true
 ---
 
 ## Java trivia

@@ -2,7 +2,7 @@
 title: "11 - Error Handling & Exceptions"
 nav_order: 11
 has_children: false
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 11: Error Handling & Exceptions

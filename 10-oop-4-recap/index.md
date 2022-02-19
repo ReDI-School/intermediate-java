@@ -2,7 +2,7 @@
 title: "10 - OOP4 Classes, Abstract Classes & Interfaces Recap"
 nav_order: 10 
 has_children: false
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 10: OOP4 - Classes, Abstract Classes and Interfaces Recap

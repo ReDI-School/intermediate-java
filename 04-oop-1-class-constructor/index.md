@@ -2,7 +2,7 @@
 title: "4 - OOP - Objects, Classes & Constructor"
 nav_order: 4
 has_children: false
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 4: OOP - Objects, Classes & Constructor

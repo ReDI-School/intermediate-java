@@ -1,7 +1,7 @@
 ---
 title: "1 - Introduction to Programming with Java"
 nav_order: 1
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 1: Introduction to Programming with Java

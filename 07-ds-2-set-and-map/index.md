@@ -2,7 +2,7 @@
 title: "7 - Data Structure - Set & Map"
 nav_order: 7 
 has_children: false 
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 7: Data Structure - Set & Map

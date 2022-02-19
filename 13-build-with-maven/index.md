@@ -2,7 +2,7 @@
 title: 13 - Build With Maven
 nav_order: 13
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 13: Build With Maven

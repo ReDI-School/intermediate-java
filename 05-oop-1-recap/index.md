@@ -2,7 +2,7 @@
 title: "5 - OOP - Objects, Classes & Constructor Recap"
 nav_order: 5
 has_children: false
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 5: OOP - Objects, Classes & Constructor Recap

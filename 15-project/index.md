@@ -2,7 +2,7 @@
 title: Project ideas
 nav_order: 89
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Project

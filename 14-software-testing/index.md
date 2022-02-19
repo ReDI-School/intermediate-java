@@ -2,7 +2,7 @@
 title: 14 - Software Testing
 nav_order: 14
 has_children: true
-nav_exclude: false
+nav_exclude: true
 ---
 
 # Lesson 14: Software Testing
