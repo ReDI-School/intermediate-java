@@ -1,17 +1,17 @@
 ---
-title: "1 - Introduction to Programming with Java"
+title: "01 - Introduction to the Intermediate Java course"
 nav_order: 1
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Lesson 1: Introduction to Programming with Java
+# Lesson 1: Introduction
 
-## Goals
+## Goals of this class
 * Getting to know each other
 * Get familiar with schedule, attendance, tools
 * Course introduction
 * Check required software (Java & Intellij Idea)
-* Iteration structures recap (loops)
+* Iteration control structures recap (loops)
 * Do some basic Java exercises 🤩
 
 ### General info
@@ -21,12 +21,12 @@ nav_exclude: true
 * 🕺🏻 We are here for you! Always ask questions if something is not clear.
 * 🚀 Never forget the feedback!
 * 🕸 [Web](https://redi-school.github.io/intermediate-java), [Previous Semesters](https://redi-j2.netlify.com)
-* 🐦 Slack: #21f_programming_java
+* 🐦 Slack: #22s_programming_java
 * 🎓 We will have a Project at the end of the course!
 
-### Content
+### Content of this course
 
-We shall aim to cover the following topics over the course of the semester. However, it is
+We planned to cover the following topics over the course of the semester. However, it is
 important to note that this is not set in stone. Depending on the progress of the class as a whole,
 we may cover a bit more or a bit less. It is nevertheless most important that we work and progress
 as a group whilst helping one another grow.
@@ -40,75 +40,135 @@ as a group whilst helping one another grow.
 * Unit Testing 
 * File IO
 
-## Let's check tools
+### Which tools we will be using?
 
-### Java 
+All tools we use are described in the Initial Setup page.
 
-We use Java 11+. In the terminal/command line check that you have an installed jdk. 
+At this point, we expect you have all of them installed and running, but if you didn't make it ask the teachers on Slack.
 
-To install jdk [follow instructions](https://adoptopenjdk.net/releases.html).
+*Important:* The focus of this course is not teaching you the tools, so we will show you only the basics, along with the content.
 
--> java -version
-![java_version](../00-initial-setup/java-version.png)
 
-## Git
+## Iteration Control Structures Recap 
+Let's review what we learned in the _Introduction to Java_ course.
 
-Git is a tool to handle different versions of your code. Please [install it following the reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+### FOR loops
+For loops are the most commonly used iteration control structures in Java (and other languages).
 
-### Intellij Idea
-We use only functionality of Intellij Idea Community Edition. Please [download it in the following link, choosing the appropriate version for your operating system](https://www.jetbrains.com/idea/download).
-To learn more about [Intellij Idea, here are some resources](https://www.jetbrains.com/idea/resources/)
-
-You can find there short cuts, debugging tutorials, integration with verious version control systems (like Git)
-
-## Java Basics Recap
+Their structure is as follows:
 ```java
-package com.redi.j2;
+for (<INITIALIZATION>; <CONDITION>; <INCREMENT>) {
+    // <CODE TO EXECUTE>
+}
+```
 
-public class Main {
+For loops are usually used to run `<CODE TO EXECUTE>` a given amount of times.
+They are using an `INITIALIZATION` statement which is run exactly once at the beginning,
+a `CONDITION` statement which is run before each iteration and
+an `INCREMENT` statement which is run after each iteration.
+For loops are executed until `CONDITION` evaluates to false. If they are false from the beginning,
+the code will never be executed.
+
+Example:
+```java
+public class SimpleForLoopExample {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-
-        String name = "Memet";
-        String profession = "skydiver";
-        int age = 40;
-        boolean smoking = false;
-
-        coolOrNotCool(profession);
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("hey " + i);
-        }
-    }
-
-    private static void coolOrNotCool(String profession) {
-        if (profession.equals("skydiver")) {
-            System.out.println("Cool");
-        } else {
-            System.out.println("Not cool");
+            System.out.println("i is " + i);
         }
     }
 }
 ```
 
-## [GitHub classroom](https://classroom.github.com/a/fKsu9Nib)
+### WHILE loops
+While loops are usually used to run code until a condition is not met anymore.
 
-We shall be using GitHub classroom for the rest of this semester to organize exercises and 
-assignments, so it is important that you have a GitHub account. **If you do not have one, please
-create an account right now.**
+Structure:
+```java
+while (<CONDITION>) {
+    <CODE TO EXECUTE>
+}
+```
+While the `CONDITION` evaluates to true, the code will be executed. Usually the `CODE TO EXECUTE` has
+an impact on the `CONDITION`, e.g. modifies its outcome.
 
-Please click the link above and follow the instructions in your free time. This assignment
-contains a course on the fundamentals of Git and GitHub which will help in understanding how
-to leverage Git & GitHub for collaboration between the students and tutors. 
+Example:
+```java
+import java.util.Scanner;
 
-## Exercises and assignment
+public class NumberGuessingGame {
 
-### [#1 Introduction to github classroom](https://classroom.github.com/a/WPyqVy9W)
-### [#2 "Know Thy Tools" - get familiar with git](https://classroom.github.com/a/fKsu9Nib)
-### [#3 Warming back up to programming with Java](https://classroom.github.com/a/7vXI9ynd)
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-## Materials:
+        int numberToGuess = 19;
+        boolean numberGuessed = false;
+        int neededTries = 0;
+
+        while (!numberGuessed) {
+            neededTries++;
+            System.out.println("Please guess a number between 0 and 20");
+
+            int guessedNumber = input.nextInt();
+
+            if (guessedNumber == numberToGuess) {
+                numberGuessed = true;
+            }
+        }
+
+        System.out.println("Congratulations! You needed " + neededTries + " tries to guess the given number!");
+    }
+}
+```
+
+### DO-WHILE loops
+Do-while loops are the least used ones. Unlike while loops, they guarantee at least one code execution.
+
+Structure:
+```java
+do {
+    <CODE TO EXECUTE>
+} while(<CONDITION>);
+```
+The `CODE TO EXECUTE` will first be executed once, then the `CONDITION` will be evaluated.
+This is repeated until the `CONDITION` evaluates to false.
+
+Example:
+```java
+import java.util.Scanner;
+
+public class NumberGuessingGame {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int numberToGuess = 19;
+        boolean numberGuessed = false;
+        int neededTries = 0;
+        
+        do {
+            neededTries++;
+            System.out.println("Please guess a number between 0 and 20");
+
+            int guessedNumber = input.nextInt();
+
+            if (guessedNumber == numberToGuess) {
+                numberGuessed = true;
+            }          
+        } while (!numberGuessed);
+
+        System.out.println("Congratulations! You needed " + neededTries + " tries to guess the given number!");
+    }
+}
+```
+
+## Exercises
+
+TODO
+
+## Supporting Materials:
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)
 - [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/)
 - [W3Schools Java Tutorial](https://www.w3schools.com/java/)

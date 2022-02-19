@@ -15,121 +15,6 @@ nav_exclude: true
 * Recap `for` each
 * Code, code, code 🤩
 
-## Recap & Assignment check
-Let's look into the assignment from lesson 1.
-
-## for loops
-For loops are the most commonly used loops in Java.
-
-Their structure is as follows:
-```java
-for (<INITIALIZATION>; <CONDITION>; <INCREMENT>) {
-    // <CODE TO EXECUTE>
-}
-```
-
-For loops are usually used to run `<CODE TO EXECUTE>` a given amount of times.
-They are using an `INITIALIZATION` statement which is run exactly once at the beginning, 
-a `CONDITION` statement which is run before each iteration and 
-an `INCREMENT` statement which is run after each iteration.
-For loops are executed until `CONDITION` evaluates to false. If they are false from the beginning,
-the code will never be executed.
-
-Example:
-```java
-public class SimpleForLoopExample {
-
-    public static void main(String[] args) {
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i is " + i);
-        }
-    }
-}
-```
-
-## while loops
-While loops are usually used to run code until a condition changes.
-
-Structure:
-```java
-while (<CONDITION>) {
-    <CODE TO EXECUTE>
-}
-```
-While the `CONDITION` evaluates to true, the code will be executed. Usually the `CODE TO EXECUTE` has
-an impact on the `CONDITION`, e.g. modifies it's outcome.
-
-Example:
-```java
-import java.util.Scanner;
-
-public class NumberGuessingGame {
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        int numberToGuess = 19;
-        boolean numberGuessed = false;
-        int neededTries = 0;
-
-        while (!numberGuessed) {
-            neededTries++;
-            System.out.println("Please guess a number between 0 and 20");
-
-            int guessedNumber = input.nextInt();
-
-            if (guessedNumber == numberToGuess) {
-                numberGuessed = true;
-            }
-        }
-
-        System.out.println("Congratulations! You needed " + neededTries + " tries to guess the given number!");
-    }
-}
-```
-
-## do while loops
-Do while loops are the least used ones. Unlike while loops, they guarantee at least one code execution.
-
-Structure:
-```java
-do {
-    <CODE TO EXECUTE>
-} while(<CONDITION>);
-```
-The `CODE TO EXECUTE` will first be executed once, then the `CONDITION` will be evaluated.
-This is repeated until the `CONDITION` evaluates to false.
-
-Example:
-```java
-import java.util.Scanner;
-
-public class NumberGuessingGame {
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        int numberToGuess = 19;
-        boolean numberGuessed = false;
-        int neededTries = 0;
-        
-        do {
-            neededTries++;
-            System.out.println("Please guess a number between 0 and 20");
-
-            int guessedNumber = input.nextInt();
-
-            if (guessedNumber == numberToGuess) {
-                numberGuessed = true;
-            }          
-        } while (!numberGuessed);
-
-        System.out.println("Congratulations! You needed " + neededTries + " tries to guess the given number!");
-    }
-}
-```
-
 ## for each loops
 For each loops are like normal for loops. However, a common case is to iterate over a whole list/a whole array.
 
@@ -315,6 +200,25 @@ Enter 1 for deposit, 2 for withdrawal
 2
 You have no money left, program stopped ...
 ```
+
+
+## [GitHub classroom](https://classroom.github.com/a/fKsu9Nib)
+
+We shall be using GitHub classroom for the rest of this semester to organize exercises and
+assignments, so it is important that you have a GitHub account. **If you do not have one, please
+create an account right now.**
+
+Please click the link above and follow the instructions in your free time. This assignment
+contains a course on the fundamentals of Git and GitHub which will help in understanding how
+to leverage Git & GitHub for collaboration between the students and tutors.
+
+## Exercises and assignment
+
+### [#1 Introduction to github classroom](https://classroom.github.com/a/WPyqVy9W)
+### [#2 "Know Thy Tools" - get familiar with git](https://classroom.github.com/a/fKsu9Nib)
+### [#3 Warming back up to programming with Java](https://classroom.github.com/a/7vXI9ynd)
+
+
 
 ## Materials
 - https://www.javatpoint.com/java-for-loop
