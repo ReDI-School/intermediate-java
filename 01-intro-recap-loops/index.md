@@ -2,6 +2,7 @@
 title: "01 - Introduction to the Intermediate Java course"
 nav_order: 1
 nav_exclude: false
+has_children: true
 ---
 
 # Lesson 1: Introduction
@@ -166,7 +167,21 @@ public class NumberGuessingGame {
 
 ## Exercises
 
-TODO
+### Exercise 1: Multiples of 3 or 5
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+[Original Source](https://projecteuler.net/problem=1)
+
+### Exercise 2: Smallest Multiple
+
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is _evenly divisible_ by all the numbers from 1 to 20?
+
+[Original Source](https://projecteuler.net/problem=5)
 
 ## Supporting Materials:
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)
