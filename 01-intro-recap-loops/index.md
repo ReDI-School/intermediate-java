@@ -11,6 +11,7 @@ nav_exclude: true
 * Get familiar with schedule, attendance, tools
 * Course introduction
 * Check required software (Java & Intellij Idea)
+* Iteration structures recap (loops)
 * Do some basic Java exercises 🤩
 
 ### General info
@@ -31,7 +32,6 @@ we may cover a bit more or a bit less. It is nevertheless most important that we
 as a group whilst helping one another grow.
 
 * The Java language
-* Git & Github
 * Data structures
 * Object Oriented Programming
 * Exceptions
