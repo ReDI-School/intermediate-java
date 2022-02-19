@@ -31,4 +31,4 @@ To learn more about Intellij Idea (e.g. shortcuts, plugins, etc.), here are [som
 
 Git is a tool to handle different versions of your code. Please install it following the [reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-_Git comes with a command-line tool, and there are plenty of Git tools out there, but none of them are required for this course (the integration that Intellij Idea Community Edition provides by default is enough)._
+_Git comes with a command-line tool, and there are plenty of other free visual tools out there, but none of them are required for this course (the integration that Intellij Idea Community Edition provides by default is enough)._
