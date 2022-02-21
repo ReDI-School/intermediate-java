@@ -40,3 +40,12 @@ Github is a free online provider of Internet hosting for source code versioned w
 We will be using Github to upload, share and review source code and exercises.
 
 Please [create an account](https://github.com/) and have it ready to use.
+
+## Github Classroom
+
+We will be using GitHub classroom for the rest of this semester to organize exercises and
+assignments, so it is important that you have a GitHub account, as defined in the previous step.
+
+Every assignment will have a link for you to accept, then implement and submit your solution. Teachers will show how this works, so don't worry.
+
+[GitHub Classroom](https://classroom.github.com/a/fKsu9Nib)

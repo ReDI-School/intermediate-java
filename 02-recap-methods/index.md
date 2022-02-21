@@ -1,223 +1,47 @@
 ---
-title: "2 - Recap loops"
+title: "02 - Recap Methods"
 nav_order: 2
-has_children: true
+has_children: false
 nav_exclude: true
 ---
 
-# Lesson 2: Recap loops
+# Lesson 2: Recap methods
 
 ## Goals
-* Intro git & github classroom
-* Recap `for`
-* Recap `while`
-* Recap `do` ... `while`
-* Recap `for` each
+* Intro Git & Github Classroom
+* TODO -- put topics here
 * Code, code, code 🤩
 
-## for each loops
-For each loops are like normal for loops. However, a common case is to iterate over a whole list/a whole array.
+## Content 1
 
-Structure:
-```java
-for (type var : array) { 
-    <CODE TO EXECUTE>
-}
-```
-This will iterate of the whole array and assign each value once to the variable var.
+TODO
 
-Example:
-```java
-for (int number : numbers) {
-    System.out.println(number);
-}
-```
-The above prints the same results as the following for loop below:
-```java
-for (int i=0; i<numbers.length; i++) {
-    System.out.println(numbers[i]);
-}
-```
+## Content 2
 
-A for each loop is quite common when you handle lists/arrays.
-
-## break and continue
-Sometimes it is needed to skip certain items or to stop the loop prematurely.
-In order to do so, we can use the `continue` (skip current iteration) and the `break`
-(stop the whole loop) keywords.
-
-Example break:
-```java
-for (int number : numbers) {
-    if (number == 3) {
-      break;
-    }
-    System.out.println(number);
-}
-```
-
-Example continue:
-```java
-for (int number : numbers) {
-    if (number == 3) {
-      continue;
-    }
-    System.out.println(number);
-}
-```
-
-
-## Exercises
-
-### Exercise 1: Sum of an array.
-
-Write a method that takes an array of integers and returns the sum of the elements of that array. Test it by passing in a few `hardcoded` inputs and printing the output to the console. 
-
-Examples:
-```shell
-[1,2,3,4] -> 10
-[] -> 0
-[1] -> 1
-```
-
-### Exercise 2: Average
-
-The average of a list of numbers is the sum of those numbers divided by the number of elements. Write a method that takes an array of integers and returns the average. Make sure to reuse the sum method that you have written for Exercise 1.
-
-Examples:
-```shell
-
-[1,2,3,4] -> 2.5
-[10,10,10] -> 10
-[] -> 0
-```
-
-### Exercise 3: Count the `char`
-
-Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that string. 
-
-Examples:
-```shell
-`"Hello!", 'l'` -> 2
-`"Banana", 'a'` -> 3
-`"ReDI", 'a'` -> 0 
-```
-
+TODO
 
 ## Homework
 
-### Graded: Simple Multiplication Table
+### Exercise 1
 
-This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/wJEsXx7a)
-
-- Read a single number with [Scanner](https://beginnersbook.com/2017/09/java-program-to-read-integer-value-from-the-standard-input/)
-- Print the multiplication table of the number from 1 until 10
-
-Example:
-```
-Input: 2
-Output:
-2 x 1 = 2
-2 x 2 = 4
-2 x 3 = 6
-2 x 4 = 8
-2 x 5 = 10
-2 x 6 = 12
-2 x 7 = 14
-2 x 8 = 16
-2 x 9 = 18
-2 x 10 = 20
-```
-
-### Graded: Dividable numbers
-
-This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/KOXYDafF)
-
-- Read two numbers with Scanner
-- Print each number from 1 to the first entered number that is dividable without remainder by the second number (e.g. 6 is dividable by 3 without remainder as 6 / 3 is 2 with remainder 0, but 6 is not dividable by 4 without remainder as 6 / 4 is 1 with remainder 2)
-
-Example:
-```
-First: 16
-Second: 5
-Output:
-5 is dividable by 5
-10 is dividable by 5
-15 is dividable by 5
-```
-
-
-### Multiplication table II
-
-- Write a Java program that reads from the user a value n and prints an n by n multiplication table.
-- When run, your program should look as follows:
-
-Example:
-```
-Dear user, please enter a number, and I will compute a multiplication table for you: 7
-
-You typed in 7. Here is the multiplication table: 
-
- 1  2  3  4  5  6  7
- 2  4  6  8 10 12 17
- 3  6  9 12 15 18 21
- 4  8 12 16 20 24 28
- 5 10 15 20 25 30 35
- 6 12 18 24 30 36 42
- 7 14 21 28 35 42 49
-
-Happy? (y/n)
-```
-
-### Bank Account
-
-- Your program should start with a variable holding the current money on a user’s bank account (start with e.g. 100)
-- The user should now enter an amount, and he should enter if he wants to deposit to his account or if he wants to withdraw (e.g. 1 for deposit, 2 for withdrawal)
-- The variable holding money on the account should be updated accordingly, and the current money should be printed.
-The program should run and let the user interact until the money on his account is zero or less.
-
-Example:
-```
-Current money on account: 100
-Enter amount:
-30
-Enter 1 for deposit, 2 for withdrawal
-2
-Current money on account: 70
-Enter amount:
-60
-Enter 1 for deposit, 2 for withdrawal
-2
-Current money on account: 10
-Enter amount:
-20
-Enter 1 for deposit, 2 for withdrawal
-1
-Current money on account: 30
-Enter amount:
-30
-Enter 1 for deposit, 2 for withdrawal
-2
-You have no money left, program stopped ...
-```
-
-
-## [GitHub classroom](https://classroom.github.com/a/fKsu9Nib)
-
-We shall be using GitHub classroom for the rest of this semester to organize exercises and
-assignments, so it is important that you have a GitHub account. **If you do not have one, please
-create an account right now.**
+TODO
 
 Please click the link above and follow the instructions in your free time. This assignment
 contains a course on the fundamentals of Git and GitHub which will help in understanding how
 to leverage Git & GitHub for collaboration between the students and tutors.
 
+### Exercise 2
+
+TODO
+
+
 ## Exercises and assignment
+
+TODO
 
 ### [#1 Introduction to github classroom](https://classroom.github.com/a/WPyqVy9W)
 ### [#2 "Know Thy Tools" - get familiar with git](https://classroom.github.com/a/fKsu9Nib)
 ### [#3 Warming back up to programming with Java](https://classroom.github.com/a/7vXI9ynd)
-
 
 
 ## Materials
