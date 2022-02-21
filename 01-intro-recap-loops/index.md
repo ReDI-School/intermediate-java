@@ -188,3 +188,4 @@ What is the smallest positive number that is _evenly divisible_ by all the numbe
 - [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/)
 - [W3Schools Java Tutorial](https://www.w3schools.com/java/)
 - [O'Reilly Programming Podcasts](https://www.oreilly.com/topics/oreilly-programming-podcast)
+- [Loops in Java](https://www.javatpoint.com/java-for-loop)

@@ -37,12 +37,12 @@ TODO
 
 ## Exercises and assignment
 
-TODO
+TODO - verify these exercises / reference the ones for methods
 
 ### [#1 Introduction to github classroom](https://classroom.github.com/a/WPyqVy9W)
 ### [#2 "Know Thy Tools" - get familiar with git](https://classroom.github.com/a/fKsu9Nib)
 ### [#3 Warming back up to programming with Java](https://classroom.github.com/a/7vXI9ynd)
 
 
-## Materials
-- https://www.javatpoint.com/java-for-loop
+## Supporting Materials:
+TODO
