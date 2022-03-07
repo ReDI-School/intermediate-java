@@ -165,7 +165,7 @@ Prettifying a string means to print the string in the standard output with the c
 
 You should write a method that takes a string and the separating character and prettifies the string using the separating character. In addition make sure to get the separating character from the user via the standard input.
 
-### 2 - Sum of an array.
+### 2 - Sum of an array
 
 Write a method that takes an array of integers and returns the sum of the elements of said array.
 
@@ -184,7 +184,9 @@ string.
 - Write a method that takes three numbers and returns the minimum number of the three
 - Write another method that takes three numbers and returns the maximum number of the three
 
-### Homework Assignment: Palindrome
+## Homework Assignment
+
+### Palindrome
 
 Write a method that takes a string and returns a boolean indicating if the provided string is a
 palindrome or not.
