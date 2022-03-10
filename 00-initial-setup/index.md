@@ -49,4 +49,4 @@ assignments, so it is important that you have a GitHub account, as defined in th
 Every assignment will have a link for you to accept, then implement and submit your solution. Teachers will show how this works, so don't worry.
 
 If you want to try out the Github Classroom by yourself, click the link below and follow the instructions.
-[GitHub Classroom](https://classroom.github.com/a/fKsu9Nib){:target="_blank"}
+[GitHub Classroom](https://classroom.github.com/a/uanpkbEI){:target="_blank"}
