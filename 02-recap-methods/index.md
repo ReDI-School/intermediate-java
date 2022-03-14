@@ -153,46 +153,10 @@ public class Main {
 ```
 
 
-## Exercises
+## [More exercises](https://classroom.github.com/a/v8BdVG8B)
 
-Note - The methods in this exercises can be static and they can be invoked from the `main` method for testing.
+Follow the [link](https://classroom.github.com/a/v8BdVG8B) and accept the assignment to be able to see the exercies and submit your solution. 
 
-Feel free to name your methods however you like.
+## [Homework Assignment](https://classroom.github.com/a/2LRYDkZ_)
 
-### 1 - Prettify
-
-Prettifying a string means to print the string in the standard output with the characters that appear side by side separated by a character chosen by the user.
-
-You should write a method that takes a string and the separating character and prettifies the string using the separating character. In addition make sure to get the separating character from the user via the standard input.
-
-### 2 - Sum of an array
-
-Write a method that takes an array of integers and returns the sum of the elements of said array.
-
-### 3 - Average
-
-The average of a collection of numbers is the sum divided by the number of elements. Write a method that takes an array of
-integers and returns the average. Make sure to reuse the sum method that you have written above.
-
-### 4 - Count the `char`
-
-Write a method that takes a `String` and a `char` and returns the number of times you can find that character in that
-string.
-
-### 5 - Min/Max
-
-- Write a method that takes three numbers and returns the minimum number of the three
-- Write another method that takes three numbers and returns the maximum number of the three
-
-## Homework Assignment
-
-### Palindrome
-
-Write a method that takes a string and returns a boolean indicating if the provided string is a
-palindrome or not.
-
-A palindrome is a string that is the same backward and forward e.g. `hannah`, `level`, `madam`, etc..
-
-
-## Supporting Materials:
-TODO
+Accept the [assignment](https://classroom.github.com/a/2LRYDkZ_) and solve it on your own. Reach out whenever you are stuck and good luck!
