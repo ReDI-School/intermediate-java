@@ -13,6 +13,7 @@ nav_exclude: true
 * Access the elements of an Array
 * Change an Array element
 * Looping through an Array
+* Returning Arrays from Methods
 * Code, code, code 🤩
 
 ## Recap & Assignment check
