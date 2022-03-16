@@ -16,7 +16,7 @@ nav_exclude: true
 
 ## Recap & Assignment check
 
-Let's look into the assignment from lesson 2
+Let's look into the assignment from lesson 3
 
 ## Array
 
