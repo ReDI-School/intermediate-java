@@ -2,7 +2,7 @@
 title: "02 - Recap Methods"
 nav_order: 2
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 2: Recap methods
