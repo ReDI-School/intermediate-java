@@ -1,11 +1,11 @@
 ---
-title: 3 - Data Structure - Arrays and Lists
+title: 3 - Data Structure - Lists
 nav_order: 3
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 3: Data Structure - Arrays and Lists
+# Lesson 3: Data Structure - Lists
 
 ## Goals
 
