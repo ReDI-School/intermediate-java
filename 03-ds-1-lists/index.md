@@ -9,7 +9,6 @@ nav_exclude: true
 
 ## Goals
 
-* Declare & Initialise Array and Access its elements
 * Declare & Initialise ArrayList and Access its elements
 * Understand the difference between Array vs List
 * Discuss different kind of Lists
