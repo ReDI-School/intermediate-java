@@ -2,7 +2,7 @@
 title: "Homework Assignment Solutions"
 nav_order: 1
 parent: "01 - Introduction to the Intermediate Java course"
-nav_exclude: true
+nav_exclude: false
 ---
 
 ### Exercise 1: Multiples of 3 or 5
