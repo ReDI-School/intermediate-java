@@ -187,5 +187,5 @@ What is the smallest positive number that is _evenly divisible_ by all the numbe
 - [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html){:target="_blank"}
 - [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/){:target="_blank"}
 - [W3Schools Java Tutorial](https://www.w3schools.com/java/){:target="_blank"}
-- [O'Reilly Programming Podcasts](https://www.oreilly.com/topics/oreilly-programming-podcast){:target="_blank"}
+- [O'Reilly Programming Podcasts (SoundCloud)](https://soundcloud.com/oreilly-radar/sets/oreilly-programming-podcast){:target="_blank"}
 - [Loops in Java](https://www.javatpoint.com/java-for-loop){:target="_blank"}
