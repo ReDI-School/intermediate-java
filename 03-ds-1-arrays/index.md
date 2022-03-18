@@ -13,7 +13,7 @@ nav_exclude: true
 * Access the elements of an Array
 * Change an Array element
 * Looping through an Array
-* Returning Arrays from Methods
+* Passing and returning Arrays to/from Methods
 * Code, code, code 🤩
 
 ## Recap & Assignment check
@@ -24,8 +24,8 @@ Let's look into the assignment from lesson 2
 
 An array is a collection of items in contiguous memory blocks. An array is a container object that 
 holds a fixed number of values of a single type. The length of an array is established when the 
-array is created. After creation, its length is fixed. You have seen an example of arrays already, 
-in the main method of the "Hello World!" application. This section discusses arrays in greater 
+array is created. After creation, its length is fixed.
+You have seen an example of arrays already, in the main method of the "Hello World!" application. This section discusses arrays in greater 
 detail.
 
 ![array](objects-tenElementArray.gif)
