@@ -226,8 +226,8 @@ output: yes
 
 ## Materials
 
-- [Arrays from Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
-- [Arrays](https://www.programiz.com/java-programming/arrays)
-- [Java Arrays](http://tutorials.jenkov.com/java/arrays.html)
-- [More Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
-- [Multidimensional arrays](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)
+- [Arrays from Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html){:target="_blank"}
+- [Arrays](https://www.programiz.com/java-programming/arrays){:target="_blank"}
+- [Java Arrays](http://tutorials.jenkov.com/java/arrays.html){:target="_blank"}
+- [More Java Arrays](https://www.w3schools.com/java/java_arrays.asp){:target="_blank"}
+- [Multidimensional arrays](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/){:target="_blank"}
