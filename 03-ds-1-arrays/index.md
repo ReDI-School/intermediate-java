@@ -2,7 +2,7 @@
 title: 03 - Data Structure - Arrays
 nav_order: 3
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 3: Data Structure - Arrays
