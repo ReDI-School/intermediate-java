@@ -1,5 +1,5 @@
 ---
-title: 3 - Data Structure - Arrays
+title: 03 - Data Structure - Arrays
 nav_order: 3
 has_children: false
 nav_exclude: true
