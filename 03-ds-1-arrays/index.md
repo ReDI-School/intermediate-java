@@ -129,9 +129,9 @@ A method can also return an array. For example, the below program returns an arr
    }
 ```
 
-## [Exercises and Assignments](https://classroom.github.com/a/vi1e0wLM)
+## [Exercises and Assignments](https://classroom.github.com/a/YP9RR7gg)
 
-Please download the assignment from GitHub Classroom.
+Please click the link to download the assignment from GitHub Classroom.
 
 ## Materials
 
