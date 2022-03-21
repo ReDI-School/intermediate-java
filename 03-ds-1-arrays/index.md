@@ -10,10 +10,10 @@ nav_exclude: true
 ## Goals
 
 * Introducing Arrays
-* Declare & Initialise Array
-* Access & Change elements of an Array
-* Looping through Array elements
-* Pass and return Arrays to/from Methods
+* Declare & Initialise Arrays
+* Access & Change Elements of an Array
+* Looping Through Array Elements
+* Pass and Return Arrays to/from Methods
 * Code, code, code 🤩
 
 ## Recap & Assignment check
@@ -29,7 +29,7 @@ Each item in an array is called an element, and each element is accessed by its 
 As shown in the preceding illustration, numbering begins with 0. The 9th element, for example, 
 would therefore be accessed at index 8.
 
-## Declare & Initialise Array
+## Declare & Initialise Arrays
 
 To create an array in Java, you use three steps:
 
@@ -68,7 +68,7 @@ public class Main {
 
 }
 ```
-## Access & Change elements in the Array
+## Access & Change Elements of an Array
 
 Once you have an array with initial values, you can get and change the values in each slot of that array. 
 To get at a value stored within an array, use the array subscript expression ([]):
@@ -86,7 +86,7 @@ public class Main {
 
 }
 ```
-## Looping through array elements
+## Looping Through Array Elements
 
 In Java, we can also loop through each element of the array. Below example uses `for loop` to iterate through the array elements
 
@@ -109,13 +109,13 @@ The property `length` is a built-in property to determine the size of any array.
 
     System.out.println(anArray.length);
 
-## Pass and return Arrays to/from Methods
+## Pass and Return Arrays to/from Methods
 
-### Pass an Array to methods
+### Pass an Array to Methods
 
 Like variables, we can also pass arrays to methods. Where have you seen this before?
 
-### Return Array from methods
+### Return Array from Methods
 
 A method can also return an array. For example, the below program returns an array from method `incrementArrElements`.
 
@@ -129,58 +129,9 @@ A method can also return an array. For example, the below program returns an arr
    }
 ```
 
-## [Exercises](https://classroom.github.com/a/vi1e0wLM)
+## [Exercises and Assignments](https://classroom.github.com/a/vi1e0wLM)
 
-### Find all elements less than X
-
-Write a program to find all elements of the array of ints that are less than X
-
-### Print reversed array
-
-In the java class `PrintReversed` (file in the github repository `src/main/java/com/redi/j2/PrintReversed.java`):
-
-1. Complete the method `printReversedArray` that will print an `int` array reversed. For an array
-   `{1,3,5,2,4}`, it prints `{4,2,5,3,1}`
-2. Write another method `printReversedList` that will print an `Integer` array reversed.
-
-
-## [Homework Assignments](https://classroom.github.com/a/vi1e0wLM)
-
-### Merge 2 arrays
-
-In the java class `Merge` (file in the github repository `src/main/java/com/redi/j2/Merge.java`):
-
-1. Complete the method `mergeArrays` that will merge two int arrays into another int array and
-   returns it. The merge rule is that for each index, that the element of the first array goes
-   before the element of the second array e.g.
-
-   ```
-   first = {2, 5, 9}
-   second = {1, 4, 0}
-   merge = {2, 1, 5, 4, 9, 0}
-   ```
-   The two arrays are of the same length.
-
-### Find an element
-
-In the java class `FindElement` (file in the github repository `src/main/java/com/redi/j2/FindElement.java`):
-
-1. Complete the method `findFirstInArray` that gets as input a `String` array and a `String`. The
-   method should return the first position of the string in this array or -1 if the string is not in
-   the array.
-2. Write another method called `findLastInArray` that returns the last position of the element.
-3. Write the equivalent methods `findFirstInList` and `findLastInList` that does the same as above
-   but using a list instead.
-
-### Second smallest
-
-In the java class `SecondSmallest` (file in the github repository `src/main/java/com/redi/j2/SecondSmallest.java`), complete the method `secondSmallest` to return the second-smallest item in an array of integers.
-
-For example
-- the second smallest of `[0, 1, 2, 3]` is `1`
-- the second smallest of `[1, 3, 4, 1, 1, 4, 2]` is `2` and
-- the second smallest of `[2]` is `2`
-
+Please download the assignment from GitHub Classroom.
 
 ## Materials
 
