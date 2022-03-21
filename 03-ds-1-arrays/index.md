@@ -20,7 +20,7 @@ nav_exclude: true
 
 Let's look into the assignment from lesson 2
 
-## Array
+## Arrays
 An array is a collection of items. Each slot in the array can hold an object or a primitive value. Arrays can contain any type of element value (primitive types or objects), but you can't store different types in a single array.
 
 ![array](objects-tenElementArray.gif)
@@ -29,7 +29,7 @@ Each item in an array is called an element, and each element is accessed by its 
 As shown in the preceding illustration, numbering begins with 0. The 9th element, for example, 
 would therefore be accessed at index 8.
 
-### Declare & Initialise Array
+## Declare & Initialise Array
 
 To create an array in Java, you use three steps:
 
@@ -68,7 +68,7 @@ public class Main {
 
 }
 ```
-### Access & Change elements in the Array
+## Access & Change elements in the Array
 
 Once you have an array with initial values, you can get and change the values in each slot of that array. 
 To get at a value stored within an array, use the array subscript expression ([]):
@@ -86,7 +86,7 @@ public class Main {
 
 }
 ```
-### Looping through array elements
+## Looping through array elements
 
 In Java, we can also loop through each element of the array. Below example uses `for loop` to iterate through the array elements
 
@@ -109,13 +109,13 @@ The property `length` is a built-in property to determine the size of any array.
 
     System.out.println(anArray.length);
 
-### Pass and return Arrays to/from Methods
+## Pass and return Arrays to/from Methods
 
-#### Pass an Array to methods
+### Pass an Array to methods
 
 Like variables, we can also pass arrays to methods. Where have you seen this before?
 
-#### Return Array from methods
+### Return Array from methods
 
 A method can also return an array. For example, the below program returns an array from method `incrementArrElements`.
 
