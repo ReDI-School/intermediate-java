@@ -1,8 +1,8 @@
 ---
-title: "4 - OOP - Objects, Classes & Constructor"
-nav_order: 4
+title: "04 - OOP - Objects, Classes & Constructor"
+nav_order: 5
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 4: OOP - Objects, Classes & Constructor
@@ -20,8 +20,6 @@ nav_exclude: true
 ## Recap & Assignment check
 
 Let's look into the assignment from lesson 3
-
-[Google Slides](https://docs.google.com/presentation/d/1M_Eeyv9fA4oJda54TCXdyhBqFoclJgqYenxT7GqkXwo/embed)
 
 ## What Is an Object?
 
@@ -54,26 +52,24 @@ methods (functions in some programming languages). Methods operate on an object'
 mechanism for object-to-object communication. Hiding internal property and requiring all interaction to be performed
 through an object's methods is known as data encapsulation — a fundamental principle of object-oriented programming.
 
+### An example: a Bicycle Object
+
 Consider a bicycle, for example:
 
 ![Concept Bicycle Object](concepts-bicycleObject.gif)
 
-By attributing property (current speed, and current gear) and providing methods for changing that property, the object
-remains in control of how the outside world is allowed to use it. For example, if the bicycle only has 6 gears, a method
-to change gears could reject any value that is less than 1 or greater than 6.
+Any bicycle you see on the street can be represented through an object; its **status** is represented by their **properties**:
+- color
+- gear
+- speed
 
-Bundling code into individual software objects provides a number of benefits, including:
+part of the status does change over time due to object **behaviors**, which are represented by its **methods**:
+- changeGear()
+- speedUp()
 
-- **Modularity**: The source code for an object can be written and maintained independently of the source code for other
-  objects. Once created, an object can be easily passed around inside the system.
-- **Information-hiding**: By interacting only with an object's methods, the details of its internal implementation
-  remain hidden from the outside world.
-- **Code re-use**: If an object already exists (perhaps written by another software developer), you can use that object
-  in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then
-  trust to run in your own code.
-- **Pluggability** and debugging ease: If a particular object turns out to be problematic, you can simply remove it from
-  your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in
-  the real world. If a bolt breaks, you replace it, not the entire machine.
+We will represent the bicycle object like this
+
+![Object Schema](img/objectSchema.png)
 
 ## What Is a Class?
 
@@ -81,16 +77,17 @@ A class is a blueprint or prototype from which objects are created. This section
 property and behavior of a real-world object. It intentionally focuses on the basics, showing how even a simple class
 can cleanly model property and behavior.
 
-In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other
+In the real world, you'll often find many individual objects of the same kind. There may be thousands of other
 bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and
 therefore contains the same components. In object-oriented terms, we say that your bicycle is an instance of the class
 of objects known as bicycles. A class is the blueprint from which individual objects are created.
 
-The following Bicycle class is one possible implementation of a bicycle:
+The following Bicycle class is one possible implementation of a bicycle class:
 
 ```java
 class Bicycle {
 
+    String color = "green";
     int speed = 0;
     int gear = 1;
 
@@ -102,19 +99,57 @@ class Bicycle {
         speed = speed + increment;
     }
 
-    void applyBrakes(int decrement) {
-        speed = speed - decrement;
-    }
-
     void printProperties() {
-        System.out.println("speed:" + speed + " gear:" + gear);
+        System.out.println("color:" + speed + "speed:" + speed + " gear:" + gear);
     }
 }
 ```
 
 The syntax of the Java programming language will look new to you, but the design of this class is based on the previous
 discussion of bicycle objects. The fields speed, and gear represent the object's property, and the methods (changeGear,
-speedUp etc.) define its interaction with the outside world.
+speedUp) define its interaction with the outside world.
+
+## Objects are instances of a class
+
+You may have noticed that the `Bicycle` class does not contain a main method. That's because it's not a complete
+application; it's just the blueprint for bicycles that might be used in an application. The responsibility of creating
+and using new `Bicycle` objects belongs to some other class in your application.
+
+Here's a `BicycleDemo` class that creates two separate `Bicycle` objects and invokes their methods:
+
+```java
+class BicycleDemo {
+    public static void main(String[] args) {
+
+        // Create two different 
+        // Bicycle objects
+        Bicycle greenBike = new Bicycle();
+        Bicycle redBike = new Bicycle();
+
+        // Invoke methods on 
+        // those objects
+        greenBike.speedUp(10);
+        greenBike.changeGear(2);
+        greenBike.printProperties();
+
+        redBike.color("red");
+        redBike.speedUp(10);
+        redBike.changeGear(2);
+        redBike.speedUp(10);
+        redBike.changeGear(3);
+        redBike.printProperties();
+    }
+}
+
+```
+
+The output of this test prints the current speed, and gear for the two bicycles:
+
+```
+color:green speed:10 gear:2
+color:red speed:20 gear:3
+```
+
 
 ## Constructors
 
@@ -123,20 +158,45 @@ like method declarations—except that they use the name of the class and have n
 the following constructors:
 
 ```java
-public Bicycle(int startSpeed,int startGear){
+class Bicycle {
+
+    /** Properties */
+    String color;
+    int speed;
+    int gear;
+
+    /** Constructors */
+    public Bicycle(String color, int startSpeed, int startGear){
+        this.color=color;
         this.gear=startGear;
         this.speed=startSpeed;
-}
-public Bicycle(){
+    }
+    
+    public Bicycle(){
+        this.color="green";
         this.gear=1;
         this.speed=0;
+    }
+
+    /** Methods */
+    void changeGear(int newValue) {
+        gear = newValue;
+    }
+
+    void speedUp(int increment) {
+        speed = speed + increment;
+    }
+
+    void printProperties() {
+        System.out.println("color" + color + "speed:" + speed + " gear:" + gear);
+    }
 }
 ```
 
-To create a new `Bicycle` object called `myBike`, a constructor is called by the new operator:
+To create a new `Bicycle` object called `blueBike`, a constructor is called by the new operator:
 
 ```java
-Bicycle myBike=new Bicycle(0,8);
+Bicycle blueBike=new Bicycle("blue",0,8);
 ```
 
 `Bicycle yourBike = new Bicycle();` invokes the no-argument constructor to create a new `Bicycle` object
@@ -154,82 +214,147 @@ cannot write two constructors that have the same number and type of arguments fo
 would not be able to tell them apart. Doing so causes a compile-time error.
 
 You don't have to provide any constructors for your class, but you must be careful when doing this. The compiler
-automatically provides a no-argument, default constructor for any class without constructors. 
+automatically provides a no-argument, default constructor for any class without constructors.
 
-You may have noticed that the `Bicycle` class does not contain a main method. That's because it's not a complete
-application; it's just the blueprint for bicycles that might be used in an application. The responsibility of creating
-and using new `Bicycle` objects belongs to some other class in your application.
+# OOP benefits
+In contrast to other styles of programming (e.g procedural, functional, and so on) Object Oriented Programming assumes
+that everything can be represented as an object. Interaction between defined objects defines the applications.
 
-Here's a `BicycleDemo` class that creates two separate `Bicycle` objects and invokes their methods:
+We will use the Bicycle example to introduce the benefits of this approach:
 
-```java
-class BicycleDemo {
-    public static void main(String[] args) {
+1. **Modularity**: The source code for an object can be written and maintained independently of the source code for other
+   objects. Once created, an object can be easily passed around inside the system.
 
-        // Create two different 
-        // Bicycle objects
-        Bicycle bike1 = new Bicycle();
-        Bicycle bike2 = new Bicycle();
+   Given that everything is representable as an object, object can be compounded of other objects. We can identify an 
+object for our bicycle brakes
 
-        // Invoke methods on 
-        // those objects
-        bike1.speedUp(10);
-        bike1.changeGear(2);
-        bike1.printProperties();
+   ![brake Schema](img/brakesSchema.png) <img src="img/hitBrakes.png" alt="brakes" height="124"/>
 
-        bike2.speedUp(10);
-        bike2.changeGear(2);
-        bike2.speedUp(10);
-        bike2.changeGear(3);
-        bike2.printProperties();
+   This is then the Brakes Class
+   ``` java
+   class Brakes {
+   
+       int power = 2;
+   
+       int decrementSpeed(int initialSpeed) {
+           int finalSpeed = initialSpeed - power;
+           return finalSpeed;
+       }
+   }
+   ```
+
+   so we can enhance our Bicycle Class using the Brakes Class:
+    ``` java
+    class Bicycle {
+    
+        /** Properties */
+        String color;
+        int speed;
+        int gear;
+        Brakes brakes;
+    
+        /** Constructors */
+        public Bicycle(int color, int startSpeed, int startGear){
+            this.color=color
+            this.gear=startGear;
+            this.speed=startSpeed;
+            this.brakes=new Brakes();
+        }
+        
+        public Bicycle(){
+                this.color="green";
+                this.gear=1;
+                this.speed=0;
+                this.brakes=new Brakes();
+        }
+    
+        /** Methods */
+        void changeGear(int newValue) {
+            gear = newValue;
+        }
+    
+        void speedUp(int increment) {
+            speed = speed + increment;
+        }
+       
+        void hitBrakes() {
+            speed = brakes.decrementSpeed(speed)
+        }
+    
+        void printProperties() {
+            System.out.println("color:" + color + "speed:" + speed + " gear:" + gear);
+        }
     }
-}
+    ```
 
-```
+2. **Information-hiding**: By interacting only with an object's methods, the details of its internal implementation
+  remain hidden from the outside world.
 
-The output of this test prints the current speed, and gear for the two bicycles:
+    Just imagine our Brakes class to be implemented as follows:
+    ``` java
+   class Brakes {
 
-```
-speed:10 gear:2
-speed:20 gear:3
-```
+       int power = 2;
 
-## [Exercise & Assignment](https://classroom.github.com/a/Pr0SbPS6)
+       int decrementSpeed(int initialSpeed) {
+           int finalSpeed = initialSpeed / power; //here we divide speed by the power!
+           return finalSpeed;
+       }
+   }
+    ```
+   The internal implementation of `decrementSpeed()` changed, but it has no implication to its usage in Bicycle class.
 
-#### Follow the link and download the assignment from GitHub Classroom
+3. **Code re-use**: If an object already exists (perhaps written by another software developer), you can use that object
+in your program. This allows specialists to implement/test/debug complex, task-specific objects, which you can then
+trust to run in your own code.
 
-0. In the package `com.redi.j2`, create a class to represent a `Car`
-1. Add the following properties to the `Car`
-  - `int speed` the current speed that the car has, initial value = 0
-  - `int maxSpeed` the maximum speed that the car can have.
-  - `String plateNumber` a string representing the plate number of the car.
-  - `int numSeats` the maximum number of seats the car has.
-  - `List<String> passengers` the list of names of people currently inside the car.
-2. Add a constructor that accepts these properties in order:
-  - `plateNumber`
-  - `maxSpeed`
-  - `numSeats`
-3. Add another constructor that only accepts these properties in order:
-  - `plateNumber`
-    also set the following default values:
-  - `maxSpeed` = 100
-  - `numSeats` = 5
-4. Add a no-arg constructor and set the following default values:
-  - `plateNumber` = `UUID.randomUUID().toString()` a random string.
-  - `maxSpeed` = 100
-  - `numSeats` = 5
-5. Now let's add the following behaviors to the `Car`
-  - Getters for each property.
-  - `start()` starts the car and accelerates until the 30 km/h
-  - `stop()` stops the car, bringing the speed to zero
-  - `accelerate(int increase)` accelerates the car by increasing the car speed.
-  - `decelerate(int reduce)` decelerates the car by reducing the car speed.
-  - `enter(name)` The person with name enters the car. This method returns true if the person is already in the car or 
-    was successfully added, otherwise it returns false.
-  - `leave(name)` The person with name leaves the car.
-  - `toString` that returns a `String` representing the Car.
+    Lots of manufacturers out there have their implementation of Brakes
+   
+    | V-BRAKES                                                  |                          DISC-BRAKES                          |                          COASTER BRAKES                          | 
+    |:-------------------------------------------------------------:|:----------------------------------------------------------------:| :----: |
+    | <img src="img/vBrakes.png" alt="v-brakes" padding-left="40" height="124"/> | <img src="img/discBrake.png" alt="disc brakes" height="124"/> | <img src="img/coasterBrake.png" alt="disc brakes" height="124"/> | 
 
-**NOTE** The constraints of max speed and number of seats must not be violated.
+    ``` java
+    import shimano.VBrakes;
+   
+    class Bicycle {
+    
+        /** Properties */
+        String color = "green";
+        int speed = 0;
+        int gear = 1;
+        VBrakes brakes;
+      
+    ...
+   }
+
+
+- **Pluggability** and debugging ease: If a particular object turns out to be problematic, you can simply remove it from
+  your application and plug in a different object as its replacement. This is analogous to fixing mechanical problems in
+  the real world. If a bolt breaks, you replace it, not the entire machine.
+
+    Which means: if you prefer the disc-Brakes, you can use them
+
+    ``` java
+    import brembo.DiscBrakes;
+  
+    class Bicycle {
+    
+        /** Properties */
+        String color = "green";
+        int speed = 0;
+        int gear = 1;
+        DiscBrakes brakes;
+      
+    ...
+   }
+
+> We will learn more advanced techniques on how to make VBrakes and DiscBrakes interchangeable with no changes in the
+> Bicycle class, by using interfaces and/or the `extends` directive.
+
+## [Exercise & Assignment](https://classroom.github.com/a/NVJU1fy8)
+
+Follow the link and download the assignment from GitHub Classroom
 
 ## Materials
 
