@@ -21,8 +21,6 @@ nav_exclude: false
 
 Let's look into the assignment from lesson 3
 
-[Google Slides](https://docs.google.com/presentation/d/1M_Eeyv9fA4oJda54TCXdyhBqFoclJgqYenxT7GqkXwo/embed)
-
 ## What Is an Object?
 
 An object is a software bundle of related property and behavior. Software objects are often used to model the real-world
