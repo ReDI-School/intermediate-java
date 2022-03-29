@@ -316,7 +316,7 @@ trust to run in your own code.
 
     ``` java
     import shimano.VBrakes;
-   
+    
     class Bicycle {
     
         /** Properties */
@@ -324,9 +324,8 @@ trust to run in your own code.
         int speed = 0;
         int gear = 1;
         VBrakes brakes;
-      
-    ...
-   }
+    }
+    ```
 
 
 - **Pluggability** and debugging ease: If a particular object turns out to be problematic, you can simply remove it from
@@ -345,9 +344,8 @@ trust to run in your own code.
         int speed = 0;
         int gear = 1;
         DiscBrakes brakes;
-      
-    ...
-   }
+    }
+    ```
 
 > We will learn more advanced techniques on how to make VBrakes and DiscBrakes interchangeable with no changes in the
 > Bicycle class, by using interfaces and/or the `extends` directive.
