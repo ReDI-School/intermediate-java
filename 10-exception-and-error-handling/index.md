@@ -1,11 +1,11 @@
 ---
-title: "11 - Error Handling & Exceptions"
+title: "10 - Error Handling & Exceptions"
 nav_order: 11
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 11: Error Handling & Exceptions
+# Lesson 10: Error Handling & Exceptions
 
 ## Goals
 - Identify what can go wrong in your applications

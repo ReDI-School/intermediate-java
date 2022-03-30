@@ -1,7 +1,7 @@
 ---
-title: Project ideas
-nav_order: 89
-has_children: true
+title: 14 - Project ideas
+nav_order: 15
+has_children: false
 nav_exclude: true
 ---
 

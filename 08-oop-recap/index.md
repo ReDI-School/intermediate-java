@@ -1,15 +1,15 @@
 ---
-title: "5 - OOP - Objects, Classes & Constructor Recap"
-nav_order: 5
+title: "08 - OOP Recap"
+nav_order: 9
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 5: OOP - Objects, Classes & Constructor Recap
+# Lesson 8: OOP Recap
 
 ## Goals
 
-- Recap basic OOP concepts
+- Recap all OOP concepts
 - Practice creating classes
 
 ## [OOP Review Classroom activity](https://classroom.github.com/a/mz9NMDhd)

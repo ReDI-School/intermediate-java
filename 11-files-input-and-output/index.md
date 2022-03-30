@@ -1,11 +1,11 @@
 ---
-title: 12 - Files Input/Output
+title: 11 - Files Input/Output
 nav_order: 12
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 12: File Input/Output (I/O)
+# Lesson 11: File Input/Output (I/O)
 
 ## Goals
 

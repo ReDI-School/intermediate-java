@@ -1,16 +1,16 @@
 ---
-title: 14 - Software Testing
-nav_order: 14
+title: 12 - Unit Testing
+nav_order: 13
 has_children: true
 nav_exclude: true
 ---
 
-# Lesson 14: Software Testing
+# Lesson 12: Unit Testing
 
 ## Goals
-- Learn about software testing
-- Deep dive into unit tests - what is the purpose of unit tests
-- Learn about libraries that helps you write unit tests
+- Learn about software testing in general
+- Deep dive into Unit tests - what is the purpose of Unit tests
+- Learn about libraries that helps you to write Unit tests
 
 ## Libraries
 - [JUnit5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.7.0)

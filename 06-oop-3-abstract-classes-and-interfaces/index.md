@@ -1,11 +1,11 @@
 ---
-title: "9 - OOP 4 - Abstract Classes and Interfaces"
-nav_order: 9
+title: "06 - OOP - Abstract Classes and Interfaces"
+nav_order: 7
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 9: OOP 4 - Abstract Classes and Interfaces
+# Lesson 6: OOP - Abstract Classes and Interfaces
 
 ## Goals
 
