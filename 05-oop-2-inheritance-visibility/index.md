@@ -1,11 +1,11 @@
 ---
-title: "8 - OOP3 - Inheritance and Visibility"
-nav_order: 8 
+title: "05 - OOP - Inheritance and Visibility"
+nav_order: 6 
 has_children: false 
 nav_exclude: true
 ---
 
-# Lesson 8: OOP3 - Inheritance and Visibility
+# Lesson 5: OOP - Inheritance and Visibility
 
 ## Goals
 

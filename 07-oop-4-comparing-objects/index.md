@@ -1,11 +1,11 @@
 ---
-title: "6 - OOP 2 - Comparing Objects"
-nav_order: 6
+title: "07 - OOP - Comparing Objects"
+nav_order: 8
 has_children: false
 nav_exclude: true
 ---
 
-# Lesson 6: OOP 2 - Comparing Objects
+# Lesson 7: OOP - Comparing Objects
 
 ## Goals
 

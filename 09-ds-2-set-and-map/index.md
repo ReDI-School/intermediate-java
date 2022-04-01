@@ -1,11 +1,11 @@
 ---
-title: "7 - Data Structure - Set & Map"
-nav_order: 7 
-has_children: false 
+title: "09 - Data Structure - Set & Map"
+nav_order: 10
+has_children: false
 nav_exclude: true
 ---
 
-# Lesson 7: Data Structure - Set & Map
+# Lesson 9: Data Structures - Set & Map
 
 ## Goals
 
