@@ -1,17 +1,18 @@
 ---
-title: "05 - OOP - Inheritance and Visibility"
+title: "05 - OOP - Inheritance and Encapsulation"
 nav_order: 6 
 has_children: false 
 nav_exclude: true
 ---
 
-# Lesson 5: OOP - Inheritance and Visibility
+# Lesson 5: OOP - Inheritance and Encapsulation
 
 ## Goals
 
 - Check-in
 - What is Encapsulation?
 - Visibility and access modifiers
+- Getters and Setters
 - What is Inheritance?
 - Why do we need it?
 - Have we seen it before?
@@ -47,7 +48,7 @@ To hide the values or state of a structured data object inside a class, preventi
 
 - A variable or method declared without any access control modifier is available to any other class in the same package.
 
-![modifiers summary](Screenshot%202021-10-13%20113506.png)
+![modifiers summary](access-modifiers-table.png)
 
 ## Properties (Attributes) and Accessor Methods (Getters and Setters)
 The concept of a "Property" goes beyond having a variable inside a class
@@ -226,7 +227,9 @@ public class Laptop extends Product {
 ### Think of inheritance as an "is-a" relationship
 
 - In Java, inheritance is an is-a relationship. That is, we use inheritance only if there exists an is-a relationship between two classes. 
-  - Examples: Laptop is a Product, Car is a Vehicle, Orange is a Fruit.
+  - Laptop **is a** Product
+  - Car **is a** Vehicle
+  - Orange **is a** Fruit.
 
 ## Why do we need it?
 
@@ -264,6 +267,7 @@ public class Main {
 - Is the strongest type of relationship, so it should be avoided unless you are completely sure
   - Strong Coupling, meaning, you won't be able to change it afterwards
   - Might "force" you to break concepts (such as Encapsulation)
+  - Not flexible enough to represent exceptions
 - There are better ways of solving the same problems (e.g. Interfaces and/or Composition, that we will see in other classes)
 
 ## Another Example
@@ -413,13 +417,13 @@ Make a new class `QueueList`, that extends the `ArrayList` class:
   - If you call the normal `add` or `remove` methods, will the Queue logic be broken?
   - How do you prevent that of happening?
 
-## [Inheritance and Visibility assignment](https://classroom.github.com/a/G8hBj-_N){:target="_blank"}
+## [Inheritance and Visibility Assignment](https://classroom.github.com/a/swd2uLN2 ){:target="_blank"}
 
-#### Follow [the link](https://classroom.github.com/a/G8hBj-_N){:target="_blank"}, accept and download the assignment from GitHub Classroom
+#### Follow [the link](https://classroom.github.com/a/swd2uLN2 ){:target="_blank"}, accept and download the assignment from GitHub Classroom
 
 ## Food for Thoughts
 
 - After learning about access modifiers, do you think a **constructor** of a class can be **private**?
   - Is it technically possible?
   - Why would you want to do something like that?
-- Let's have a discussion about it on slack!
+- Let's have a discussion about it on Slack!
