@@ -2,7 +2,7 @@
 title: "05 - OOP - Inheritance and Encapsulation"
 nav_order: 6 
 has_children: false 
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 5: OOP - Inheritance and Encapsulation
