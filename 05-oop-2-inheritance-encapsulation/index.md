@@ -257,7 +257,7 @@ public class Main {
 
         // here's the polymorphism
         p1.setPrice(10); // that works
-        p2.setPrice(10); // does won't work! (too cheap for a Laptop)
+        p2.setPrice(10); // won't work! (too cheap for a Laptop)
       
         // beware of the reference type
         p2.setHardDisk(4); // does not compile (because the reference is for Product)
