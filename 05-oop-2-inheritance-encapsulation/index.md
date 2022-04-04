@@ -27,7 +27,10 @@ How is everybody doing?
 In object-oriented programming (OOP), encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.
 
 ### What is used for?
-To hide the values or state of a structured data object inside a class, preventing direct access to them by clients in a way that could expose hidden implementation details or violate state invariance maintained by the methods.
+Mainly, to hide the values or states inside a class, in order to
+- Prevent direct access to them by clients (and avoid violation of internal logic)
+- Hide implementation details (increasing usability)
+- Promote maintainability (code changes can be made independently)
 
 ## Visibility and access modifiers
 
@@ -35,14 +38,18 @@ To hide the values or state of a structured data object inside a class, preventi
 
 - Methods, variables, and constructors that are declared private can only be accessed within the declared class itself.
 
-- Private access modifier is the most restrictive access level. Class and interfaces cannot be private.
+- Private access modifier is the most restrictive access level. Classes and interfaces cannot be private.
 
 ### Public Access Modifier - Public
 
 - A class, method, constructor, interface, etc. declared public can be accessed from any other class(es). Therefore, fields, methods, blocks declared
   inside a public class can be accessed from any class belonging to the Java Universe™.
 
-### Default Access Modifier - No Keyword
+### Protected Access Modifier - Protect
+
+- Methods, variables, and constructors that are declared private can only be accessed within the declared class itself AND derived classes (inheritance).
+
+### Default Access Modifier (Package Protected) - No Keyword
 
 - Default access modifier means we do not explicitly declare an access modifier for a class, field, method, etc.
 
@@ -246,14 +253,14 @@ public class Main {
         
         // instantiating some products
         Product p1 = new Product();
-        Product p2 = new Laptop(); // Laptop IS a Product, thus this is accepted
+        Product p2 = new Laptop(); // Laptop IS A Product, thus this statement is accepted
 
         // here's the polymorphism
         p1.setPrice(10); // that works
-        p2.setPrice(10); // does not work!
+        p2.setPrice(10); // won't work! (too cheap for a Laptop)
       
         // beware of the reference type
-        p2.setHardDisk(4); // does not compile (the reference is for Product)
+        p2.setHardDisk(4); // does not compile (because the reference is for Product)
         if (p2 instanceof Laptop) { // safe-check
             Laptop laptop = (Laptop) p2; // this is called "Casting"
             laptop.setHardDisk(4); // now it compiles
@@ -265,10 +272,9 @@ public class Main {
 ## Problems with Inheritance
 
 - Is the strongest type of relationship, so it should be avoided unless you are completely sure
-  - Strong Coupling, meaning, you won't be able to change it afterwards
-  - Might "force" you to break concepts (such as Encapsulation)
-  - Not flexible enough to represent exceptions
-- There are better ways of solving the same problems (e.g. Interfaces and/or Composition, that we will see in other classes)
+  - Strong Coupling, meaning, you won't be able to change it afterwards without a huge refactoring
+  - It is not flexible enough to represent exceptions (or new requirements)
+- There are better ways of solving the same problems (e.g. Interfaces and/or Composition, which we will see in other classes)
 
 ## Another Example
 
