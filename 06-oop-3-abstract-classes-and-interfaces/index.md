@@ -17,9 +17,9 @@ nav_exclude: true
 
 [Google Slides](https://docs.google.com/presentation/d/1wWBYhCs0qNxYKMee1euA0QDcMeYpfjrfXnPZ4nJdwac/embed ){:target="_blank"}
 
-## [Homework Assignment](https://TODO ){:target="_blank"}
+## [Homework Assignment](https://classroom.github.com/a/CZE7E53o ){:target="_blank"}
 
-#### Follow the [Link](https://TODO ){:target="_blank"}, accept the exercise and download the repository
+#### Follow the [Link](hhttps://classroom.github.com/a/CZE7E53o ){:target="_blank"}, accept the exercise and download the repository
 
 Let's improve the Animal Kingdom exercise!
 
