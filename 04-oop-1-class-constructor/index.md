@@ -1,7 +1,7 @@
 ---
 title: "04 - OOP - Objects, Classes & Constructor"
 nav_order: 5
-has_children: false
+has_children: true
 nav_exclude: false
 ---
 
