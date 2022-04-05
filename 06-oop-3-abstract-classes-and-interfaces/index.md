@@ -15,16 +15,16 @@ nav_exclude: true
 
 ## Slides
 
-[Google Slides](https://docs.google.com/presentation/d/1wWBYhCs0qNxYKMee1euA0QDcMeYpfjrfXnPZ4nJdwac/embed)
+[Google Slides](https://docs.google.com/presentation/d/1wWBYhCs0qNxYKMee1euA0QDcMeYpfjrfXnPZ4nJdwac/embed ){:target="_blank"}
 
-[Hands-On Exercise Solution](https://github.com/RediJavaClassroomF21/09-hands-on-exercise-solution)
+## [Homework Assignment](https://classroom.github.com/a/CZE7E53o ){:target="_blank"}
 
-## [Homework Assignment](https://classroom.github.com/a/PsVIQZSy)
+#### Follow the [Link](hhttps://classroom.github.com/a/CZE7E53o ){:target="_blank"}, accept the exercise and download the repository
 
-#### Follow the link, accept the exercise and download the repository
+Let's improve the Animal Kingdom exercise!
 
 ## Useful Links
 
-- [Abstract Classes (by Oracle)](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html )
-- [Interfaces (by Oracle)](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+- [Abstract Classes (by Oracle)](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html ){:target="_blank"}
+- [Interfaces (by Oracle)](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html ){:target="_blank"}
 
