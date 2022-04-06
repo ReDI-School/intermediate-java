@@ -2,7 +2,7 @@
 title: "06 - OOP - Abstract Classes and Interfaces"
 nav_order: 7
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 6: OOP - Abstract Classes and Interfaces
