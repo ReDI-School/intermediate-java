@@ -16,7 +16,7 @@ nav_exclude: false
 
 ## Slides
 
-[Google Slides](https://docs.google.com/presentation/d/19YeuUsnd3RYcJoDB2SUa3oIV5nosfgk4KUMwRgWKiIM/embed)
+[Google Slides](https://docs.google.com/presentation/d/1Plo5HgHf8yreMbY1hiEB85k0D_DNVhfWhHLcJkVH7SU/embed)
 
 ## [Exercise & Assignment](https://classroom.github.com/a/wBJvmYFC)
 
