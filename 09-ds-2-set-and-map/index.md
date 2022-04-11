@@ -98,8 +98,8 @@ public class Main {
 - **Ordering is important**
 - `TreeSet` is a **Binary Search Tree** that uses the `compareTo` method to ensure that the items in the `Set` are unique and are sorted in the right order.
 - `TreeMap` is a **Binary Search Tree** that uses the `compareTo` method to ensure that the keys in the `Map` are unique and are sorted in the right order.
-- Learn about [**Binary Search Tree**](https://www.youtube.com/watch?v=pYT9F8_LFTM)
+- Learn about [**Binary Search Tree**](https://www.youtube.com/watch?v=pYT9F8_LFTM ){:target="_blank"}
 
-## [Set & Map Assignment](https://classroom.github.com/a/dUh1YtIJ)
+## [Set & Map Assignment](https://classroom.github.com/a/dUh1YtIJ ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
