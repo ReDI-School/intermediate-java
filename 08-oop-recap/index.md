@@ -72,15 +72,14 @@ public class Main {
 ```
 
 
-## [OOP Review Classroom activity](https://classroom.github.com/a/ikzsCVEM)
+## [OOP Review Classroom activity](https://classroom.github.com/a/i39IlGbD)
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
-
-## [OOP Review Assignment](https://classroom.github.com/a/i39IlGbD)
-
-#### Follow the link, accept and download the assignment from GitHub Classroom
-
 This exercise consists of creating 2 classes to hold Rating and Movie info.
+
+## [OOP Review Exercise](https://classroom.github.com/a/ikzsCVEM)
+
+#### Follow the link, accept and download the assignment from GitHub Classroom
 
 Good luck and have fun!
 
