@@ -157,11 +157,11 @@ ArrayList<String> animals = new ArrayList<>(Arrays.asList(arr));
 > Question; How do you find out whether the given `List` is empty or not?
 
 
-## [Exercises and Assignments](https://classroom.github.com/a/nJT37gYK)
+## [Exercises and Assignments](https://classroom.github.com/a/nJT37gYK ){:target="_blank"}
 
 Please download the assignment from GitHub Classroom.
 
 ## Materials
 
-- [ArrayList (Official documentation)](https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html)
-- [Java ArrayList Vs Array](https://www.programiz.com/java-programming/arraylist)
+- [ArrayList (Official documentation)](https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html ){:target="_blank"}
+- [Java ArrayList Vs Array](https://www.programiz.com/java-programming/arraylist ){:target="_blank"}

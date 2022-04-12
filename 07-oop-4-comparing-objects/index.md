@@ -16,15 +16,15 @@ nav_exclude: false
 
 ## Slides
 
-[Google Slides](https://docs.google.com/presentation/d/1Plo5HgHf8yreMbY1hiEB85k0D_DNVhfWhHLcJkVH7SU/embed)
+[Google Slides](https://docs.google.com/presentation/d/1Plo5HgHf8yreMbY1hiEB85k0D_DNVhfWhHLcJkVH7SU/embed ){:target="_blank"}
 
-## [Exercise & Assignment](https://classroom.github.com/a/wBJvmYFC)
+## [Exercise & Assignment](https://classroom.github.com/a/wBJvmYFC ){:target="_blank"}
 
 #### Follow the link, accept the exercise and download the repository
 
 ## Useful Links
 
-- [Equals and HashCode (by JournalDev)](https://www.journaldev.com/21095/java-equals-hashcode)
-- [Sorting in Java (by Baeldung)](https://www.baeldung.com/java-sorting)
-- [LocalDateTime Tutorial (by Baeldung)](https://www.baeldung.com/java-8-date-time-intro )
+- [Equals and HashCode (by JournalDev)](https://www.journaldev.com/21095/java-equals-hashcode ){:target="_blank"}
+- [Sorting in Java (by Baeldung)](https://www.baeldung.com/java-sorting ){:target="_blank"}
+- [LocalDateTime Tutorial (by Baeldung)](https://www.baeldung.com/java-8-date-time-intro ){:target="_blank"}
 

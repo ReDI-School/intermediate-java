@@ -1,7 +1,7 @@
 ---
 title: "05 - OOP - Inheritance and Encapsulation"
 nav_order: 6 
-has_children: false 
+has_children: true 
 nav_exclude: false
 ---
 

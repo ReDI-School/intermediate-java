@@ -139,9 +139,9 @@ public class CountCharExercise {
 
 ### Graded: Simple Multiplication Table
 
-This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/wJEsXx7a)
+This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/wJEsXx7a ){:target="_blank"}
 
-- Read a single number with [Scanner](https://beginnersbook.com/2017/09/java-program-to-read-integer-value-from-the-standard-input/)
+- Read a single number with [Scanner](https://beginnersbook.com/2017/09/java-program-to-read-integer-value-from-the-standard-input/ ){:target="_blank"}
 - Print the multiplication table of the number from 1 until 10
 
 Example:
@@ -196,7 +196,7 @@ public class MultiplicationTable {
 
 ### Graded: Dividable numbers
 
-This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/KOXYDafF)
+This exercise is available in [Github classroom assignment here](https://classroom.github.com/a/KOXYDafF ){:target="_blank"}
 
 - Read two numbers with Scanner
 - Print each number from 1 to the first entered number that is dividable without remainder by the second number (e.g. 6 is dividable by 3 without remainder as 6 / 3 is 2 with remainder 0, but 6 is not dividable by 4 without remainder as 6 / 4 is 1 with remainder 2)

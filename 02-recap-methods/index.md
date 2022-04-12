@@ -153,10 +153,10 @@ public class Main {
 ```
 
 
-## [More exercises](https://classroom.github.com/a/v8BdVG8B)
+## [More exercises](https://classroom.github.com/a/v8BdVG8B ){:target="_blank"}
 
-Follow the [link](https://classroom.github.com/a/v8BdVG8B) and accept the assignment to be able to see the exercies and submit your solution. 
+Follow the [link](https://classroom.github.com/a/v8BdVG8B ){:target="_blank"} and accept the assignment to be able to see the exercies and submit your solution. 
 
-## [Homework Assignment](https://classroom.github.com/a/2LRYDkZ_)
+## [Homework Assignment](https://classroom.github.com/a/2LRYDkZ_ ){:target="_blank"}
 
-Accept the [assignment](https://classroom.github.com/a/2LRYDkZ_) and solve it on your own. Reach out whenever you are stuck and good luck!
+Accept the [assignment](https://classroom.github.com/a/2LRYDkZ_ ){:target="_blank"} and solve it on your own. Reach out whenever you are stuck and good luck!

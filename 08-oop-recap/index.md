@@ -72,12 +72,12 @@ public class Main {
 ```
 
 
-## [OOP Review Classroom activity](https://classroom.github.com/a/i39IlGbD)
+## [OOP Review Classroom activity](https://classroom.github.com/a/i39IlGbD ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 This exercise consists of creating 2 classes to hold Rating and Movie info.
 
-## [OOP Review Exercise](https://classroom.github.com/a/ikzsCVEM)
+## [OOP Review Exercise](https://classroom.github.com/a/ikzsCVEM ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 
@@ -85,8 +85,8 @@ Good luck and have fun!
 
 ## Materials
 
-- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
-- [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
-- [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)
-- [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/)
+- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html ){:target="_blank"}
+- [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html ){:target="_blank"}
+- [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b ){:target="_blank"}
+- [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/ ){:target="_blank"}
 

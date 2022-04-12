@@ -350,14 +350,14 @@ trust to run in your own code.
 > We will learn more advanced techniques on how to make VBrakes and DiscBrakes interchangeable with no changes in the
 > Bicycle class, by using interfaces and/or the `extends` directive.
 
-## [Exercise & Assignment](https://classroom.github.com/a/NVJU1fy8)
+## [Exercise & Assignment](https://classroom.github.com/a/NVJU1fy8 ){:target="_blank"}
 
 Follow the link and download the assignment from GitHub Classroom
 
 ## Materials
 
-- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
-- [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
-- [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)
-- [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/)
+- [Object-Oriented Programming Concepts by Oracle](https://docs.oracle.com/javase/tutorial/java/concepts/index.html ){:target="_blank"}
+- [Providing Constructors for Your Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html ){:target="_blank"}
+- [OOP: Everything you need to know about Object Oriented Programming](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b ){:target="_blank"}
+- [4 Pillars for Object Oriented Programming](https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/ ){:target="_blank"}
 

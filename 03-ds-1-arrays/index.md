@@ -129,14 +129,14 @@ A method can also return an array. For example, the below program returns an arr
    }
 ```
 
-## [Exercises and Assignments](https://classroom.github.com/a/YP9RR7gg)
+## [Exercises and Assignments](https://classroom.github.com/a/YP9RR7gg ){:target="_blank"}
 
 Please click the link to download the assignment from GitHub Classroom.
 
 ## Materials
 
-- [Arrays from Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html){:target="_blank"}
-- [Arrays](https://www.programiz.com/java-programming/arrays){:target="_blank"}
-- [Java Arrays](http://tutorials.jenkov.com/java/arrays.html){:target="_blank"}
-- [More Java Arrays](https://www.w3schools.com/java/java_arrays.asp){:target="_blank"}
-- [Multidimensional arrays](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/){:target="_blank"}
+- [Arrays from Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html ){:target="_blank"}
+- [Arrays](https://www.programiz.com/java-programming/arrays ){:target="_blank"}
+- [Java Arrays](http://tutorials.jenkov.com/java/arrays.html ){:target="_blank"}
+- [More Java Arrays](https://www.w3schools.com/java/java_arrays.asp ){:target="_blank"}
+- [Multidimensional arrays](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/ ){:target="_blank"}
