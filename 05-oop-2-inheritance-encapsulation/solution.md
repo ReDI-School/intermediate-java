@@ -1,5 +1,5 @@
 ---
-title: "Hands-on Exercise Solution"
+title: "Assignment Solutions"
 nav_order: 1
 parent: "05 - OOP - Inheritance and Encapsulation"
 nav_exclude: false
