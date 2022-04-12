@@ -1,8 +1,8 @@
 ---
-title: "Hands-on Exercise Solution"
+title: "Assignment Solutions"
 nav_order: 1
 parent: "06 - OOP - Abstract Classes and Interfaces"
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Hands-on Exercise Solution

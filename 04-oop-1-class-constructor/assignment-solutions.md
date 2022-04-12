@@ -1,5 +1,5 @@
 ---
-title: "04 - OOP Assignment Solutions"
+title: "Assignment Solutions"
 nav_order: 0
 parent: "04 - OOP - Objects, Classes & Constructor"
 nav_exclude: false

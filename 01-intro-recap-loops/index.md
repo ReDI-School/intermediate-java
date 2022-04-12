@@ -21,7 +21,7 @@ has_children: true
 * 🏝 We take a 10 minutes break in the middle of the class
 * 🕺🏻 We are here for you! Always ask questions if something is not clear.
 * 🚀 Never forget the feedback!
-* 🕸 [Web](https://redi-school.github.io/intermediate-java){:target="_blank"}, [Previous Semesters](https://redi-j2.netlify.com){:target="_blank"}
+* 🕸 [Web](https://redi-school.github.io/intermediate-java){:target="_blank"}, [Previous Semesters](https://redi-j2.netlify.com ){:target="_blank"}
 * 🐦 Slack: #22s_programming_java
 * 🎓 We will have a Project at the end of the course!
 
@@ -173,7 +173,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 
-[Original Source](https://projecteuler.net/problem=1){:target="_blank"}
+[Original Source](https://projecteuler.net/problem=1 ){:target="_blank"}
 
 ### Exercise 2: Smallest Multiple
 
@@ -181,11 +181,11 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 What is the smallest positive number that is _evenly divisible_ by all the numbers from 1 to 20?
 
-[Original Source](https://projecteuler.net/problem=5){:target="_blank"}
+[Original Source](https://projecteuler.net/problem=5 ){:target="_blank"}
 
 ## Supporting Materials:
-- [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html){:target="_blank"}
-- [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/){:target="_blank"}
-- [W3Schools Java Tutorial](https://www.w3schools.com/java/){:target="_blank"}
-- [O'Reilly Programming Podcasts (SoundCloud)](https://soundcloud.com/oreilly-radar/sets/oreilly-programming-podcast){:target="_blank"}
-- [Loops in Java](https://www.javatpoint.com/java-for-loop){:target="_blank"}
+- [Intellij Idea. First Java Application Tutorial](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html ){:target="_blank"}
+- [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/ ){:target="_blank"}
+- [W3Schools Java Tutorial](https://www.w3schools.com/java/ ){:target="_blank"}
+- [O'Reilly Programming Podcasts (SoundCloud)](https://soundcloud.com/oreilly-radar/sets/oreilly-programming-podcast ){:target="_blank"}
+- [Loops in Java](https://www.javatpoint.com/java-for-loop ){:target="_blank"}
