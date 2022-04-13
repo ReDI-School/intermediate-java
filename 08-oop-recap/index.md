@@ -2,7 +2,7 @@
 title: "08 - OOP Recap"
 nav_order: 9
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 8: OOP Recap
