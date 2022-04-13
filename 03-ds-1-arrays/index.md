@@ -1,7 +1,7 @@
 ---
 title: 03 - Data Structure - Arrays
 nav_order: 3
-has_children: false
+has_children: true
 nav_exclude: false
 ---
 
