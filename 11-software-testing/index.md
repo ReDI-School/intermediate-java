@@ -1,11 +1,11 @@
 ---
-title: 12 - Unit Testing
-nav_order: 13
-has_children: true
+title: 11 - Unit Testing
+nav_order: 12
+has_children: false
 nav_exclude: true
 ---
 
-# Lesson 12: Unit Testing
+# Lesson 11: Unit Testing
 
 ## Goals
 - Learn about software testing in general
