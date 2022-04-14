@@ -9,52 +9,29 @@ nav_exclude: true
 
 ## Goals
 - Learn about software testing in general
-- Deep dive into Unit tests - what is the purpose of Unit tests
-- Learn about libraries that helps you to write Unit tests
-
-## Libraries
-- [JUnit5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.7.0)
+- Deep dive into Unit Tests
+- Learn about libraries that help you to writing Unit Tests
 
 ## Slides
 
-[Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSYCIArENldqw6a04i1WIcVvLXwPVr3vtNvc5AQaaVtkSgiA_HhUU5GQAkWBfAarXYF6rXnSvXEm4cU/embed)
+[Google Slides](https://docs.google.com/presentation/d/1xVOt4O6BVRqRwYBxNM6H5-rs0TZMvvBgaDx2JUh8PDw/embed ){:target="_blank"}
 
 ## Exercises
 
-### Exercise 1
-Given the following operations, write unit tests to make sure they work as expected
-Write test that test the behavior in the happy case and test that test exceptional behaviors (i.e. dividing by zero).
+### [Hands-On Exercise](https://classroom.github.com/a/QDE8RKa3 ){:target="_blank"}
 
-```java
-public class Operations {
+Follow the [link](https://classroom.github.com/a/QDE8RKa3 ){:target="_blank"} and download the exercise from GitHub Classroom
 
-    public int divide(int x, int y) {
-        return x / y;
-    }
+### [Homework Assignment](https://classroom.github.com/a/??????? ){:target="_blank"}
 
-    public int multiply(int x, int y) {
-        return x * y;
-    }
-
-    public int sum(int x, int y) {
-        return x + y;
-    }
-
-    public int difference(int x, int y) {
-        return x - y;
-    }
-}
-
-```
-
-### Exercise 2
-Write a program that checks if a word or a phrase is palindrome using TDD method. 
-
-Hint: A word or a phrase is a **palindrome** if it reads the same backward as forward i.e. `mom`, `madam`, `reace car`, `radar`, `level`, `Was it a car or a cat I saw`
+Follow the [link](https://classroom.github.com/a/??????? ){:target="_blank"} and download the assignment from GitHub Classroom
 
 ## Additional Resources
 
- - [Junit Tutorial - tutorialpoint](https://www.tutorialspoint.com/junit/index.htm)
- - [Junit Tutorial - guru99](https://www.guru99.com/junit-tutorial.html)
- - [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
- - [Tests naming conventions](https://dzone.com/articles/7-popular-unit-test-naming)
+ - [JUnit 5 - User Guide](https://junit.org/junit5/docs/current/user-guide/ ){:target="_blank"}
+ - [Configure IntelliJ with JUnit](https://www.jetbrains.com/help/idea/junit.html ){:target="_blank"}
+ - [Given-When-Then Testing Structure](https://martinfowler.com/bliki/GivenWhenThen.html ){:target="_blank"}
+ - [Test-Driven Development (Wikipedia)](https://en.wikipedia.org/wiki/Test-driven_development ){:target="_blank"}
+ - [Popular Test Naming Conventions](https://dzone.com/articles/7-popular-unit-test-naming ){:target="_blank"}
+ - [JUnit 5 Tutorial (Guru99)](https://www.guru99.com/junit-tutorial.html ){:target="_blank"}
+ - [JUnit Best Practices Guide](https://howtodoinjava.com/best-practices/unit-testing-best-practices-junit-reference-guide ){:target="_blank"}
