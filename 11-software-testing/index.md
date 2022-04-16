@@ -22,9 +22,9 @@ nav_exclude: true
 
 Follow the [link](https://classroom.github.com/a/QDE8RKa3 ){:target="_blank"} and download the exercise from GitHub Classroom
 
-### [Homework Assignment](https://classroom.github.com/a/??????? ){:target="_blank"}
+### [Homework Assignment](https://classroom.github.com/a/Ly6IxG-I ){:target="_blank"}
 
-Follow the [link](https://classroom.github.com/a/??????? ){:target="_blank"} and download the assignment from GitHub Classroom
+Follow the [link](https://classroom.github.com/a/Ly6IxG-I ){:target="_blank"} and download the assignment from GitHub Classroom
 
 ## Additional Resources
 
