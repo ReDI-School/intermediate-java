@@ -13,22 +13,21 @@ nav_exclude: true
 - When do I need a `Set`?
 - `Set` vs `List`
 - What is a `Map`?
-- Understand the different types of Set and Map?
+- Understand the different types of `Set` and `Map`.
 
 ## Recap
 
 - What is an `Array`?
 - What is a `List`?
-- What is the difference between an `Array` & a `List`?
+- What are the differences between `Array` & `List`?
 
 ## What is a Set?
 
-- A `Set` is a collection of items that contains no duplicate items.
-- A `Set` is a collection of items that contains only unique elements.
+- A `Set` is a collection of items that contains no duplicate items / only unique elements.
 
 > More formally, a `Set` contains no pair of items `e1` and `e2` such that `e1.equals(e2)` is true.
 
-1. What is the size of this `Set` at the end?
+1. Let's analyse the following code. What's the final size of the `Set`?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -42,7 +41,7 @@ public class Main {
     }
 }
   ```
-2. What is the size of this `Set` at the end?
+2. Let's analyse another code. What's the final size of the `Set`?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -56,18 +55,17 @@ public class Main {
     }
 }
   ```
-> As stated above, you need a Set when you are interested in only unique items.
+> As stated above, you need a Set when you are interested in having only unique items.
 
 ## What is a Map?
 
-- A `Map` is a collection of _unique_ keys and their values.
-- A `Map` is a dictionary of _unique_ keys and allows you to look for their values.
-- A `Map` maps _unique_ keys to their values.
+- A `Map` is a collection of _unique_ keys and a corresponding (assigned) value for each key.
+- A `Map` allows you to look for a value based on a given key.
 
 > More formally, a `Map` is a collection of key-value pairs containing no pair of keys `k1` and `k2`
 > such that `k1.equals(k2)` is true.
 
-1. What is the size of this `Map` at the end?
+1. Let's analyse the following code. What's the final size of the `Map`?
   ```java
 public class Main {
     public static void main(String[] args) {
@@ -84,76 +82,36 @@ public class Main {
     }
 }
   ```
-2. What is the size of this `Map` at the end?
-  ```java
-public class Main {
-    public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("car", 5);
-        map.put("bicycle", 2);
-        map.put("car", 0);
-        int size = map.size(); // ??
-        boolean containsCar = map.containsKey("car"); // ??
-        boolean containsBus = map.containsKey("bus"); // ??
-        int car = map.get("car"); // ??
-        Integer bus = map.get("bus"); // ??
-        int bus = map.get("bus"); // ??
-    }
-}
-  ```
+
 > As stated above, you need a `Map` when you are interested in keeping a dictionary or mapping of keys to values.
 
 ## HashSet and HashMap
 
 - **Ordering is not important**
-- HashSet uses the `equals` and `hashCode` methods to ensure that the items in the `Set` are unique.
-- HashMap uses the `equals` and `hashCode` methods to ensure that the keys in the `Map` are unique.
+- `HashSet` uses the `equals` and `hashCode` methods to ensure that the items in the `Set` are unique.
+- `HashMap` uses the `equals` and `hashCode` methods to ensure that the keys in the `Map` are unique.
 
 > When in doubt, use the `HashSet` and `HashMap`.
 
 ## TreeSet and TreeMap
 
-- **Ordering is very important**
-- TreeSet is a **Binary Search Tree** that uses the `compareTo` method to ensure that the items in the `Set` are unique and are sorted in the right order.
-- TreeMap is a **Binary Search Tree** that uses the `compareTo` method to ensure that the keys in the `Map` are unique and are sorted in the right order.
-- Learn about [**Binary Search Tree**](https://www.youtube.com/watch?v=pYT9F8_LFTM)
+- **Ordering is important**
+- `TreeSet` is a **Binary Search Tree** that uses the `compareTo` method to ensure that the items in the `Set` are unique and are sorted in the right order.
+- `TreeMap` is a **Binary Search Tree** that uses the `compareTo` method to ensure that the keys in the `Map` are unique and are sorted in the right order.
+- Learn about [**Binary Search Tree**](https://www.youtube.com/watch?v=pYT9F8_LFTM ){:target="_blank"}
 
-### Design
+## Exercise
 
-### Let us design `RediSet` interface.
+Remember the [Star Classification](https://en.wikipedia.org/wiki/Star_(classification) ){:target="_blank"} challenge from the last assignment? Well, let's implement it using a Map!
 
-```java
-interface RediSet<T> {
+![Extracted from Amazon](./amazon-style-ratings.png)
 
-    // adds an item to the set
-    void add(T t);
+Define a class called `Ratings`, use a Map to store the ratings' information, and implement all the following behaviours:
+- `void addRating(int stars)`: Used for adding a rating from a customer. It receives a star rating from 0 to 5 (only).
+- `int getAmountRatings()`: Returns the total amount of ratings given to this product.
+- `int getAmountRatings(int stars)`: Returns the total amount of ratings of a specific star (e.g. how many customers gave 4 stars for this product). The method should return 0 if an invalid rating is specified.
+- `float getAverageRating()`: Returns the average of all given ratings for the product. If there are no ratings, it should return -1.
 
-    // removes an item from the set
-    void remove(T t);
-
-    // checks if the item is present in the set
-    boolean contains(T t);
-    
-    // returns the size of this set
-    int size();
-}
-public interface RediSortedSet<T> extends RediSet<T> {
-
-    // The first item in the Set
-    T first();
-
-    // The last item in the Set
-    T last();
-
-    // The Set containing items >= first and < last.
-    SortedSet<T> subset(T first, T last);
-
-}
-``` 
-
-### Let us design `RediSimpleSet` class.
-### Let us design `RediHashSet` class.
-
-## [Set & Map Assignment](https://classroom.github.com/a/BH7ZFXWa)
+## [Set & Map Assignment](https://classroom.github.com/a/dUh1YtIJ ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
