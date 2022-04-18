@@ -1,7 +1,7 @@
 ---
 title: "07 - OOP - Comparing Objects"
 nav_order: 8
-has_children: false
+has_children: true
 nav_exclude: false
 ---
 
