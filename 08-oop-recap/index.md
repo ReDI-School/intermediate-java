@@ -1,7 +1,7 @@
 ---
 title: "08 - OOP - Recap"
 nav_order: 9
-has_children: false
+has_children: true
 nav_exclude: false
 ---
 
@@ -72,12 +72,12 @@ public class Main {
 ```
 
 
-## [OOP Review Classroom activity](https://classroom.github.com/a/i39IlGbD ){:target="_blank"}
+## [OOP Review Classroom Activity](https://classroom.github.com/a/i39IlGbD ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 This exercise consists of creating 2 classes to hold Rating and Movie info.
 
-## [OOP Review Exercise](https://classroom.github.com/a/ikzsCVEM ){:target="_blank"}
+## [OOP Review Homework Exercise](https://classroom.github.com/a/ikzsCVEM ){:target="_blank"}
 
 #### Follow the link, accept and download the assignment from GitHub Classroom
 
