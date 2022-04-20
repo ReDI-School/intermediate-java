@@ -21,6 +21,10 @@ nav_exclude: true
 - What is a `List`?
 - What are the differences between `Array` & `List`?
 
+## Presentation
+
+[Link](https://docs.google.com/presentation/d/1u7_eK6VpGtFGE6rfGUjfmFFzb8UvTPVD-96VSj6v9h4/embed ){:target="_blank"}
+
 ## What is a Set?
 
 - A `Set` is a collection of items that contains no duplicate items / only unique elements.
