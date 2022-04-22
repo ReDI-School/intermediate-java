@@ -34,8 +34,8 @@ Definition of an exception:
 
 Examples of exceptions:
 
-1: You have an app to send messages between users, what happens when the internet is down? how does the app handle that?
-2: Your program is reading data from a file and suddenly the file is deleted by a user. How will your program react?
+1. You have an app to send messages between users, what happens when the internet is down? how does the app handle that? 
+2. Your program is reading data from a file and suddenly the file is deleted by a user. How will your program react?
 
 ## Understand how to use Java Exceptions to handle errors
 
@@ -44,8 +44,8 @@ We either want to handle the error, or at the very least, provide a proper error
 
 Following the example we gave above:
 
-1: The app handles the network down exception and shows an error message to the user or the app retries to send the message when the internet is back.
-2: The program stops when the file is deleted and shows an error to the user.
+1. The app handles the network down exception and shows an error message to the user or the app retries to send the message when the internet is back.
+2. The program stops when the file is deleted and shows an error to the user.
 
 See the following code as an example, what could go wrong here?
 
@@ -69,7 +69,7 @@ Whe we look at the code behind FileReader(filename), we see the following:
 
 When we try to read a file, it can happen that the file does not exist!
 Note the `throws` keyword - It tells us that this function can fail in a predictable way. If the file cannot be found, this function will `throw` a `FileNotFoundException`.
-This is a foreseeable error and our application should **explicitly** handle this error. 
+This is a foreseeable error and our application should **explicitly** handle this error.
 In fact, Java will not accept the above code for `readFile`. Since the function it calls has a `throws FileNotFoundException` in the signature, Java **knows** that this exception can happen.
 Since Java knows this, it will **force** you to handle this exception **explicitly**.
 
@@ -135,7 +135,7 @@ try {
 Not the `e.getMessage()` in the catch block - it will return the string `Invalid file path`.
 
 
-### Know the differences between checked and unchecked exceptions
+### Checked and unchecked exceptions
 Definition:
 > A checked exception is a type of exception that must be either caught or declared in the method in which it is thrown.
 
@@ -156,7 +156,7 @@ void readFile(String fileName) {
 ```
 
 #### Declare the exception in the method:
-Instead of handling this exception directly in `readFile`, we can also propagate it to it's caller and let them handle it. This can be useful if how you want to handle it depends on who calls the method.
+Instead of handling this exception directly in `readFile`, we can also propagate it to its caller and let them handle it. This can be useful if how you want to handle it depends on who calls the method.
 
 ```java
 void readFile(String fileName) throws FileNotFoundException {
@@ -208,7 +208,7 @@ Two of the most common types of runtime exceptions are `NullPointerException` an
 
 ## Custom exceptions
 Every now and then, the exceptions defined by Java are not enough. We want to define our own exceptions.
-In order to do so, we can just inherit from Exception for checked exceptions or from RuntimeException.
+In order to do so, we can just inherit from `Exception` class for checked exceptions or from `RuntimeException` class for runtime exceptions.
 In order to set a specific message or a specific root cause, we can overwrite the constructors of Exception/RuntimeException.
 
 ```java
