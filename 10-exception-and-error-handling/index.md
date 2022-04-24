@@ -264,6 +264,6 @@ Write a dateValidator method that accept a string as parameter and returns nothi
 
 # Assignment
 
-## [Rock, Paper, Scissors with Error Handling](https://classroom.github.com/a/QEHpqbFP)
+## [Rock, Paper, Scissors Game with Error Handling](https://classroom.github.com/a/BAPYLA8Z ){:target="_blank"}
 
-#### Follow the link, accept and download the assignment from GitHub Classroom
+#### Follow the [link](https://classroom.github.com/a/BAPYLA8Z ){:target="_blank"}, accept and download the assignment from GitHub Classroom
