@@ -123,9 +123,10 @@ Definition:
 
 The purpose of it is to force the developer to consider **expected** cases they might not be aware of.
 
-Example: **_ParseException_** is a checked exception. The following code will not compile unless we either handle the exception or declare it in the method.
+Example: **_ParseException_** is a checked exception used when you try to convert a String to a Date object. 
 
-#### Handle the exception:
+The following code will not compile unless we either handle the exception or declare it in the method.
+
 ```java
 public static Date readDate() {
     
@@ -137,6 +138,20 @@ public static Date readDate() {
     // the parse method can throw a 'ParseException'
     Date date = sdf.parse(dateInput);
     return date;
+}
+```
+
+#### Handle the exception:
+
+To handle a checked exception in your code, you need to surround the instruction with a `try-catch` block.
+
+```java
+try {
+    Date date = sdf.parse(dateInput);
+    return date;
+} catch (ParseException e) {
+    System.out.println(e.getMessage());
+    return null;
 }
 ```
 
