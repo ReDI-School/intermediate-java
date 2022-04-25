@@ -2,7 +2,7 @@
 title: "10 - Error Handling & Exceptions"
 nav_order: 11
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 10: Error Handling & Exceptions
@@ -34,8 +34,8 @@ Definition of an exception:
 
 Examples of exceptions:
 
-1. You have an app to send messages between users, what happens when the internet is down? how does the app handle that? 
-2. Your program is reading data from a file and suddenly the file is deleted by a user. How will your program react?
+1. You have an array of 3 elements, what happens when your program tries to print the 4th element in the array? how does the program handle that? 
+2. Your program is parsing user inputs to integer, What happens when user enter text instead of numbers? how will your program react?
 
 ## Understand how to use Java Exceptions to handle errors
 
@@ -44,95 +44,77 @@ We either want to handle the error, or at the very least, provide a proper error
 
 Following the example we gave above:
 
-1. The app handles the network down exception and shows an error message to the user or the app retries to send the message when the internet is back.
-2. The program stops when the file is deleted and shows an error to the user.
+1. Your program should display an error message informing the user that element 4 can't be found because the array contains only 3 elements, may be prompt the user to add another element index to be printed
+2. Your program should display an error message informing the user to enter data in the valid format
+
 
 See the following code as an example, what could go wrong here?
 
 ```java
-  void readFile(String fileName) {
-    FileReader fr = new FileReader(fileName);
+public class Main {
+  public static void main(String[ ] args) {
+    int[] myNumbers = {0, 1, 2};
+    System.out.println(myNumbers[3]); // error!
   }
+}
 ```
 
 Don't scroll down yet - Take a minute to think about it...
 
 -----------------
 
-Whe we look at the code behind FileReader(filename), we see the following:
+When we run the above code you get the following:
 
 ```java
-    public FileReader(String fileName) throws FileNotFoundException {
-        super(new FileInputStream(fileName));
-    }
+    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 ```
 
-When we try to read a file, it can happen that the file does not exist!
-Note the `throws` keyword - It tells us that this function can fail in a predictable way. If the file cannot be found, this function will `throw` a `FileNotFoundException`.
-This is a foreseeable error and our application should **explicitly** handle this error.
-In fact, Java will not accept the above code for `readFile`. Since the function it calls has a `throws FileNotFoundException` in the signature, Java **knows** that this exception can happen.
-Since Java knows this, it will **force** you to handle this exception **explicitly**.
 
-A better version of the `readFile` function would be:
+A better version to avoid this error function would be:
 
 ```java
-void readFile(String fileName) {
-  try {
-      FileReader fr = new FileReader(fileName);
-      System.out.println("File found!")
-  } catch (FileNotFoundException e) {
-      System.out.println("File not found");
+public class Main {
+  public static void main(String[ ] args) {
+    int[] myNumbers = {0, 1, 2};
+    int index = 3;
+    try {
+      System.out.println(myNumbers[index]); // invalid index
+      System.out.println("Valid Index!");
+    } catch (ArrayIndexOutOfBoundsException e){
+      System.out.println("Error: myNumbers array contains only 3 elements, index "+index+" is out of bounds");
+    }
   }
 }
 ```
 
-Note the `try` and `catch` keywords. We wrap the code that can cause an exception in a `try { ... }` block and add a `catch(FileNotFoundException e) {...}` after it.
-Your application will start by executing the code in the `try` block: `FileReader fr = new FileReader(fileName)`
+Note the `try` and `catch` keywords. We wrap the code that can cause an exception in a `try { ... }` block and add a `catch(ArrayIndexOutOfBoundsException e) {...}` after it.
+Your application will start by executing the code in the `try` block: `System.out.println(myNumbers[3])`
 
-If the exception happens - the file cannot be found - the application will leave the `try` block immediately, ignore the rest of the code in the `try` block and enter the `catch` block. 
-Then, it will execute the code written in the catch block and print `File not found` to the console.
+If the exception happens - the index is out of bounds - the application will leave the `try` block immediately, ignore the rest of the code in the `try` block and enter the `catch` block. 
+Then, it will execute the code written in the catch block and print `Error: myNumbers array contains only 3 elements, index 3 is out of bounds` to the console.
 
-If the exception does not happen - the file can be found - the application will continue with the rest of the `try` block and print `File found!` to the console.
-It will **skip** the catch block entirely.
+If the exception does not happen - the index is within the bounds - the application will continue with the rest of the `try` block and print `Valid Index!` to the console.
+Then, it will **skip** the catch block entirely.
 
 
-Let's look at the second part of `catch (FileNotFoundException e)`. What is this `FileNotFoundException e`?
+Let's look at the second part of `catch (ArrayIndexOutOfBoundsException e)`. What is this `ArrayIndexOutOfBoundsException e`?
 Exceptions in Java are classes! Just like the classes we looked at in the previous sessions.
 
-For our FileNotFound example, this is the code that actually throws the exception:
+For our ArrayIndexOutOfBoundsException example, this is the code that actually throws the exception.
 
-```java
- if (file.isInvalid()) {
-    throw new FileNotFoundException("Invalid file path");
- }
-```
-
-The definition for FileNotFoundException looks like this (shortened): 
-```java
-
-public class FileNotFoundException extends IOException {
-    public FileNotFoundException() {
-        super();
-    }
-    
-    public FileNotFoundException(String s) {
-        super(s);
-    }
-}
-```
-
-Within the catch block, you gain access to the exception object - `new FileNotFoundException("Invalid file path")` - and all it's properties, including the error message.
+Within the catch block, you gain access to the exception object and all it's properties, including the error message.
 
 It can be used like this:
 ```java
 try {
-  FileReader fr = new FileReader(fileName);
-} catch (FileNotFoundException e) {
-  System.out.println(e.getMessage());
+    System.out.println(myNumbers[3]); // invalid index
+    System.out.println("Valid index");
+}catch (ArrayIndexOutOfBoundsException e){
+    System.out.println(e.getMessage());
 }
 ```
 
-Not the `e.getMessage()` in the catch block - it will return the string `Invalid file path`.
+Notice the `e.getMessage()` in the catch block - it will return the string `Index 3 out of bounds for length 3`.
 
 
 ### Checked and unchecked exceptions
@@ -141,30 +123,48 @@ Definition:
 
 The purpose of it is to force the developer to consider **expected** cases they might not be aware of.
 
-Example: FileNotFoundException is a checked exception. The following code will not compile as we either need to handle the exception or declare it in the method.
+Example: **_ParseException_** is a checked exception used when you try to convert a String to a Date object. 
 
+The following code will not compile unless we either handle the exception or declare it in the method.
+
+```java
+public static Date readDate() {
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Please, enter a date in DD/MM/YYYY format: ");
+    String dateInput = scanner.nextLine();
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    
+    // the parse method can throw a 'ParseException'
+    Date date = sdf.parse(dateInput);
+    return date;
+}
+```
 
 #### Handle the exception:
+
+To handle a checked exception in your code, you need to surround the instruction with a `try-catch` block.
+
 ```java
-void readFile(String fileName) {
-  try {
-      FileReader fr = new FileReader(fileName);
-  } catch (FileNotFoundException e) {
-      System.out.println("File not found");
-  }
+try {
+    Date date = sdf.parse(dateInput);
+    return date;
+} catch (ParseException e) {
+    System.out.println(e.getMessage());
+    return null;
 }
 ```
 
 #### Declare the exception in the method:
-Instead of handling this exception directly in `readFile`, we can also propagate it to its caller and let them handle it. This can be useful if how you want to handle it depends on who calls the method.
+Instead of handling this exception directly (with try-catch), we can also choose to propagate it to its caller and let them handle it. 
+
+This can be useful if how you want to handle it depends on who calls the method.
 
 ```java
-void readFile(String fileName) throws FileNotFoundException {
-  FileReader fr = new FileReader(fileName);
-}
+public static Date readDate() throws ParseException { ... }
 ```
 
-In this case, you don't decide in `readFile` what to do in case of an exception, but warn whoever calls `readFile` that they have to handle it.
+In this case, you don't decide in `readDate` what to do in case of an exception, but warn whoever calls `readDate` that they have to handle it.
 
 ### Runtime Exceptions
 Definition:
@@ -177,13 +177,13 @@ Two of the most common types of runtime exceptions are `NullPointerException` an
 
 * We will try to get a user's input from the console. In order to achieve this we need to use a Scanner. Then let's try to convert the user's input to an Integer.
 
-  ```java
+```java
   Scanner scanner = new Scanner(System.in);
   String userInput = scanner.nextLine();
 
   // this will throw an exception if user input is not convertable to an integer
   Integer.parseInt(userInput);
-  ```
+```
 
 * Let's see what happens when we try to access an element that do not exist in a List
 
@@ -213,11 +213,15 @@ In order to set a specific message or a specific root cause, we can overwrite th
 
 ```java
 public class MyException extends Exception {
-
+  public MyException(String message) {
+    super(message);
+  }
 }
 
 public class MyRuntimeException extends RuntimeException {
-
+  public MyRuntimeException(String message) {
+    super(message);
+  }
 }
 
 public class Service {
@@ -251,16 +255,17 @@ public class Service {
 Use exceptions only for exceptional situations, e.g. 
 - a file should be there, but isn't
 - the user should put in a number, but puts a name
-- you want to call the instagram API but you have no internet connection.
+- you want to call the instagram API, but you have no internet connection.
 
 Do not use it for anything else. It is considered bad practice - Exceptions complicate the flow of your application because you jump between functions and blocks before they complete.
 
 ## Exercises
 
-## Exercise 1
+### Exercise 1
 Write a dateValidator method that accept a string as parameter and returns nothing if the string is in the format `DD/MM/YYYY` otherwise it raises a `DateTimeException` as a checked exception.
 
-## Exercise 2: Replace the `DateTimeException` in Exercise 1 with a custom Exception.
+### Exercise 2 
+Replace the `DateTimeException` in Exercise 1 with a custom Exception.
 
 # Assignment
 
