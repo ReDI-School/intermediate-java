@@ -53,8 +53,8 @@ See the following code as an example, what could go wrong here?
 ```java
 public class Main {
   public static void main(String[ ] args) {
-    int[] myNumbers = {1, 2, 3};
-    System.out.println(myNumbers[4]); // error!
+    int[] myNumbers = {0, 1, 2};
+    System.out.println(myNumbers[3]); // error!
   }
 }
 ```
@@ -66,7 +66,7 @@ Don't scroll down yet - Take a minute to think about it...
 When we run the above code you get the following:
 
 ```java
-    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 3
+    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 ```
 
 
@@ -75,46 +75,46 @@ A better version to avoid this error function would be:
 ```java
 public class Main {
   public static void main(String[ ] args) {
-    int[] myNumbers = {1, 2, 3};
+    int[] myNumbers = {0, 1, 2};
+    int index = 3;
     try {
-      int index=4;
       System.out.println(myNumbers[index]); // invalid index
       System.out.println("Valid Index!");
-    }catch (ArrayIndexOutOfBoundsException e){
-      System.out.println("Error: myNumbers array contains only 3 elements, index 4 is out of bounds");
+    } catch (ArrayIndexOutOfBoundsException e){
+      System.out.println("Error: myNumbers array contains only 3 elements, index "+index+" is out of bounds");
     }
   }
 }
 ```
 
 Note the `try` and `catch` keywords. We wrap the code that can cause an exception in a `try { ... }` block and add a `catch(ArrayIndexOutOfBoundsException e) {...}` after it.
-Your application will start by executing the code in the `try` block: `System.out.println(myNumbers[4])`
+Your application will start by executing the code in the `try` block: `System.out.println(myNumbers[3])`
 
 If the exception happens - the index is out of bounds - the application will leave the `try` block immediately, ignore the rest of the code in the `try` block and enter the `catch` block. 
-Then, it will execute the code written in the catch block and print `Error: myNumbers array contains only 3 elements, index 4 is out of bounds` to the console.
+Then, it will execute the code written in the catch block and print `Error: myNumbers array contains only 3 elements, index 3 is out of bounds` to the console.
 
 If the exception does not happen - the index is within the bounds - the application will continue with the rest of the `try` block and print `Valid Index!` to the console.
-It will **skip** the catch block entirely.
+Then, it will **skip** the catch block entirely.
 
 
 Let's look at the second part of `catch (ArrayIndexOutOfBoundsException e)`. What is this `ArrayIndexOutOfBoundsException e`?
 Exceptions in Java are classes! Just like the classes we looked at in the previous sessions.
 
-For our ArrayIndexOutOfBoundsException example, this is the code that actually throws the exception:
+For our ArrayIndexOutOfBoundsException example, this is the code that actually throws the exception.
 
 Within the catch block, you gain access to the exception object and all it's properties, including the error message.
 
 It can be used like this:
 ```java
 try {
-    System.out.println(myNumbers[4]); // invalid index
+    System.out.println(myNumbers[3]); // invalid index
     System.out.println("Valid index");
 }catch (ArrayIndexOutOfBoundsException e){
     System.out.println(e.getMessage());
 }
 ```
 
-Not the `e.getMessage()` in the catch block - it will return the string `Index 4 out of bounds for length 3`.
+Notice the `e.getMessage()` in the catch block - it will return the string `Index 3 out of bounds for length 3`.
 
 
 ### Checked and unchecked exceptions
@@ -240,16 +240,17 @@ public class Service {
 Use exceptions only for exceptional situations, e.g. 
 - a file should be there, but isn't
 - the user should put in a number, but puts a name
-- you want to call the instagram API but you have no internet connection.
+- you want to call the instagram API, but you have no internet connection.
 
 Do not use it for anything else. It is considered bad practice - Exceptions complicate the flow of your application because you jump between functions and blocks before they complete.
 
 ## Exercises
 
-## Exercise 1
+### Exercise 1
 Write a dateValidator method that accept a string as parameter and returns nothing if the string is in the format `DD/MM/YYYY` otherwise it raises a `DateTimeException` as a checked exception.
 
-## Exercise 2: Replace the `DateTimeException` in Exercise 1 with a custom Exception.
+### Exercise 2 
+Replace the `DateTimeException` in Exercise 1 with a custom Exception.
 
 # Assignment
 
