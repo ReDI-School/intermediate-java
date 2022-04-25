@@ -123,37 +123,33 @@ Definition:
 
 The purpose of it is to force the developer to consider **expected** cases they might not be aware of.
 
-Example: IOException is a checked exception. The following code will not compile unless we either handle the exception or declare it in the method.
-
+Example: **_ParseException_** is a checked exception. The following code will not compile unless we either handle the exception or declare it in the method.
 
 #### Handle the exception:
 ```java
-public static void main(String[ ] args) {
-    int firstNum, secondNum, result;
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    try {
-        System.out.println("Enter a first number:");
-        firstNum = Integer.parseInt(br.readLine());
-        System.out.println("Enter a second number:");
-        secondNum = Integer.parseInt(br.readLine());
-        result = firstNum * secondNum;
-        System.out.println("The Result is: " + result);
-    } catch (IOException ioe) {
-        System.out.println(ioe);
-    }
+public static Date readDate() {
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Please, enter a date in DD/MM/YYYY format: ");
+    String dateInput = scanner.nextLine();
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    
+    // the parse method can throw a 'ParseException'
+    Date date = sdf.parse(dateInput);
+    return date;
 }
 ```
 
 #### Declare the exception in the method:
-Instead of handling this exception directly, we can also propagate it to its caller and let them handle it. This can be useful if how you want to handle it depends on who calls the method.
+Instead of handling this exception directly (with try-catch), we can also choose to propagate it to its caller and let them handle it. 
+
+This can be useful if how you want to handle it depends on who calls the method.
 
 ```java
-void readFile(String fileName) throws FileNotFoundException {
-  FileReader fr = new FileReader(fileName);
-}
+public static Date readDate() throws ParseException { ... }
 ```
 
-In this case, you don't decide in `readFile` what to do in case of an exception, but warn whoever calls `readFile` that they have to handle it.
+In this case, you don't decide in `readDate` what to do in case of an exception, but warn whoever calls `readDate` that they have to handle it.
 
 ### Runtime Exceptions
 Definition:
@@ -166,13 +162,13 @@ Two of the most common types of runtime exceptions are `NullPointerException` an
 
 * We will try to get a user's input from the console. In order to achieve this we need to use a Scanner. Then let's try to convert the user's input to an Integer.
 
-  ```java
+```java
   Scanner scanner = new Scanner(System.in);
   String userInput = scanner.nextLine();
 
   // this will throw an exception if user input is not convertable to an integer
   Integer.parseInt(userInput);
-  ```
+```
 
 * Let's see what happens when we try to access an element that do not exist in a List
 
@@ -202,11 +198,15 @@ In order to set a specific message or a specific root cause, we can overwrite th
 
 ```java
 public class MyException extends Exception {
-
+  public MyException(String message) {
+    super(message);
+  }
 }
 
 public class MyRuntimeException extends RuntimeException {
-
+  public MyRuntimeException(String message) {
+    super(message);
+  }
 }
 
 public class Service {
