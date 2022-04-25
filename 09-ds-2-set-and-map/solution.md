@@ -2,7 +2,7 @@
 title: "Assignment Solutions"
 nav_order: 1
 parent: "09 - Data Structure - Set & Map"
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Class Exercise
