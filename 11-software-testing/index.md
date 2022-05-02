@@ -2,7 +2,7 @@
 title: 11 - Unit Testing
 nav_order: 12
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 11: Unit Testing
