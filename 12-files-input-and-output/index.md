@@ -2,7 +2,7 @@
 title: 12 - Files Input/Output
 nav_order: 13
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 12: File Input/Output (I/O)
@@ -296,8 +296,9 @@ memory which can lead to the application running out of memory and crashing.
 
 _Please use the above methods only if necessary for the assignment exercise._
 
-## [Github Classroom Exercises](https://classroom.github.com/a/v_iYcSA9)
+## [Github Classroom Exercises](https://classroom.github.com/a/G95nsQ_O)
 
+## [Github Classroom Assignment](https://classroom.github.com/a/_ao9_Cso)
 ### Follow the link, accept and download the assignment from GitHub Classroom
 
 ## Materials
