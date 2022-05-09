@@ -2,7 +2,7 @@
 title: 13 - Design Patterns
 nav_order: 14
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Lesson 13: Design Patterns
