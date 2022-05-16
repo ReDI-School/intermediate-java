@@ -1,25 +1,39 @@
 ---
-title: 14 - Project ideas
+title: 14 - Project Instructions and Ideas
 nav_order: 15
 has_children: false
-nav_exclude: true
+nav_exclude: false
 ---
 
-# Project
+# Final Project
 
 ## Project rules
 
 - **Find a colleague to work with!**
-- Choose and share your idea in the class' Slack channel before 22.11
-- You are working on the project until the end of the course
+- Choose and share your idea in the class' Slack channel before 23.05
+- You will be working on the project until the end of the course
+  - Teachers will follow the progress and support you
+  - There will be an intermediate delivery
 - Try to use what we learnt during the course
 - You are free to use something that was not covered during the course
 - The following ideas are meant as inspiration: you can use them, but why not coming up with your own?
-- **Find a colleague to work with!**
+- **Groups of maximum 3 people!**
+
+## Schedule
+
+- **16.05.2022**: Introduction (this class)
+- **22.05.2022**: Final date for submission of group members and selected project 
+- **23.05.2022**: Start of Project (creation of GitHub repository and sharing with teachers)
+- **25.05.2022**: Working on the project
+- **30.05.2022**: Working on the project
+- **06.06.2022**: Intermediate delivery
+- **08.06.2022**: Working on the project
+- **13.06.2022**: Working on the project
+- **15.06.2022**: Demo Day (final delivery)
 
 ## Project ideas
 
-### Text analysis
+### 1 - Text analysis
 
 #### Description:
 
@@ -47,7 +61,7 @@ If this is too simple, here some ideas how you can make the project more complex
 - Read text from a web URL, or from an API (Twitter?)
 - Add tests for your application
 
-### Book Library
+### 2 - Book Library
 
 #### Description:
 
@@ -68,7 +82,7 @@ Build an application that allows us to catalogue and organize the books we lend 
 - Late returns are charged 10 cents for every day after the return period.
 - The user can request to see their activity history.
 
-### Phone Index
+### 3 - Phone Index
 
 #### Description:
 
@@ -95,7 +109,7 @@ If this is too simple, here some ideas how you can make the project more complex
 - generate a [VCF file](https://fileinfo.com/extension/vcf) for a contact.
 - generate a [CSV file](https://fileinfo.com/extension/csv) for all contacts.
 
-### Accounting software
+### 4 - Accounting software
 
 #### Description:
 
@@ -114,7 +128,7 @@ If this is too simple, here some ideas how you can make the project more complex
   data in different files
 - use a real db!
 
-### Twitter analysis
+### 5 - Twitter analysis
 
 #### Description:
 
@@ -132,19 +146,19 @@ If this is too simple, here some ideas how you can make the project more complex
 
 - you could use a graphing library to actually output nice graphs!
 
-### Exercice Tracker (with persistence)
+### 6 - Exercise Tracker (with persistence)
 
 #### Description:
 
 Users should be able to:
 
-- select from a static list of possible exercises and enter when they did it & specific exercice-relevant information,
+- select from a static list of possible exercises and enter when they did it & specific exercise-relevant information,
   e.g.
-    - for runnning and biking: Duration & Distance
-    - for weightlifting exercices: Weight & Repetitions
+    - for running and biking: Duration & Distance
+    - for weightlifting exercises: Weight & Repetitions
     - for football, basketball, ... : Duration, # of matches played
-- get an easily readable list of exercices they did in the last x days/weeks/months
-- The data they entered should not be lost when the appliction is closed - either with a database or a file-based
+- get an easily readable list of exercises they did in the last x days/weeks/months
+- The data they entered should not be lost when the application is closed - either with a database or a file-based
   storage.
 
 #### Bonus:
@@ -153,16 +167,16 @@ If this is too simple, here some ideas how you can make the project more complex
 
 - keeping track of the data of multiple users in parallel
 - allowing the user to put in their weight and keep track of their weight change over the last x days/weeks/months
-- calculating the calories burned whenever someone enters an exercice based on the exercice type, the provided details &
+- calculating the calories burned whenever someone enters an exercise based on the exercise type, the provided details &
   the persons weight.
 
-### Pacman console version
+### 7 - Pacman console version
 
 #### Description
 
 In this project we would like to create a simple version of the famous game Pacman. You will have a 20 by 27 maze (you
 can freely choose a different one than the original game), the maze contains dots, large flashing dots, ghosts and
-pacmac itself. For this simple version the game will be turn based, so each time you will get a prompt in the console to
+pacman itself. For this simple version the game will be turn based, so each time you will get a prompt in the console to
 choose in which direction pacman will go, of course the ghost move randomly, on each turn you move by one case only.
 Game rule:
 
@@ -191,7 +205,7 @@ dots the others are obstacles.
    a `Java 2d games library`.
 3. Change the game to no be turn based but more dynamic as the original pacman game. (This is a tricky one)
 
-### Groceries Delivery
+### 8 - Groceries Delivery
 
 Users should be able to (through the terminal):
 
@@ -210,7 +224,7 @@ If this is too simple, here some ideas how you can make the project more complex
     - see previous orders of this user
     - see statistics how much they paid per month
     - see statistics what product was ordered the most for the user
-- Super user (admin) should be able to
+- Superuser (admin) should be able to
     - see all orders
     - see all users
     - see the most popular product
@@ -218,7 +232,7 @@ If this is too simple, here some ideas how you can make the project more complex
 - Add support for the distribution centers (so some product could be out of stock after the orders)
 - Add tests for your application
 
-### CV generator
+### 9 - CV generator
 
 Users should be able to:
 
@@ -233,7 +247,7 @@ Users should be able to:
 - https://www.baeldung.com/java-pdf-creation
 - https://www.dunebook.com/best-java-pdf-generation-libraries/
 
-### Instagram API
+### 10 - Instagram API
 Use the instagram API to make something cool, for example:
 
 Users should be able to enter a hashtag and get a list of accounts they can follow that use that hashtag.
@@ -245,7 +259,7 @@ The details of how you select these accounts is up to you - there's different wa
 
 **Note: An important part of this task will be reading the Instagram API documentation and understanding how to interact with it.**
 
-### Spotify API
+### 11 - Spotify API
 
 Use the spotify API to do something cool, for example:
 User should be able to enter an artist and get 10 song recommendations
@@ -258,7 +272,7 @@ The details of how you select these songs is up to you - there's different ways 
 
 **Note: An important part of this task will be reading the Spotify API documentation and understanding how to interact with it.**
 
-### Image Analysis
+### 12 - Image Analysis
 
 Java provides libraries to analyze images. You can do something cool with that, like:
 
@@ -266,8 +280,7 @@ Easy: User should be able to provide the path to a local image and the applicati
 Medium: User should be able to provide the path to a folder with images and the user can search for colors. The application lists the images that use that color a lot.
 Hard: After performing image analysis, store the information per image locally. Allow the user to add custom tags on top of the automatic color analysis. Provide the User the ability to search the folder based on tags. Tags should not be lost when the application restarts!
 
-
-### Degrees
+### 13 - Degrees
 
 A Java program that would tell us how many "degrees of separation" apart two actors are.
 
@@ -280,12 +293,11 @@ Each dataset includes three files:
 2. `movies.csv` in which you’ll see here that each movie also has a unique id, in addition to a title and the year in which the movie was released.
 3. Finally, `stars.csv` which establishes a relationship between the people in `people.csv` and the movies in `movies.csv`. Each row is a pair of a `person_id` value and `movie_id` value. 
 
-You can start with just outputting any relation between the two given actors. If you want a challenge think try to get the **shortest relation** between the actors!
+You can start with just outputting any relation between the two given actors. If you want a challenge think try to get **the shortest relation** between the actors!
 
-### Image filtering app
+### 14 - Image filtering app
 
-A Java program that wold take a path to an image through the command line and then offers the user a list of filters that they can apply to the image. The program would apply the filter to the image and save the new image on disk. The more filters the better!
+A Java program that would take a path to an image through the command line and then offers the user a list of filters that they can apply to the image. The program would apply the filter to the image and save the new image on disk. The more filters the better!
 
-
-For a bonus you can build a GUI for it, that IS how Instagram started, you know! 
+For a bonus you can build a GUI for it (that IS how Instagram started, you know!) 
 
