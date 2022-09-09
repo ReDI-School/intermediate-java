@@ -31,8 +31,6 @@ To learn more about Intellij Idea (e.g. shortcuts, plugins, etc.), here are [som
 
 Git is a tool to handle different versions of your code. Please install it following the [reference manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){:target="_blank"}
 
-_Git comes with a command-line tool, and there are plenty of other free visual tools out there, but none of them are required for this course (the integration that Intellij Idea Community Edition provides by default is enough)._
-
 ## Github
 
 Github is a free online provider of Internet hosting for source code versioned with Git.
@@ -40,6 +38,10 @@ Github is a free online provider of Internet hosting for source code versioned w
 We will be using Github to upload, share and review source code and exercises.
 
 Please [create an account](https://github.com/){:target="_blank"} and have it ready to use.
+
+## GitHub Desktop
+
+Git comes with a command-line tool, but in order to be able to visualize the different versions of your code we will also use the github desktop client. You can install this from the [following link](https://desktop.github.com/){:target="_blank"}
 
 ## Github Classroom
 
