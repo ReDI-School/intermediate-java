@@ -24,46 +24,42 @@ In Java, we need to declare the size of an array before we can use it. Once the 
 declared, it's not possible to change it.  What if we don't know how many elements will 
 be in our array?
 
-To handle this issue, we can use the `List` data structure. The List data structure is defined in
-Java by the `List` interface. Unlike arrays, lists can automatically adjust its capacity when we 
+To handle this issue, we can use the `ArrayList` data structure. Unlike arrays, an ArrayLists can automatically adjust its capacity when we 
 add or remove elements from it.
 
-A `List` is an ordered collection (also known as a sequence). The user of this collection has precise
+An `ArrayList` is an ordered collection (also known as a sequence). The user of this collection has precise
 control over where in the list each element is inserted. The user can access elements by their 
 integer index (position in the list), and search for elements in the list.
 
-The `ArrayList` class is an implementation of the `List` interface which allows us to create 
-resizable arrays.
-
-The list interface looks like this:
+ArrayList contains the following important methods:
 
 ```java
-interface List<E>{
+class ArrayList<E>{
   // Adds the element to the end of the list increasing its size by 1.
-  boolean add(E element);
+  boolean add(E element){/*...*/}
   // Adds the element to position #index of the list increasing its size by 1.
-  boolean add(int index, E element);
+  boolean add(int index, E element){/*...*/}
   // Replaces the element at position #index, does not increase the size.
-  boolean set(int index, E element);
+  boolean set(int index, E element){/*...*/}
   // Returns the element at #index
-  E get(int index);
+  E get(int index){/*...*/}
   // Removes the element at #index and return that element.
-  E remove(int index);
+  E remove(int index){/*...*/}
   // Removes the first occurrence of the specified element from this list, 
   // if it is present (optional operation).
-  boolean remove(E element);
+  boolean remove(E element){/*...*/}
   // Returns the current size of the list
-  int size();
+  int size(){/*...*/}
 }
 ```
 
-> Question; What other methods can a `List` have?
+> Question; What other methods can an `ArrayList` have?
 
 ### Declare & Initialise ArrayList
 
 ```java
 // create Integer type arraylist
-List<Integer> arrayList = new ArrayList<>();
+ArrayList<Integer> arrayList = new ArrayList<>();
 
 // create String type arraylist
 ArrayList<String> arrayList = new ArrayList<>();
