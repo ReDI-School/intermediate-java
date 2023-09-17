@@ -19,7 +19,7 @@ If you need to install the JDK (or a new version), follow [these instructions](h
 
 ## IntelliJ Idea
 
-We use the IntelliJ Idea (Community Edition) as an IDE (Integrated Development Environment).
+We use the **IntelliJ Idea (Community Edition)** as an IDE (Integrated Development Environment).
 
 With it, we write code, compile and run it. On top of that, we also use it to integrate with Git (as described in the next section).
 
