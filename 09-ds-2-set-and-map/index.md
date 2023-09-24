@@ -89,6 +89,38 @@ public class Main {
 
 > As stated above, you need a `Map` when you are interested in keeping a dictionary or mapping of keys to values.
 
+### Useful methods of a Map
+
+- put -> adds a key and value to the map
+- get -> returns the value associated with the key
+- containsKey -> returns if the key exists in the map
+- remove -> removes the item with the given key from the map
+
+### Iterating over the elements of a Map
+
+Different options:
+
+#### By key:
+```java
+        for (String key: map.keySet()) {
+            int value = map.get(key);
+            System.out.println("The value associated to key " + key + " is " + value);
+        }
+```
+
+#### By EntrySet
+```java
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println("The value associated to key " + entry.getKey() + " is " + entry.getValue());
+        }
+```
+
+## Using own objects as keys for a map or entry of a set
+
+If you want to use your own classes as keys for a map or element of a set you have to override the `equals` and the `hashCode` method of your new class.
+Please review [**this explanation**](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/){:target="_blank"} for more information.
+
+
 ## HashSet and HashMap
 
 - **Ordering is not important**
